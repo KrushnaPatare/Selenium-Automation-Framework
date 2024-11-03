@@ -1,3 +1,3 @@
-ControlFocus("Open","","Edit1")
-ControlSetText("Open","","Edit1","H:\KRUSHNA PATARE Resume-101.pdf")
-ControlClick("Open","","Button1")
+ControlFocus("File Upload","","Edit1")
+ControlSetText("File Upload","","Edit1","H:\KRUSHNA PATARE Resume-101.pdf")
+ControlClick("File Upload","","Button1")

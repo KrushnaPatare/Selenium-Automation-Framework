@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -20,8 +21,8 @@ public class NaukriProfileUpdate
 	@Test()
 	public static void updateNaukriProfile() throws InterruptedException, IOException 
 	{
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver = new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		driver.get("https://www.naukri.com/");
