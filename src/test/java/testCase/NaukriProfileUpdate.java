@@ -75,6 +75,21 @@ public class NaukriProfileUpdate
 		Runtime.getRuntime().exec("F:\\WorkSpace\\SwagLabs-Ecommerce\\DDT\\FileUpload.exe");
 		Thread.sleep(12000);
 		
+		
+		WebElement profilePercentage = driver.findElement(By.xpath("//div[@class='user-percentage high']"));
+		//System.out.println(profilePercentage.getText());
+		while(profilePercentage.getText()=="90%") 
+		{
+			js.executeScript("arguments[0].scrollIntoView({block: 'center'});", uploadButton);
+			Thread.sleep(2000);
+			uploadButton.click();
+			Thread.sleep(7000);
+			
+			Runtime.getRuntime().exec("F:\\WorkSpace\\SwagLabs-Ecommerce\\DDT\\FileUpload.exe");
+			Thread.sleep(12000);
+		}
+		
+		
 		WebElement basicDetailsButton = driver.findElement(By.xpath("//em[text()='editOneTheme']"));
 		js.executeScript("window.scrollTo(0, 0);");
 		Thread.sleep(3000);
