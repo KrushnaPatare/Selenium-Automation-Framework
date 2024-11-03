@@ -84,7 +84,7 @@ public class NaukriProfileUpdate
 		WebElement saveDetailsButton = driver.findElement(By.xpath("//button[@id='saveBasicDetailsBtn']"));
 		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", saveDetailsButton);
 		saveDetailsButton.click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		
 		driver.quit();
 	}
