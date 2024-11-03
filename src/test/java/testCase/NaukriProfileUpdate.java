@@ -73,7 +73,7 @@ public class NaukriProfileUpdate
 		Thread.sleep(7000);
 		
 		Runtime.getRuntime().exec("F:\\WorkSpace\\SwagLabs-Ecommerce\\DDT\\FileUpload.exe");
-		Thread.sleep(10000);
+		Thread.sleep(12000);
 		
 		WebElement basicDetailsButton = driver.findElement(By.xpath("//em[text()='editOneTheme']"));
 		js.executeScript("window.scrollTo(0, 0);");
