@@ -4,4 +4,5 @@ testCase\SwagLabs6CheckoutOverviewPageTest.class
 testCase\SwagLabs4CartPageTest.class
 testCase\SwagLabs7CheckoutCompletepageTest.class
 testCase\SwagLabs3ProductPageTest.class
+testCase\NaukriProfileUpdate.class
 testCase\SwagLabs5CheckoutPageTest.class

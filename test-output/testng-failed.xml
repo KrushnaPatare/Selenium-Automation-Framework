@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.SwagLabs4CartPageTest">
+      <class name="testCase.NaukriProfileUpdate">
         <methods>
-          <include name="Setup"/>
-          <include name="verifyNavigationToCheckoutPage"/>
-          <include name="closeBrowser"/>
+          <include name="updateNaukriProfile"/>
         </methods>
-      </class> <!-- testCase.SwagLabs4CartPageTest -->
+      </class> <!-- testCase.NaukriProfileUpdate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
