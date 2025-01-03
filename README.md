@@ -8,7 +8,7 @@ Automated testing project for Swag Labs with test cases, bug reports, and clear 
 - [Scope](#scope)
 - [Features](#features)
 - [Tools and Technologies Used](#tools-and-technologies-used)
-- [Test Cases](#test-cases)
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -52,10 +52,7 @@ These tools form a powerful framework for automating test cases, validating outc
 
 ---
 
-## 📋 Test Cases
 
-Test cases are written in Gherkin syntax, making them easily readable and understandable. With over 100 test cases, this suite provides comprehensive test coverage.  
-📄 **View Complete Test Cases**: [Test Automation for Swag Labs - Test Cases.pdf](https://github.com/lakshithadil/Test-Automation-for-Swag-Labs/blob/main/Test%20Automation%20for%20Swag%20Labs%20%20-%20Test%20Cases%20.pdf)
 
 ---
 
@@ -91,4 +88,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 --- 
 
-Feel free to copy this Markdown content!
+
