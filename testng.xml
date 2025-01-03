@@ -4,13 +4,13 @@
 	 <parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCase.SwagLabs1LoginPageTest"/>
-      <class name="testCase.SwagLabs2InventoryPageTest"/>
-      <class name="testCase.SwagLabs3ProductPageTest"/>
-      <class name="testCase.SwagLabs4CartPageTest"/>
-      <class name="testCase.SwagLabs5CheckoutPageTest"/>
-      <class name="testCase.SwagLabs6CheckoutOverviewPageTest"/>
-      <class name="testCase.SwagLabs7CheckoutCompletepageTest"/>
+      <class name="com.swagLabs.tests.CartPageTest"/>
+      <class name="com.swagLabs.tests.EndToEndTest"/>
+      <class name="com.swagLabs.tests.CheckoutOverviewPageTest"/>
+      <class name="com.swagLabs.tests.InventoryPageTest"/>
+      <class name="com.swagLabs.tests.CheckoutCompletepageTest"/>
+      <class name="com.swagLabs.tests.CheckoutPageTest"/>
+      <class name="com.swagLabs.tests.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

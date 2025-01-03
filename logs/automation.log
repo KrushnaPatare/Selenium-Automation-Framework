@@ -103,3 +103,4 @@
 19:45:23.357  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (6de3c02048bb74cd96b15b274b87f3a4)] -> xpath: //input[@data-test='password']]
 19:45:23.357  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
 19:45:23.590  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6de3c02048bb74cd96b15b274b87f3a4)] -> xpath: //input[@data-test='login-button']]
+19:47:54.475  [main] DEBUG org.testng.TestNG - suiteXmlPath: "F:\WorkSpace\SwagLabs-Ecommerce\testng.xml"
