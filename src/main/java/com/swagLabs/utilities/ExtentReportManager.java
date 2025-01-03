@@ -3,21 +3,43 @@ package com.swagLabs.utilities;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.swagLabs.pojo.BaseClass;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReportManager extends BaseClass implements ITestListener 
+public class ExtentReportManager implements ITestListener 
 {
-	public  ExtentReports reports;
+	private ExtentReports reports;
 	public static ExtentTest test;
 
-	public void onStart(ITestContext context) {
-		reports = ExtentReport.createExtentReports();
+	public void onStart(ITestContext context) 
+	{
+		reports = new ExtentReports();
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(TestContext.extentReportPath);
+
+		sparkReporter.config().setTheme(Theme.DARK);
+		sparkReporter.config().setReportName("SwagLabs Test Automation Results Report");
+		sparkReporter.config().setDocumentTitle("SwagLabs Automation Report");
+		sparkReporter.config().setTimeStampFormat("dd/MM/yyyy hh:mm:ss a");
+
+		reports.attachReporter(sparkReporter);
+
+		reports.setSystemInfo("Application URL", "https://www.saucedemo.com");
+		reports.setSystemInfo("Browser Name", "set this from config.properties");
+		reports.setSystemInfo("Username",System.getProperty("user.name"));
+		reports.setSystemInfo("Operating System", System.getProperty("os.name"));
+		reports.setSystemInfo("OS Version", System.getProperty("os.version"));
+		reports.setSystemInfo("OS Architecture", System.getProperty("os.arch"));
+		reports.setSystemInfo("Java Version", System.getProperty("java.version"));
+
+		System.out.println("ExtentReportManager initialized.........!!!");
 	}
 
 	public void onTestStart(ITestResult result) {
@@ -29,7 +51,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener
 		System.out.println(result.getName() + " started executing.");
 		
 		test = reports.createTest(result.getTestClass().getName() +" - "+
-				result.getMethod().getPriority() + ". " + result.getMethod().getMethodName());
+				result.getMethod().getPriority() + ". " + result.getMethod().getMethodName(), result.getMethod().getDescription());
 		test.assignAuthor("Krushna Patare.");
 		test.log(Status.INFO, result.getName() + " started executing.");
 	}
@@ -53,18 +75,12 @@ public class ExtentReportManager extends BaseClass implements ITestListener
 	public void onTestFailure(ITestResult result) 
 	{
 		test.createNode(result.getName());
-		test.assignCategory(result.getMethod().getGroups());
-		String screenshotDestinationPath = null;
-		try {
-			screenshotDestinationPath = BaseClass.screenshot.generateScreenshot(driver);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		test.assignCategory(result.getMethod().getGroups());		
 		
 		System.out.println("Test is failed " + result.getName());
-		test.log(Status.INFO, result.getThrowable());
+		test.log(Status.FAIL, "Test failed due to: " + result.getThrowable().getMessage());
 		test.log(Status.FAIL, result.getName() + " got failed");
-		test.addScreenCaptureFromPath(screenshotDestinationPath);
+		ReportUtils.addScreenshot("*****");
 		
 		System.out.println(result.getName() + " got failed");
 		System.out.println();
@@ -85,14 +101,13 @@ public class ExtentReportManager extends BaseClass implements ITestListener
 		System.out.println();
 		System.out.println("************************************");
 		System.out.println("************************************");
-		
 	}
 
 	public void onFinish(ITestContext context) 
 	{
 		reports.flush();
 	
-		File extentReportCopy = new File(AutoConstant.extentReportPath);
+		File extentReportCopy = new File(TestContext.extentReportPath);
 		try {
 			Desktop.getDesktop().browse(extentReportCopy.toURI());
 			} 

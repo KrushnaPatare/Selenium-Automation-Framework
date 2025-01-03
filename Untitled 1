@@ -1,0 +1,2 @@
+org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: googlechromelabs.github.io

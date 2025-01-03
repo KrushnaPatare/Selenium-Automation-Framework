@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.NaukriProfileUpdate">
+      <class name="com.swagLabs.tests.EndToEndTest">
         <methods>
-          <include name="updateNaukriProfile"/>
+          <include name="initializeBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyEndToEndPurchasingFunctionality"/>
         </methods>
-      </class> <!-- testCase.NaukriProfileUpdate -->
+      </class> <!-- com.swagLabs.tests.EndToEndTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

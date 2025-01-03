@@ -16,7 +16,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 
-public class XLUtility {
+
+public class XLUtility 
+{
+  //  private static final Logger logger = LoggerFactory.getLogger(XLUtility.class);
+
 	
 	public FileInputStream fi;
 	public FileOutputStream fo;
@@ -32,6 +36,36 @@ public class XLUtility {
 	{
 		this.path = path;
 	}
+	
+	
+	/**
+	 * @param sheetname
+	 * @param rowNum
+	 * @param cellNum
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
+	public  String getExcelData(String sheetname, int rowNum, int cellNum)
+			throws EncryptedDocumentException, IOException 
+	{
+		 FileInputStream file = new FileInputStream(path);
+		 String value = WorkbookFactory.create(file).getSheet(sheetname).getRow(rowNum).getCell(cellNum).getStringCellValue();
+			/*DataFormatter formatter = new DataFormatter();
+			String data;
+			try
+			{
+				data = formatter.formatCellValue(cell); //Returns the formatted value of a cell 
+				                                         //as a String regardless
+			}
+			catch(Exception e) 
+			{
+				data = "";
+			}*/
+			fi.close();
+			return value;
+	}
+	
 	
 	/**
 	 * @param sheetName
@@ -127,30 +161,5 @@ public class XLUtility {
 		return data;
 	}
 	
-	/**
-	 * @param sheetname
-	 * @param rowNum
-	 * @param cellNum
-	 * @return
-	 * @throws EncryptedDocumentException
-	 * @throws IOException
-	 */
-	public  String getExelData(String sheetname, int rowNum, int cellNum)
-			throws EncryptedDocumentException, IOException {
-		 FileInputStream file = new FileInputStream(path);
-		 String value = WorkbookFactory.create(file).getSheet(sheetname).getRow(rowNum).getCell(cellNum).getStringCellValue();
-			/*DataFormatter formatter = new DataFormatter();
-			String data;
-			try
-			{
-				data = formatter.formatCellValue(cell); //Returns the formatted value of a cell 
-				                                         //as a String regardless
-			}
-			catch(Exception e) 
-			{
-				data = "";
-			}*/
-			fi.close();
-			return value;
-}
+	
 }
