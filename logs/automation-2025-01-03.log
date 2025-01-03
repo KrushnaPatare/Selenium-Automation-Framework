@@ -1,21 +1,253 @@
-14:20:47.922  [main] ERROR com.swagLabs.utilities.LogUtils - An exception occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Back Home']"}
+19:52:21.180  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
+19:52:21.343  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='first-name']]
+19:52:21.511  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Krushna[[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='first-name']]
+19:52:21.572  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='last-name']]
+19:52:21.718  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Patare[[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='last-name']]
+19:52:21.770  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='postal-code']]
+19:52:21.914  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}411016[[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //*[@id='postal-code']]
+19:52:24.928  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
+19:52:28.124  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //input[@name='continue']]
+19:52:33.326  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
+19:52:33.326  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
+19:52:33.468  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //button[@data-test='finish']]
+19:52:33.529  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //button[@data-test='finish']]
+19:52:38.668  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-test='finish']'
+19:52:38.668  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout success page.
+19:52:38.829  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (6d36b2b1447c8d51b3c5b42e6e866bc1)] -> xpath: //button[text()='Back Home']]
+19:52:43.982  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Back Home']'
+19:52:43.982  [main] INFO  com.swagLabs.utilities.LogUtils - Opened inventory page.
+19:52:44.124  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyEndToEndPurchasingFunctionality *****
+19:52:44.125  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
+19:52:44.796  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:52:44.841  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 20:45:16 03/01/2025 IST)
+19:52:44.843  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.204 in cache (valid until 14:02:34 04/01/2025 IST)
+19:52:44.843  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+19:52:44.890  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.204 found in cache
+19:52:44.891  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+19:52:50.726  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
+19:52:50.727  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyUserIsAbleToNavigateToSocialMediaSites >>>>> *****
+19:52:50.729  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:52:50.900  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //input[@data-test='username']]
+19:52:51.102  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //input[@data-test='username']]
+19:52:51.160  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //input[@data-test='password']]
+19:52:51.308  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //input[@data-test='password']]
+19:52:51.309  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:52:51.493  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //input[@data-test='login-button']]
+19:52:56.733  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:52:56.733  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:52:59.885  [main] INFO  com.swagLabs.utilities.LogUtils - Login successful.
+19:53:00.026  [main] INFO  com.swagLabs.utilities.LogUtils - Navigating to LinkedIn page.
+19:53:00.065  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //a[text()='LinkedIn']]
+19:53:03.282  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //a[text()='LinkedIn']]
+19:53:03.469  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a6198362d7470b3c126e19c96a5d74fd)] -> xpath: //a[text()='LinkedIn']]
+19:53:08.749  [main] ERROR com.swagLabs.utilities.LogUtils - Failed to switch to window by title: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "com.swagLabs.utilities.SeleniumUtils.driver" is null
+19:53:08.749  [main] ERROR com.swagLabs.utilities.LogUtils - An exception occurred: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "com.swagLabs.utilities.SeleniumUtils.driver" is null
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandles()" because "com.swagLabs.utilities.SeleniumUtils.driver" is null
+	at com.swagLabs.utilities.SeleniumUtils.switchToWindowByTitle(SeleniumUtils.java:309) ~[classes/:?]
+	at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:65) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+19:53:18.790  [main] ERROR com.swagLabs.utilities.LogUtils - Test failed due to assertion error: Page title should match. expected [Sauce Labs | LinkedIn] but found [Swag Labs]
+19:53:18.790  [main] ERROR com.swagLabs.utilities.LogUtils - An exception occurred: Page title should match. expected [Sauce Labs | LinkedIn] but found [Swag Labs]
+java.lang.AssertionError: Page title should match. expected [Sauce Labs | LinkedIn] but found [Swag Labs]
+	at org.testng.Assert.fail(Assert.java:111) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.Assert.assertEquals(Assert.java:132) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.Assert.assertEquals(Assert.java:656) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:69) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+19:53:18.791  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyUserIsAbleToNavigateToSocialMediaSites *****
+19:53:18.791  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
+19:53:19.483  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:53:19.503  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 20:45:16 03/01/2025 IST)
+19:53:19.505  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.204 in cache (valid until 14:02:34 04/01/2025 IST)
+19:53:19.505  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+19:53:19.534  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.204 found in cache
+19:53:19.536  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+19:53:24.209  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************************************
+19:53:24.209  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyUserCanAddItemToCart >>>>> *****
+19:53:24.210  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:53:24.384  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //input[@data-test='username']]
+19:53:24.580  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //input[@data-test='username']]
+19:53:24.637  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //input[@data-test='password']]
+19:53:24.799  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //input[@data-test='password']]
+19:53:24.799  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:53:24.963  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //input[@data-test='login-button']]
+19:53:30.188  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:53:30.188  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:53:33.344  [main] INFO  com.swagLabs.utilities.LogUtils - Login successful.
+19:53:33.395  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.419  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.529  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.529  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.567  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.602  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.728  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.728  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.773  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.808  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.919  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.919  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.948  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:33.976  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.081  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.081  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.123  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.155  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.248  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.248  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.266  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.286  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.356  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:34.357  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //button[text()='Add to cart']]
+19:53:39.358  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
+19:53:39.566  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //div[@class='shopping_cart_container']]
+19:53:39.755  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (eb85e26118ad34c6d096c3b5cae7014e)] -> xpath: //div[@class='shopping_cart_container']]
+19:53:42.760  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
+19:53:48.000  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyUserCanAddItemToCart *****
+19:53:48.000  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
+19:53:48.432  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:53:48.461  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 20:45:16 03/01/2025 IST)
+19:53:48.463  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.204 in cache (valid until 14:02:34 04/01/2025 IST)
+19:53:48.463  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
+19:53:48.497  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.204 found in cache
+19:53:48.498  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
+19:53:55.060  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
+19:53:55.061  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyCheckoutSuccessMessage >>>>> *****
+19:53:55.062  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:53:55.238  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@data-test='username']]
+19:53:55.430  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@data-test='username']]
+19:53:55.503  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@data-test='password']]
+19:53:55.689  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@data-test='password']]
+19:53:55.690  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:53:55.859  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@data-test='login-button']]
+19:54:01.060  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:54:01.060  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:54:04.212  [main] INFO  com.swagLabs.utilities.LogUtils - Login successful.
+19:54:04.274  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.301  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.395  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.395  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.429  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.461  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.537  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.538  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.570  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.595  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.670  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.670  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.696  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.718  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.792  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.792  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.814  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.838  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.913  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.913  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.934  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:04.955  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:05.031  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:05.031  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Add to cart']]
+19:54:10.038  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
+19:54:10.238  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //div[@class='shopping_cart_container']]
+19:54:10.391  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //div[@class='shopping_cart_container']]
+19:54:13.400  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
+19:54:13.553  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Checkout']]
+19:54:16.565  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
+19:54:16.724  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //button[text()='Checkout']]
+19:54:21.887  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
+19:54:24.895  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
+19:54:25.059  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='first-name']]
+19:54:25.226  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Krushna[[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='first-name']]
+19:54:25.286  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='last-name']]
+19:54:25.435  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Patare[[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='last-name']]
+19:54:25.490  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='postal-code']]
+19:54:25.641  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}411016[[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //*[@id='postal-code']]
+19:54:28.643  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
+19:54:31.811  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (230f85ff37d4ecd4d38eff9a62863a69)] -> xpath: //input[@name='continue']]
+19:54:36.957  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
+19:54:36.957  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
+19:54:42.116  [main] ERROR com.swagLabs.utilities.LogUtils - Unexpected exception occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='checkout_complete_container']"}
   (Session info: chrome=131.0.6778.205)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [622c327fb38ad53e3228777dc99900a4, findElement {using=xpath, value=//button[text()='Back Home']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50547/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622c327fb38ad53e3228777dc99900a4
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Back Home']"}
+Command: [230f85ff37d4ecd4d38eff9a62863a69, findElement {value=//div[@id='checkout_complete_container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 230f85ff37d4ecd4d38eff9a62863a69
+19:54:42.117  [main] ERROR com.swagLabs.utilities.LogUtils - An exception occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='checkout_complete_container']"}
   (Session info: chrome=131.0.6778.205)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [622c327fb38ad53e3228777dc99900a4, findElement {using=xpath, value=//button[text()='Back Home']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50547/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622c327fb38ad53e3228777dc99900a4
+Command: [230f85ff37d4ecd4d38eff9a62863a69, findElement {value=//div[@id='checkout_complete_container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 230f85ff37d4ecd4d38eff9a62863a69
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='checkout_complete_container']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [230f85ff37d4ecd4d38eff9a62863a69, findElement {value=//div[@id='checkout_complete_container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 230f85ff37d4ecd4d38eff9a62863a69
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
@@ -34,9 +266,8 @@ Session ID: 622c327fb38ad53e3228777dc99900a4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351) ~[selenium-remote-driver-4.23.0.jar:?]
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.23.0.jar:?]
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.23.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source) ~[?:?]
-	at com.swagLabs.utilities.SeleniumUtils.waitAndClick(SeleniumUtils.java:91) ~[classes/:?]
-	at com.swagLabs.tests.EndToEndTest.verifyEndToEndPurchasingFunctionality(EndToEndTest.java:53) ~[test-classes/:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy33.getText(Unknown Source) ~[?:?]
+	at com.swagLabs.tests.CheckoutCompletepageTest.verifyCheckoutSuccessMessage(CheckoutCompletepageTest.java:53) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -65,291 +296,47 @@ Session ID: 622c327fb38ad53e3228777dc99900a4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-14:20:47.933  [main] ERROR com.swagLabs.utilities.LogUtils - Test failed due to assertion error: Failed to click element
-14:20:47.933  [main] ERROR com.swagLabs.utilities.LogUtils - An exception occurred: Failed to click element
-java.lang.AssertionError: Failed to click element
-	at org.testng.Assert.fail(Assert.java:111) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at com.swagLabs.utilities.SeleniumUtils.waitAndClick(SeleniumUtils.java:98) ~[classes/:?]
-	at com.swagLabs.tests.EndToEndTest.verifyEndToEndPurchasingFunctionality(EndToEndTest.java:53) ~[test-classes/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:739) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.TestRunner.run(TestRunner.java:614) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.10.1.r202404130807.jar:7.10.1]
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-14:20:47.934  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyEndToEndPurchasingFunctionality *****
-14:20:47.934  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
-14:20:50.418  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2bb62414: 265 ms
-14:20:50.702  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@3cdff901: 284 ms
-14:20:50.717  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@61f377d1: 15 ms
-14:20:50.728  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@49fdbe2b: 10 ms
-14:20:50.774  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7197b07f: 46 ms
-14:20:50.775  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@1f10fec6: 1 ms
-14:21:52.991  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2054499241\testng-customsuite.xml"
-14:21:53.439  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.443  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-14:21:53.445  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.446  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.446  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.447  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.448  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.448  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.449  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.449  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.450  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.451  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.452  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.452  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.453  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.453  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.463  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
-14:21:53.476  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
-14:21:53.478  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.479  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.483  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.483  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.484  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.484  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.485  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-14:21:53.486  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.488  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.489  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.489  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:21:53.489  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:21:53.501  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2054499241\testng-customsuite.xml
-
-14:21:53.848  [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
-14:21:53.926  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-14:21:54.405  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 15:02:34 03/01/2025 IST)
-14:21:54.407  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.204 in cache (valid until 14:02:34 04/01/2025 IST)
-14:21:54.409  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
-14:21:54.467  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.204 found in cache
-14:21:54.471  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
-14:21:57.711  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-14:21:57.711  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyEndToEndPurchasingFunctionality >>>>> *****
-14:21:57.716  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-14:21:58.102  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@data-test='username']]
-14:21:58.327  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@data-test='username']]
-14:21:58.400  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@data-test='password']]
-14:21:58.566  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@data-test='password']]
-14:21:58.566  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-14:21:58.737  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@data-test='login-button']]
-14:22:04.050  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
-14:22:04.050  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-14:22:07.219  [main] INFO  com.swagLabs.utilities.LogUtils - Login successful.
-14:22:07.334  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.374  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.483  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.484  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.574  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.609  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.708  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.708  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.840  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:07.885  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.009  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.009  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.040  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.074  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.157  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.157  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.186  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.216  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.295  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.295  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.320  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.346  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.425  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:08.425  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Add to cart']]
-14:22:13.434  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
-14:22:13.656  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //div[@class='shopping_cart_container']]
-14:22:13.802  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //div[@class='shopping_cart_container']]
-14:22:16.804  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
-14:22:16.978  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Checkout']]
-14:22:19.983  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
-14:22:20.168  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Checkout']]
-14:22:25.346  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
-14:22:28.347  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
-14:22:28.566  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='first-name']]
-14:22:28.746  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Krushna[[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='first-name']]
-14:22:28.807  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='last-name']]
-14:22:28.963  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Patare[[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='last-name']]
-14:22:29.029  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='postal-code']]
-14:22:29.190  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}411016[[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //*[@id='postal-code']]
-14:22:32.194  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
-14:22:35.399  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //input[@name='continue']]
-14:22:40.550  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
-14:22:40.551  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
-14:22:40.740  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[@data-test='finish']]
-14:22:40.803  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[@data-test='finish']]
-14:22:45.970  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-test='finish']'
-14:22:45.970  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout success page.
-14:22:46.156  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (e8f9531d1c430002f67d6bc3add603a5)] -> xpath: //button[text()='Back Home']]
-14:22:51.351  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Back Home']'
-14:22:51.351  [main] INFO  com.swagLabs.utilities.LogUtils - Opened inventory page.
-14:22:51.516  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyEndToEndPurchasingFunctionality *****
-14:22:51.517  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
-14:22:53.709  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@261b9a37: 167 ms
-14:22:53.714  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@15d3793b: 5 ms
-14:22:53.734  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@42679fc2: 20 ms
-14:22:53.744  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@643ba1ed: 9 ms
-14:22:53.751  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1f84327b: 7 ms
-14:22:53.751  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@39549f33: 0 ms
-14:25:03.796  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1153539387\testng-customsuite.xml"
-14:25:04.295  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-14:25:04.299  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-14:25:04.302  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.302  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.303  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.303  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.304  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.305  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.306  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.306  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.307  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.308  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.309  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.309  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.311  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.311  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.321  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
-14:25:04.335  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
-14:25:04.338  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.338  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.344  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.344  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.344  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.345  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.347  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.347  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.350  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.350  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.351  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-14:25:04.351  [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-14:25:04.366  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1153539387\testng-customsuite.xml
-
-14:25:04.763  [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
-14:25:04.853  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-14:25:05.414  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 15:02:34 03/01/2025 IST)
-14:25:05.417  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.204 in cache (valid until 14:02:34 04/01/2025 IST)
-14:25:05.418  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.204 (resolved driver for Chrome 131)
-14:25:05.483  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.204 found in cache
-14:25:05.485  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.204\chromedriver.exe
-14:25:10.130  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-14:25:10.130  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyEndToEndPurchasingFunctionality >>>>> *****
-14:25:10.134  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-14:25:10.339  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@data-test='username']]
-14:25:10.538  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@data-test='username']]
-14:25:10.604  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@data-test='password']]
-14:25:10.756  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@data-test='password']]
-14:25:10.756  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-14:25:11.023  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@data-test='login-button']]
-14:25:16.383  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
-14:25:16.384  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-14:25:19.569  [main] INFO  com.swagLabs.utilities.LogUtils - Login successful.
-14:25:19.623  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.649  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.727  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.728  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.763  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.792  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.875  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.876  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.911  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:19.937  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.006  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.006  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.029  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.054  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.122  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.122  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.148  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.178  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.245  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.246  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.270  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.292  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.362  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:20.363  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Add to cart']]
-14:25:25.370  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
-14:25:25.586  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //div[@class='shopping_cart_container']]
-14:25:25.717  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //div[@class='shopping_cart_container']]
-14:25:28.723  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
-14:25:28.892  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Checkout']]
-14:25:31.906  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
-14:25:32.067  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Checkout']]
-14:25:37.211  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
-14:25:40.217  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
-14:25:40.426  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='first-name']]
-14:25:40.657  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Krushna[[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='first-name']]
-14:25:40.734  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='last-name']]
-14:25:40.922  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}Patare[[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='last-name']]
-14:25:40.996  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='postal-code']]
-14:25:41.160  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '{}' into element: {}411016[[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //*[@id='postal-code']]
-14:25:44.161  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
-14:25:47.353  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //input[@name='continue']]
-14:25:52.544  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
-14:25:52.544  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
-14:25:52.708  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[@data-test='finish']]
-14:25:52.779  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[@data-test='finish']]
-14:25:57.929  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-test='finish']'
-14:25:57.930  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout success page.
-14:25:58.144  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (bd691a89578ebc3aafbbe918b4dc03ba)] -> xpath: //button[text()='Back Home']]
-14:26:03.354  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Back Home']'
-14:26:03.354  [main] INFO  com.swagLabs.utilities.LogUtils - Opened inventory page.
-14:26:03.515  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyEndToEndPurchasingFunctionality *****
-14:26:03.515  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
-14:26:05.760  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@261b9a37: 169 ms
-14:26:05.762  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@15d3793b: 1 ms
-14:26:05.821  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@42679fc2: 59 ms
-14:26:05.830  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@643ba1ed: 9 ms
-14:26:05.879  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1f84327b: 7 ms
-14:26:05.879  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@39549f33: 0 ms
-19:45:12.859  [main] DEBUG org.testng.TestNG - suiteXmlPath: "F:\WorkSpace\SwagLabs-Ecommerce\testng.xml"
-19:45:14.192  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  F:\WorkSpace\SwagLabs-Ecommerce\testng.xml
-
-19:45:15.119  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-19:45:15.736  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Removing resolution chrome=131 from cache (expired on 2025-01-03T15:02:34.000+0530)
-19:45:15.776  [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 preparing request execution
-19:45:15.808  [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
-19:45:15.809  [main] DEBUG org.apache.hc.client5.http.impl.classic.ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
-19:45:15.810  [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
-19:45:15.810  [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
-19:45:15.813  [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
-19:45:15.822  [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
-19:45:15.874  [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
-19:45:15.874  [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
-19:45:15.875  [main] DEBUG org.apache.hc.client5.http.impl.classic.ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
-19:45:15.876  [main] DEBUG org.apache.hc.client5.http.impl.classic.InternalHttpClient - ep-0000000001 connecting endpoint (null)
-19:45:15.881  [main] DEBUG org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
-19:45:15.881  [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolving remote address
-19:45:15.961  [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.108.133, raw.githubusercontent.com/2606:50c0:8000:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8001:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8002:0:0:0:0:154, raw.githubusercontent.com/2606:50c0:8003:0:0:0:0:154]
-19:45:15.964  [main] DEBUG org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.110.133:443 (30 SECONDS)
-19:45:15.965  [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.110.133:443 with timeout 30 SECONDS
-19:45:16.122  [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
-19:45:16.123  [main] DEBUG org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+19:54:42.118  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyCheckoutSuccessMessage *****
+19:54:42.118  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************
+19:54:42.882  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:42.887  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:42.890  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:43.606  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:43.807  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:43.810  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:43.812  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:43.842  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:43.888  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:43.890  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:43.892  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:43.916  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:43.966  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:43.967  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:43.970  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:43.992  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.030  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.032  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.033  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.053  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.115  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.116  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.118  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.140  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.174  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.175  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.177  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.195  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.224  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.225  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.227  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.249  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.292  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.293  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.294  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.313  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.341  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:54:44.343  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:54:44.344  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:54:44.359  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:54:44.382  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:54:44.409  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 20:45:16 03/01/2025 IST)

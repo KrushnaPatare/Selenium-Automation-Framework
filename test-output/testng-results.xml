@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="8" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-03T14:25:04 IST" name="Default suite" finished-at="2025-01-03T14:26:03 IST" duration-ms="59528">
+  <suite started-at="2025-01-03T19:50:38 IST" name="Suite" finished-at="2025-01-03T19:57:24 IST" duration-ms="406076">
     <groups>
     </groups>
-    <test started-at="2025-01-03T14:25:04 IST" name="Default test" finished-at="2025-01-03T14:26:03 IST" duration-ms="59528">
-      <class name="com.swagLabs.tests.EndToEndTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.EndToEndTest@66565121]" started-at="2025-01-03T14:25:04 IST" name="initializeBrowser" finished-at="2025-01-03T14:25:10 IST" duration-ms="5300" status="PASS">
+    <test started-at="2025-01-03T19:50:38 IST" name="Test" finished-at="2025-01-03T19:57:24 IST" duration-ms="406076">
+      <class name="com.swagLabs.tests.InventoryPageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:52:44 IST" name="initializeBrowser" finished-at="2025-01-03T19:52:50 IST" duration-ms="5932" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,583 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyEndToEndPurchasingFunctionality()[pri:1, instance:com.swagLabs.tests.EndToEndTest@66565121]" started-at="2025-01-03T14:25:10 IST" name="verifyEndToEndPurchasingFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies complete purchasing functionality cycle.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T14:26:03 IST" duration-ms="53410" status="PASS">
+        <test-method signature="verifyUserIsAbleToNavigateToSocialMediaSites()[pri:1, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:52:50 IST" name="verifyUserIsAbleToNavigateToSocialMediaSites" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user is able to different social media handles of SwagLabs.com.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:53:18 IST" duration-ms="28068" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion error occurred: Page title should match. expected [Sauce Labs | LinkedIn] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion error occurred: Page title should match. expected [Sauce Labs | LinkedIn] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToNavigateToSocialMediaSites -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:53:18 IST" name="tearDown" finished-at="2025-01-03T19:53:19 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:53:19 IST" name="initializeBrowser" finished-at="2025-01-03T19:53:24 IST" duration-ms="4726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserCanAddItemToCart()[pri:2, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:53:24 IST" name="verifyUserCanAddItemToCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can add items to cart he wants to buy.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:53:48 IST" duration-ms="23794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddItemToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@6ee660fb]" started-at="2025-01-03T19:53:48 IST" name="tearDown" finished-at="2025-01-03T19:53:48 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swagLabs.tests.InventoryPageTest -->
+      <class name="com.swagLabs.tests.CheckoutCompletepageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@305a0c5f]" started-at="2025-01-03T19:53:48 IST" name="initializeBrowser" finished-at="2025-01-03T19:53:55 IST" duration-ms="6629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyCheckoutSuccessMessage()[pri:1, instance:com.swagLabs.tests.CheckoutCompletepageTest@305a0c5f]" started-at="2025-01-03T19:53:55 IST" name="verifyCheckoutSuccessMessage" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user after order placing process completion, a success message is displayed.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:54:42 IST" duration-ms="47060" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='checkout_complete_container']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [230f85ff37d4ecd4d38eff9a62863a69, findElement {value=//div[@id='checkout_complete_container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 230f85ff37d4ecd4d38eff9a62863a69]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='checkout_complete_container']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [230f85ff37d4ecd4d38eff9a62863a69, findElement {value=//div[@id='checkout_complete_container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 230f85ff37d4ecd4d38eff9a62863a69
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy33.getText(Unknown Source)
+at com.swagLabs.tests.CheckoutCompletepageTest.verifyCheckoutSuccessMessage(CheckoutCompletepageTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutSuccessMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@305a0c5f]" started-at="2025-01-03T19:54:42 IST" name="tearDown" finished-at="2025-01-03T19:54:42 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swagLabs.tests.CheckoutCompletepageTest -->
+      <class name="com.swagLabs.tests.EndToEndTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.EndToEndTest@9ef8eb7]" started-at="2025-01-03T19:51:48 IST" name="initializeBrowser" finished-at="2025-01-03T19:51:51 IST" duration-ms="3217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyEndToEndPurchasingFunctionality()[pri:1, instance:com.swagLabs.tests.EndToEndTest@9ef8eb7]" started-at="2025-01-03T19:51:51 IST" name="verifyEndToEndPurchasingFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies complete purchasing functionality cycle.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:52:44 IST" duration-ms="52677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndPurchasingFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.EndToEndTest@66565121]" started-at="2025-01-03T14:26:03 IST" name="tearDown" finished-at="2025-01-03T14:26:03 IST" duration-ms="383" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.EndToEndTest@9ef8eb7]" started-at="2025-01-03T19:52:44 IST" name="tearDown" finished-at="2025-01-03T19:52:44 IST" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.EndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.swagLabs.tests.CheckoutOverviewPageTest">
+        <test-method signature="verifyCheckoutFinishFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutOverviewPageTest@34cdeda2]" started-at="2025-01-03T19:52:44 IST" name="verifyCheckoutFinishFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:52:44 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [verifyCheckoutFinishFunctionality] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [verifyCheckoutFinishFunctionality] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutFinishFunctionality -->
+      </class> <!-- com.swagLabs.tests.CheckoutOverviewPageTest -->
+      <class name="com.swagLabs.tests.CartPageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:50:38 IST" name="initializeBrowser" finished-at="2025-01-03T19:50:44 IST" duration-ms="5608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserCanRemoveItemsFromCart()[pri:1, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:50:44 IST" name="verifyUserCanRemoveItemsFromCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can remove mutiple items from the cart.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:51:14 IST" duration-ms="30449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanRemoveItemsFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:51:14 IST" name="tearDown" finished-at="2025-01-03T19:51:15 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:51:15 IST" name="initializeBrowser" finished-at="2025-01-03T19:51:17 IST" duration-ms="2745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserCanCheckOut()[pri:2, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:51:17 IST" name="verifyUserCanCheckOut" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can navigate to checkout page for futher process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-03T19:51:47 IST" duration-ms="30074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanCheckOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@1fdf1c5]" started-at="2025-01-03T19:51:47 IST" name="tearDown" finished-at="2025-01-03T19:51:48 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swagLabs.tests.CartPageTest -->
+      <class name="com.swagLabs.tests.CheckoutPageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:54:44 IST" name="initializeBrowser" finished-at="2025-01-03T19:54:50 IST" duration-ms="6212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:54:50 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-03T19:55:32 IST" duration-ms="42045" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Krushna]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patare]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[411016]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pass]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assertion error occurred: Page Url should match. expected [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-step-two.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assertion error occurred: Page Url should match. expected [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+at org.testng.Assert.fail(Assert.java:111)
+at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageTest.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:55:32 IST" name="tearDown" finished-at="2025-01-03T19:55:33 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:55:33 IST" name="initializeBrowser" finished-at="2025-01-03T19:55:39 IST" duration-ms="6571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:55:39 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-03T19:56:21 IST" duration-ms="41974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patare]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[411016]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@4535b6d5]" started-at="2025-01-03T19:56:21 IST" name="tearDown" finished-at="2025-01-03T19:56:22 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swagLabs.tests.CheckoutPageTest -->
+      <class name="com.swagLabs.tests.LoginPageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:22 IST" name="initializeBrowser" finished-at="2025-01-03T19:56:28 IST" duration-ms="6275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:28 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-03T19:56:38 IST" duration-ms="9123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:38 IST" name="tearDown" finished-at="2025-01-03T19:56:38 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:38 IST" name="initializeBrowser" finished-at="2025-01-03T19:56:44 IST" duration-ms="5888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:44 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-03T19:56:48 IST" duration-ms="4013" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:48 IST" name="tearDown" finished-at="2025-01-03T19:56:48 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:48 IST" name="initializeBrowser" finished-at="2025-01-03T19:56:54 IST" duration-ms="5587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:56:54 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-03T19:57:03 IST" duration-ms="9106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:57:03 IST" name="tearDown" finished-at="2025-01-03T19:57:03 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:57:03 IST" name="initializeBrowser" finished-at="2025-01-03T19:57:09 IST" duration-ms="5700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:57:09 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-03T19:57:23 IST" duration-ms="14198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@1ecee32c]" started-at="2025-01-03T19:57:23 IST" name="tearDown" finished-at="2025-01-03T19:57:24 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swagLabs.tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
