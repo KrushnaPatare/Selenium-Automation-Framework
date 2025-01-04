@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,6 +13,7 @@ import org.testng.annotations.Test;
 import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
+import com.swagLabs.utilities.PropertiesReader;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class CheckoutCompletepageTest extends BaseClass 
@@ -23,8 +23,6 @@ public class CheckoutCompletepageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -43,14 +41,20 @@ public class CheckoutCompletepageTest extends BaseClass
 		 )	
 	public void verifyCheckoutSuccessMessage() throws InterruptedException, IOException 
 	{
+    	
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyCheckoutSuccessMessage >>>>> *****");
 	
 	    try {
-	    	new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
-	    	String successMessage = "Thank you for your order!";
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new InventoryPageTest().addItemsToCart();
+	    	new CartPageTest().checkout();
+			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
+	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	String successMessage = "Thank you for your order!";
 	    	
 	    	String message = checkoutCompletePage.getCheckoutCompleteContainer().getText();
+	        new LoginPageTest().logOut();
+
 	    	Assert.assertTrue(message.toLowerCase().contains(successMessage.toLowerCase()), "Success message should be displayed on page.");     
 	    } 
 	    catch (AssertionError e) 

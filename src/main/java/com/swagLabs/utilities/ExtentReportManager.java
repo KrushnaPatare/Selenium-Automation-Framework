@@ -13,8 +13,9 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.swagLabs.base.BaseClass;
 
-public class ExtentReportManager implements ITestListener 
+public class ExtentReportManager extends BaseClass implements ITestListener 
 {
 	private ExtentReports reports;
 	public static ExtentTest test;
@@ -24,6 +25,7 @@ public class ExtentReportManager implements ITestListener
 		reports = new ExtentReports();
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(TestContext.extentReportPath);
 
+		
 		sparkReporter.config().setTheme(Theme.DARK);
 		sparkReporter.config().setReportName("SwagLabs Test Automation Results Report");
 		sparkReporter.config().setDocumentTitle("SwagLabs Automation Report");
@@ -31,8 +33,7 @@ public class ExtentReportManager implements ITestListener
 
 		reports.attachReporter(sparkReporter);
 
-		reports.setSystemInfo("Application URL", "https://www.saucedemo.com");
-		reports.setSystemInfo("Browser Name", "set this from config.properties");
+		reports.setSystemInfo("Application URL", PropertiesReader.getProperty("baseUrl"));
 		reports.setSystemInfo("Username",System.getProperty("user.name"));
 		reports.setSystemInfo("Operating System", System.getProperty("os.name"));
 		reports.setSystemInfo("OS Version", System.getProperty("os.version"));
@@ -105,6 +106,9 @@ public class ExtentReportManager implements ITestListener
 
 	public void onFinish(ITestContext context) 
 	{
+		reports.setSystemInfo("Browser Name", browserName);
+		reports.setSystemInfo("Browser Version", browserVersion);
+		
 		reports.flush();
 	
 		File extentReportCopy = new File(TestContext.extentReportPath);

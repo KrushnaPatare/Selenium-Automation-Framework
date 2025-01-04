@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,6 +13,7 @@ import org.testng.annotations.Test;
 import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
+import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
@@ -24,8 +24,6 @@ public class CheckoutOverviewPageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -48,9 +46,14 @@ public class CheckoutOverviewPageTest extends BaseClass
 		LogUtils.info("***** <<<<< Starting verifyCheckoutFinishFunctionality >>>>> *****");
 	
 	    try {
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new InventoryPageTest().addItemsToCart();
+	    	new CartPageTest().checkout();
+			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
 	    	completeCheckoutOverview();
 	    	String actualUrl = driver.getCurrentUrl();
 			String expectedUrl = "https://www.saucedemo.com/checkout-complete.html";
+	        new LoginPageTest().logOut();
 	    	
 	    	switch(result.toLowerCase()) 
 	    	{
@@ -93,7 +96,6 @@ public class CheckoutOverviewPageTest extends BaseClass
 	
 	public void completeCheckoutOverview() throws InterruptedException 
 	{
-		new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
 		SelUtils.scrollToElement(checkoutOverviewPage.getFinishButton(), driver);
 		SelUtils.waitAndClick(checkoutOverviewPage.getFinishButton(), 2);
 

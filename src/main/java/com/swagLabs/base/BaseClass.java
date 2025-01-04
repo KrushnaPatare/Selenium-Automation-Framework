@@ -2,11 +2,13 @@ package com.swagLabs.base;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Parameters;
 
 import com.swagLabs.pom.BasePage;
@@ -43,6 +45,9 @@ public class BaseClass {
 	public static ExtentReportManager extentReportManager;
 	public static SeleniumUtils SelUtils;
 		
+	public static String browserName;
+	public static String browserVersion;
+	public static String platformName;
 	
 	@Parameters({ "browser" }) // This parameter value is passed from testng.xml that is browser name.
 	public static void openBrowser(String browser) throws InterruptedException 
@@ -76,14 +81,23 @@ public class BaseClass {
 		extentReportManager = new ExtentReportManager();
 		SelUtils = new SeleniumUtils();
 		
+        Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
 
-		driver.manage().window().maximize();
+        // Retrieve browser details
+        browserName = capabilities.getBrowserName();
+        browserVersion = capabilities.getBrowserVersion();
+        platformName = capabilities.getPlatformName().toString();
+       
+        System.out.println(browserName);
+        System.out.println(browserVersion);
+        System.out.println(platformName);
+
+        
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.get(PropertiesReader.getProperty("baseUrl"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get(PropertiesReader.getProperty("baseUrl"));
+
 		SelUtils.waitTime(1);
-		
-		
 	}
 
 	

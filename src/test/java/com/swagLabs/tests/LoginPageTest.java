@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -27,8 +26,6 @@ public class LoginPageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@AfterMethod()
@@ -68,6 +65,8 @@ public class LoginPageTest extends BaseClass
 		String actualUrl = BaseClass.driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		
+		logOut();
+		
 		switch(result.toLowerCase()) 
     	{
     		case "pass":
@@ -81,6 +80,8 @@ public class LoginPageTest extends BaseClass
     		default:
 	    		throw new IllegalArgumentException("Wrong argument is entered. Please enter 'Pass' or 'Fail' as argument.");
     	}	
+		
+		
 		
         }
         catch (AssertionError e) 
@@ -119,15 +120,33 @@ public class LoginPageTest extends BaseClass
 		ReportUtils.addScreenshot(Status.INFO, "Entered username and password.");
 
 		SelUtils.waitAndClick(loginPage.getLoginButton(), 3) ;
-		
-		LogUtils.info("Logged in Successfully!");
 		SelUtils.waitTime(3);
-		
+
+		LogUtils.info("Logged in Successfully!");
 		ReportUtils.addScreenshot(Status.INFO,"Logged in Successfully!");	
 	}
 
+	
+	public void logOut() throws InterruptedException 
+	{
+		SelUtils.waitAndClick(basePage.getBurgerMenuButton(), 2);       
+		SelUtils.waitTime(2);
+		SelUtils.waitAndClick(basePage.getLogoutLink(), 2);
+		SelUtils.waitTime(2);
+	}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

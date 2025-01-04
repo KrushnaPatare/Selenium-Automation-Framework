@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,6 +13,7 @@ import org.testng.annotations.Test;
 import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
+import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
 
 
@@ -25,8 +25,6 @@ public class EndToEndTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -49,11 +47,15 @@ public class EndToEndTest extends BaseClass
 		LogUtils.info("***** <<<<< Starting verifyEndToEndPurchasingFunctionality >>>>> *****");
 	
 	    try {
-	    	new CheckoutOverviewPageTest().completeCheckoutOverview();
-	    	SelUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new InventoryPageTest().addItemsToCart();
+	    	new CartPageTest().checkout();
+			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
+	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	SelUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
 	    	LogUtils.info("Opened inventory page.");
 	        ReportUtils.addScreenshot("Opened inventory page.");
-	    	Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", "Page url should match.");     
+	    	Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", "Page url should match.");   
+	        new LoginPageTest().logOut();
 	    } 
 	    catch (AssertionError e) 
 	    {

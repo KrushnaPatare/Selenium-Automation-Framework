@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.swagLabs.tests.EndToEndTest">
+      <class name="com.swagLabs.tests.CartPageTest">
         <methods>
+          <include name="verifyUserCanCheckOut"/>
           <include name="initializeBrowser"/>
           <include name="tearDown"/>
-          <include name="verifyEndToEndPurchasingFunctionality"/>
         </methods>
-      </class> <!-- com.swagLabs.tests.EndToEndTest -->
+      </class> <!-- com.swagLabs.tests.CartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

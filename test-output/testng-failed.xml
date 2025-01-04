@@ -11,13 +11,6 @@
           <include name="verifyCheckoutFunctionality" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.swagLabs.tests.CheckoutPageTest -->
-      <class name="com.swagLabs.tests.CheckoutCompletepageTest">
-        <methods>
-          <include name="initializeBrowser"/>
-          <include name="verifyCheckoutSuccessMessage"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.swagLabs.tests.CheckoutCompletepageTest -->
       <class name="com.swagLabs.tests.InventoryPageTest">
         <methods>
           <include name="initializeBrowser"/>

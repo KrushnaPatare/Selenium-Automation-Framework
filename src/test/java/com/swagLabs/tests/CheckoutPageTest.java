@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +14,7 @@ import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.DataProviders;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
+import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
@@ -25,8 +25,6 @@ public class CheckoutPageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -51,11 +49,16 @@ public class CheckoutPageTest extends BaseClass
 		LogUtils.info("***** <<<<< Starting verifyCheckoutFunctionality >>>>> *****");
 	
 	    try {
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new InventoryPageTest().addItemsToCart();
+	    	new CartPageTest().checkout();
 	    	checkOutComplete(firstname, lastname, postalCode);
 	        
 	    	String actualUrl = driver.getCurrentUrl();
 			String expectedUrl = "https://www.saucedemo.com/checkout-complete.html";
-	    	
+	        
+			new LoginPageTest().logOut();
+
 	    	switch(result.toLowerCase()) 
 	    	{
 	    		case "pass":
@@ -101,8 +104,6 @@ public class CheckoutPageTest extends BaseClass
 	
 	public void checkOutComplete(String firstname, String lastname, String postalCode) throws InterruptedException 
 	{
-		new CartPageTest().checkout();
-    	
         SelUtils.sendKeysMethod(checkoutPage.getFirstNameField(), firstname, 2);
         SelUtils.sendKeysMethod(checkoutPage.getLastNameField(), lastname, 2);
         SelUtils.sendKeysMethod(checkoutPage.getPostalCodeField(), postalCode,2);

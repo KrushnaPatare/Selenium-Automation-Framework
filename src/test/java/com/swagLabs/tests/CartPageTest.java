@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -16,6 +15,7 @@ import org.testng.annotations.Test;
 import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
+import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
@@ -26,8 +26,6 @@ public class CartPageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -50,13 +48,17 @@ public class CartPageTest extends BaseClass
 		LogUtils.info("***** <<<<< Starting verifyUserCanRemoveItemsFromCart >>>>> *****");
 	
 	    try {
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        List<WebElement> products = new InventoryPageTest().addItemsToCart();
+
 	        SelUtils.clickOnMultipleWebElementsReverseOrder(cartPage.getRemoveButton(), driver);
 	        SelUtils.waitTime(5);
 	        LogUtils.info("Removed all products from the cart.");
 	        ReportUtils.addScreenshot("Removed all products from the cart.");
 	        
 	        String cartItemDetails = cartPage.getCartItemDetails().getText().toLowerCase();
+	        
+	        new LoginPageTest().logOut();
 	        
 	        for (WebElement product : products) 
 	        {
@@ -103,8 +105,11 @@ public class CartPageTest extends BaseClass
 		LogUtils.info("***** <<<<< Starting verifyUserCanCheckOut >>>>> *****");
 	
 	    try {
+	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new InventoryPageTest().addItemsToCart();
 	    	checkout();
 	        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+	        new LoginPageTest().logOut();
 	    } 
 	    catch (AssertionError e) 
 	    {
@@ -135,8 +140,6 @@ public class CartPageTest extends BaseClass
 	
 	public void checkout() throws InterruptedException 
     {
-    	new InventoryPageTest().addItemsToCart();
-        
         SelUtils.scrollToElement(cartPage.getCheckoutButton(), driver);
         SelUtils.waitTime(3);
         LogUtils.info("Scrolled to Checkout button.");

@@ -1,7 +1,6 @@
 package com.swagLabs.tests;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -27,8 +26,6 @@ public class InventoryPageTest extends BaseClass
 	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
 		openBrowser(browser);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -106,6 +103,8 @@ public class InventoryPageTest extends BaseClass
 	        SelUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
 	        SelUtils.closeOtherWindows();
+	        
+	        new LoginPageTest().logOut();
 	    } 
 	    catch (AssertionError e) 
 	    {
@@ -144,7 +143,8 @@ public class InventoryPageTest extends BaseClass
 		LogUtils.info("********************************************************************************");
 		LogUtils.info("***** <<<<< Starting verifyUserCanAddItemToCart >>>>> *****");
 
-	    try {	        
+	    try {	 
+	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        List<WebElement> products = addItemsToCart();
 	        
 	        String cartItemDetails = cartPage.getCartItemDetails().getText().toLowerCase();
@@ -183,9 +183,6 @@ public class InventoryPageTest extends BaseClass
 	
 	public List<WebElement> addItemsToCart() throws InterruptedException 
 	{
-        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
-        LogUtils.info("Login successful.");
-        
         List<WebElement> products = inventoryPage.getProductNames();
 
     	SelUtils.clickOnMultipleWebElementsReverseOrder(inventoryPage.getAddToCartButton(), driver);

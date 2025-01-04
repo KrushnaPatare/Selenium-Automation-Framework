@@ -1,0 +1,98 @@
+org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: googlechromelabs.github.io
+
+
+
+TimeoutException
+Thrown when a command fails because it exceeds the configured timeout.
+
+NoSuchElementException
+Raised when an element could not be found on the page.
+
+StaleElementReferenceException
+Occurs when the referenced element is no longer present in the DOM.
+
+ElementNotInteractableException
+Thrown when an element is present in the DOM but cannot be interacted with (e.g., hidden or overlapped).
+
+NoSuchWindowException
+Raised when trying to switch to a window or tab that does not exist.
+
+NoSuchFrameException
+Thrown when the frame to be switched to is not found.
+
+WebDriverException
+The base exception class for all WebDriver errors.
+
+SessionNotCreatedException
+Occurs when the WebDriver cannot establish a new session, often due to a browser/driver mismatch.
+
+InvalidArgumentException
+Raised when an argument passed to a command is invalid or malformed.
+
+InvalidElementStateException
+Thrown when an operation cannot be performed because the element is in an invalid state.
+
+ElementClickInterceptedException
+Occurs when an element click is intercepted by another element (e.g., a popup or overlay).
+
+UnhandledAlertException
+Raised when there is an unhandled alert on the page.
+
+UnexpectedAlertPresentException
+Thrown when an unexpected alert is present, and no alert handling code is in place.
+
+MoveTargetOutOfBoundsException
+Raised when the target for a mouse action is outside the viewport.
+
+JavascriptException
+Thrown when a JavaScript execution error occurs during executeScript().
+
+InsecureCertificateException
+Raised when navigating to a site with an insecure SSL certificate.
+
+NoSuchAttributeException
+Thrown when the requested attribute of an element is not found.
+
+ElementNotSelectableException
+Occurs when trying to select an element that is not selectable.
+
+InvalidSelectorException
+Raised when a selector (XPath, CSS, etc.) is syntactically incorrect.
+
+ImeNotAvailableException
+Thrown when an Input Method Editor (IME) is not available.
+
+ImeActivationFailedException
+Raised when activating an IME fails.
+
+NoAlertPresentException
+Occurs when trying to interact with an alert that is not present.
+
+NotFoundException
+A generic exception that occurs when something cannot be found.
+
+ErrorInResponseException
+Thrown when an error occurs on the server side during the WebDriver command execution.
+
+RemoteDriverServerException
+Occurs when there is an issue with the remote WebDriver server.
+
+InvalidCookieDomainException
+Raised when attempting to set a cookie in a different domain.
+
+UnableToSetCookieException
+Thrown when a cookie cannot be set.
+
+UnexpectedTagNameException
+Raised when a support class encounters an unexpected tag name.
+
+NoSuchSessionException
+Thrown when the WebDriver session is not available (e.g., session timeout).
+
+SessionNotFoundException
+Raised when the session ID is invalid or not recognized.
+
+If you believe I've missed any exceptions you've previously searched for or discussed, feel free to let me know! 😊
+
+
