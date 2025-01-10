@@ -1,0 +1,319 @@
+13:23:32.886  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
+13:23:35.889  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Checkout page opened.
+13:23:36.067  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='first-name']]
+13:23:36.238  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}12345[[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='first-name']]
+13:23:36.305  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='last-name']]
+13:23:36.476  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}Patare[[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='last-name']]
+13:23:36.543  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='postal-code']]
+13:23:36.720  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}411016[[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='postal-code']]
+13:23:39.722  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered firstname, lastname, postalCode.
+13:23:42.903  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //input[@name='continue']]
+13:23:48.106  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
+13:23:48.106  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Opened checkout complete page.
+13:23:48.336  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:23:48.450  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:23:50.512  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (84ec71084132f988afe949b2ba0e753e)] -> xpath: //*[@id='logout_sidebar_link']]
+13:23:55.714  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
+13:23:57.716  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] For 'fail' condition https://www.saucedemo.com/checkout-step-two.html https://www.saucedemo.com/checkout-complete.html
+13:23:57.716  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** Finished verifyCheckoutFunctionality *****
+13:23:57.716  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************
+13:23:58.240  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.242  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.243  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.259  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.305  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.307  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.311  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.376  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.429  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.431  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.432  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.454  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.504  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.506  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.507  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.530  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.565  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.566  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.566  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.585  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.639  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.640  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.646  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.690  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.743  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.744  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.747  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.790  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.836  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.840  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.841  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.861  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.914  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.915  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.916  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:58.940  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:58.983  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:58.984  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:58.985  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:59.000  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:59.027  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:59.028  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:59.029  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:59.044  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:59.068  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:59.071  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:59.071  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:59.088  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:59.115  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:59.116  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:59.117  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:59.161  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:59.202  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:23:59.203  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:23:59.204  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:23:59.216  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+13:23:59.242  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+13:23:59.265  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 14:16:40 10/01/2025 IST)
+13:23:59.266  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 13:16:40 11/01/2025 IST)
+13:23:59.266  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+13:23:59.315  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+13:23:59.317  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+13:24:04.537  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************************
+13:24:04.537  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** <<<<<Starting checkLoginFunctionality>>>>> *****
+13:24:04.539  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Test started with parameters - Username: {standard_user}, Password: {secret_sauce}
+13:24:04.540  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Opened login page.
+13:24:04.789  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //input[@data-test='username']]
+13:24:05.083  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}standard_user[[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //input[@data-test='username']]
+13:24:05.149  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //input[@data-test='password']]
+13:24:05.300  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //input[@data-test='password']]
+13:24:05.300  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered username and password.
+13:24:05.446  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //input[@data-test='login-button']]
+13:24:10.698  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+13:24:13.709  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Logged in Successfully!
+13:24:13.916  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:24:14.029  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:24:16.098  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (114b0b0e222e95ffc145fd4f1f9b5a66)] -> xpath: //*[@id='logout_sidebar_link']]
+13:24:21.248  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
+13:24:23.251  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] For 'pass' condition https://www.saucedemo.com/inventory.html https://www.saucedemo.com/inventory.html
+13:24:23.251  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** Finished checkLoginFunctionality *****
+13:24:23.251  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************
+13:24:23.697  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+13:24:23.720  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 14:16:40 10/01/2025 IST)
+13:24:23.721  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 13:16:40 11/01/2025 IST)
+13:24:23.721  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+13:24:23.750  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+13:24:23.752  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+13:24:28.550  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************************
+13:24:28.551  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** <<<<<Starting checkLoginFunctionality>>>>> *****
+13:24:28.551  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Test started with parameters - Username: {locked_out_user}, Password: {secret_sauce}
+13:24:28.551  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Opened login page.
+13:24:28.797  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='username']]
+13:24:29.016  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}locked_out_user[[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='username']]
+13:24:29.073  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='password']]
+13:24:29.237  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='password']]
+13:24:29.237  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered username and password.
+13:24:29.393  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='login-button']]
+13:24:29.524  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: [[ChromeDriver: chrome on windows (6566cf172df37d240862c65333414167)] -> xpath: //input[@data-test='login-button']]
+13:24:32.533  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Logged in Successfully!
+13:24:42.733  [main] ERROR com.swagLabs.utilities.LogUtils - [Thread: 1] Error waiting for element to be clickable: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='react-burger-menu-btn']' (tried for 2 second(s) with 500 milliseconds interval)
+13:24:42.733  [main] ERROR com.swagLabs.utilities.LogUtils - [Thread: 1] An exception occurred: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='react-burger-menu-btn']' (tried for 2 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='react-burger-menu-btn']' (tried for 2 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.23.0.jar:?]
+	at com.swagLabs.utilities.SeleniumUtils.explicitlyWaitForElement(SeleniumUtils.java:167) ~[classes/:?]
+	at com.swagLabs.utilities.SeleniumUtils.waitAndClick(SeleniumUtils.java:187) ~[classes/:?]
+	at com.swagLabs.tests.LoginPageTest.logOut(LoginPageTest.java:133) ~[test-classes/:?]
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:69) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-burger-menu-btn']"}
+  (Session info: chrome=131.0.6778.264)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6566cf172df37d240862c65333414167, findElement {value=//*[@id='react-burger-menu-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61499/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6566cf172df37d240862c65333414167
+	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.23.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy34.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.23.0.jar:?]
+	... 32 more
+13:24:47.767  [main] ERROR com.swagLabs.utilities.LogUtils - [Thread: 1] Failed to click element: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-burger-menu-btn']"}
+  (Session info: chrome=131.0.6778.264)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6566cf172df37d240862c65333414167, findElement {value=//*[@id='react-burger-menu-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61499/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6566cf172df37d240862c65333414167
+13:24:47.767  [main] ERROR com.swagLabs.utilities.LogUtils - [Thread: 1] An exception occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-burger-menu-btn']"}
+  (Session info: chrome=131.0.6778.264)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6566cf172df37d240862c65333414167, findElement {value=//*[@id='react-burger-menu-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61499/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6566cf172df37d240862c65333414167
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='react-burger-menu-btn']"}
+  (Session info: chrome=131.0.6778.264)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6566cf172df37d240862c65333414167, findElement {value=//*[@id='react-burger-menu-btn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61499/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6566cf172df37d240862c65333414167
+	at jdk.internal.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351) ~[selenium-remote-driver-4.23.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.23.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.23.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy34.click(Unknown Source) ~[?:?]
+	at com.swagLabs.utilities.SeleniumUtils.waitAndClick(SeleniumUtils.java:188) ~[classes/:?]
+	at com.swagLabs.tests.LoginPageTest.logOut(LoginPageTest.java:133) ~[test-classes/:?]
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:69) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.10.1.r202404130807.jar:7.10.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+13:24:47.769  [main] ERROR com.swagLabs.utilities.LogUtils - [Thread: 1] Test failed due to exception: Failed to click element
+13:24:47.769  [main] DEBUG com.swagLabs.utilities.LogUtils - [Thread: 1] Exception detailsjava.lang.AssertionError: Failed to click element
+13:24:47.769  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** Finished checkLoginFunctionality *****
+13:24:47.769  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************
+13:24:48.275  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+13:24:48.292  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 14:16:40 10/01/2025 IST)
+13:24:48.293  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 13:16:40 11/01/2025 IST)
+13:24:48.293  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+13:24:48.328  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+13:24:48.330  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+13:24:52.113  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************************
+13:24:52.113  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** <<<<<Starting checkLoginFunctionality>>>>> *****
+13:24:52.113  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Test started with parameters - Username: {problem_user}, Password: {secret_sauce}
+13:24:52.113  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Opened login page.
+13:24:52.306  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //input[@data-test='username']]
+13:24:52.532  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}problem_user[[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //input[@data-test='username']]
+13:24:52.607  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //input[@data-test='password']]
+13:24:52.791  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //input[@data-test='password']]
+13:24:52.792  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered username and password.
+13:24:52.966  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //input[@data-test='login-button']]
+13:24:58.182  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+13:25:01.188  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Logged in Successfully!
+13:25:01.432  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:25:01.551  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:25:03.618  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (d33e119f9ead30356f93468c2bbbbb86)] -> xpath: //*[@id='logout_sidebar_link']]
+13:25:08.787  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
+13:25:10.803  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] For 'pass' condition https://www.saucedemo.com/inventory.html https://www.saucedemo.com/inventory.html
+13:25:10.803  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** Finished checkLoginFunctionality *****
+13:25:10.803  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************
+13:25:11.223  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+13:25:11.241  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 14:16:40 10/01/2025 IST)
+13:25:11.242  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 13:16:40 11/01/2025 IST)
+13:25:11.242  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+13:25:11.278  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+13:25:11.280  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+13:25:19.427  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************************
+13:25:19.427  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** <<<<<Starting checkLoginFunctionality>>>>> *****
+13:25:19.427  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Test started with parameters - Username: {performance_glitch_user}, Password: {secret_sauce}
+13:25:19.429  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Opened login page.
+13:25:19.615  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //input[@data-test='username']]
+13:25:19.898  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}performance_glitch_user[[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //input[@data-test='username']]
+13:25:19.977  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //input[@data-test='password']]
+13:25:20.154  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered '{}' into element: {}secret_sauce[[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //input[@data-test='password']]
+13:25:20.154  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Entered username and password.
+13:25:20.334  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //input[@data-test='login-button']]
+13:25:30.578  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+13:25:33.591  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Logged in Successfully!
+13:25:33.853  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:25:34.004  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //*[@id='react-burger-menu-btn']]
+13:25:36.078  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Element is clickable: [[ChromeDriver: chrome on windows (143823d0c0d2a161e51ad67ca60a66e3)] -> xpath: //*[@id='logout_sidebar_link']]
+13:25:41.235  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
+13:25:43.249  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] For 'pass' condition https://www.saucedemo.com/inventory.html https://www.saucedemo.com/inventory.html
+13:25:43.249  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ***** Finished checkLoginFunctionality *****
+13:25:43.249  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] ********************************************
