@@ -15,7 +15,8 @@ public class ImageUtils
      * @return The Base64-encoded string representing the image
      * @throws IOException if there's an error during image processing
      */
-    public static String toBase64(BufferedImage image) throws IOException {
+    public static String toBase64(BufferedImage image) throws IOException 
+    {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ImageIO.write(image, "PNG", baos);  // Writing the image to the byte array in PNG format
         byte[] imageBytes = baos.toByteArray();

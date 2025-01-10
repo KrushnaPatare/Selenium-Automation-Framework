@@ -16,24 +16,54 @@ public class PropertiesReader
 	private static FileInputStream fis;
 	private static Properties prop = null;
 
-	public static String getProperty(String property) {		
+    private static void loadProperties() 
+    {
+        if (prop == null) 
+        { // Check if properties are already loaded
+        	try 
+        	{
+        		fis = new FileInputStream(new File("F:\\WorkSpace\\SwagLabs-Ecommerce\\src\\test\\resources\\config\\config.properties"));
+        		prop = new Properties();
+        		prop.load(fis);
+        	} 
+        	catch(FileNotFoundException fnfe) 
+        	{
+        		LOG.error("Properties File Not Found or Wrong file path entered YOU DumbAss!", fnfe);
+        	} 
+        	catch(IOException ioe) 
+        	{
+        		LOG.error("IO Exception while loading Properties File", ioe);
+        	} 
+        	finally 
+        	{
+        		try 
+        		{
+        			fis.close();
+        		} 
+        		catch (IOException e) 
+        		{
+        			LOG.error("IO Exception while closing file input stream", e);
+        		}
+        	}
+        }
+    }
 
-		try {
-			fis = new FileInputStream(new File("F:\\WorkSpace\\SwagLabs-Ecommerce\\src\\test\\resources\\config\\config.properties"));
-			prop = new Properties();
-			prop.load(fis);
-		} catch(FileNotFoundException fnfe) 
-		{
-			LOG.error("Properties File Not Found or Wrong file path entered YOU DumbAss!", fnfe);
-		} catch(IOException ioe) {
-			LOG.error("IO Exception while loading Properties File", ioe);
-		} finally {
-			try {
-				fis.close();
-			} catch (IOException e) {
-				LOG.error("IO Exception while closing file input stream", e);
-			}
-		}
-		return prop.getProperty(property).trim();
-	}
+    
+    public static String getProperty(String property) 
+    {
+        loadProperties();
+        if (prop != null) 
+        {
+            return prop.getProperty(property, "").trim();
+        } 
+        else 
+        {
+            LOG.error("Properties file not loaded. Returning an empty value for property: " + property);
+            return "";
+        }
+    }
 }
+
+
+
+

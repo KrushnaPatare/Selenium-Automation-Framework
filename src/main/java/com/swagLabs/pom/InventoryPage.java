@@ -20,7 +20,11 @@ public class InventoryPage
     
     @FindBy(xpath = "//button[text()='Remove']")
     private WebElement removeButton;
-
+    
+    @FindBy(xpath = "(//div[@data-test='inventory-item-name'])[1]")
+    private WebElement firstProduct;
+    
+    
     
     public InventoryPage(WebDriver driver) 
     {
@@ -36,6 +40,9 @@ public class InventoryPage
     public WebElement getRemoveButton() {return removeButton;}
     
     public List<WebElement> getProductNames() {return productNames;}
+    
+    public WebElement getFirstProduct() {return firstProduct;}
+
 
         
 }

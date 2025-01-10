@@ -29,9 +29,9 @@ public class EndToEndTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+		super.tearDown();
 	}
 	
 	
@@ -43,15 +43,17 @@ public class EndToEndTest extends BaseClass
 		 )	
 	public void verifyEndToEndPurchasingFunctionality() throws InterruptedException, IOException 
 	{
-		LogUtils.info("********************************************************");
+		LogUtils.info("**********************************************************************");
 		LogUtils.info("***** <<<<< Starting verifyEndToEndPurchasingFunctionality >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	    	new InventoryPageTest().addItemsToCart();
 	    	new CartPageTest().checkout();
 			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
-	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	SelUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
+	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	
+	    	selUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
 	    	LogUtils.info("Opened inventory page.");
 	        ReportUtils.addScreenshot("Opened inventory page.");
 	    	Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", "Page url should match.");   

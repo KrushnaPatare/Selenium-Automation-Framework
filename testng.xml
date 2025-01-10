@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	 <parameter name="browser" value="chrome"></parameter>
-  <test thread-count="5" name="Test">
+  <test thread-count="4" name="Test">
     <classes>
       <class name="com.swagLabs.tests.CartPageTest"/>
       <class name="com.swagLabs.tests.EndToEndTest"/>

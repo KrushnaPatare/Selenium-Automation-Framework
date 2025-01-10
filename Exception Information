@@ -1,7 +1,7 @@
 org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
 io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: googlechromelabs.github.io
 
-
+Do not use xpath having any empty spaces in it.
 
 TimeoutException
 Thrown when a command fails because it exceeds the configured timeout.

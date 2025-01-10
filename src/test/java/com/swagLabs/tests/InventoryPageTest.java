@@ -30,9 +30,9 @@ public class InventoryPageTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+		super.tearDown();
 	}
 	
 	
@@ -47,62 +47,63 @@ public class InventoryPageTest extends BaseClass
 	    LogUtils.info("********************************************************");
 	    LogUtils.info("***** <<<<< Starting verifyUserIsAbleToNavigateToSocialMediaSites >>>>> *****");
 
-	    try {
+	    try 
+	    {
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        LogUtils.info("Login successful.");
 	        ReportUtils.addScreenshot("Login successful.");
 	        
 	        LogUtils.info("Navigating to LinkedIn page.");
-	        SelUtils.scrollToElement(basePage.getLinkedInPageButton(), driver);
-	        SelUtils.waitTime(3);
+	        selUtils.scrollToElement(basePage.getLinkedInPageButton());
+	        selUtils.waitTime(3);
 	        ReportUtils.addScreenshot("Scrolled to LinkeInPageButton.");
-	        SelUtils.waitAndClick(basePage.getLinkedInPageButton(), 2);
-	        SelUtils.waitTime(5);
+	        selUtils.waitAndClick(basePage.getLinkedInPageButton(), 2);
+	        selUtils.waitTime(5);
 	        ReportUtils.addScreenshot("Opened LinkeIn Page.");
-	        SelUtils.switchToWindowByTitle("Sauce Labs | LinkedIn");
-	        SelUtils.waitTime(10);
+	        selUtils.switchToWindowByTitle("Sauce Labs | LinkedIn");
+	        selUtils.waitTime(10);
 	        System.out.println(driver.getTitle());
 
-	        Assert.assertEquals( driver.getTitle(), "Sauce Labs | LinkedIn", "Page title should match.");
+	        Assert.assertEquals(driver.getTitle(), "Sauce Labs | LinkedIn", "Page title should match.");
 	        LogUtils.info("LinkedIn page title validation passed.");
 
-	        SelUtils.switchToWindowByTitle("Swag Labs");
+	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
 
-	        SelUtils.closeOtherWindows();
+	        selUtils.closeOtherWindows();
 
 	        LogUtils.info("Navigating to Twitter page.");
-	        SelUtils.scrollToElement(basePage.getTwitterPageButton(), driver);
-	        SelUtils.waitTime(3);
+	        selUtils.scrollToElement(basePage.getTwitterPageButton());
+	        selUtils.waitTime(3);
 	        ReportUtils.addScreenshot("Scrolled to TwitterPageButton.");
 
-	        SelUtils.waitAndClick(basePage.getTwitterPageButton(), 5);
-	        SelUtils.switchToWindowByTitle("Sauce Labs (@saucelabs) / X");
-	        SelUtils.waitTime(5);
+	        selUtils.waitAndClick(basePage.getTwitterPageButton(), 5);
+	        selUtils.switchToWindowByTitle("Sauce Labs (@saucelabs) / X");
+	        selUtils.waitTime(5);
 	        ReportUtils.addScreenshot("Opened Twitter Page.");
 
 	        Assert.assertEquals(driver.getTitle(), "Sauce Labs (@saucelabs) / X", "Page title should match.");
 	        LogUtils.info("Twitter page title validation passed.");
 
-	        SelUtils.switchToWindowByTitle("Swag Labs");
+	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
 	       
-	        SelUtils.closeOtherWindows();
+	        selUtils.closeOtherWindows();
 
 	        LogUtils.info("Navigating to Facebook page.");
-	        SelUtils.scrollToElement(basePage.getFacebookPageButton(), driver);
+	        selUtils.scrollToElement(basePage.getFacebookPageButton());
 	        ReportUtils.addScreenshot("Scrolled to FacebookPageButton.");
-	        SelUtils.waitAndClick(basePage.getFacebookPageButton(), 5);
-	        SelUtils.waitTime(5);
+	        selUtils.waitAndClick(basePage.getFacebookPageButton(), 5);
+	        selUtils.waitTime(5);
 	        ReportUtils.addScreenshot("Opened Facebook Page.");
 
-	        SelUtils.switchToWindowByTitle("Sauce Labs | San Francisco CA | Facebook");
-	        Assert.assertEquals(driver.getTitle(), "Sauce Labs | San Francisco CA | Facebook", "Page title should match.");
+	        selUtils.switchToWindowByTitle("Sauce Labs | Facebook");
+	        Assert.assertEquals(driver.getTitle(), "Sauce Labs | Facebook", "Page title should match.");
 	        LogUtils.info("Facebook page title validation passed.");
 
-	        SelUtils.switchToWindowByTitle("Swag Labs");
+	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
-	        SelUtils.closeOtherWindows();
+	        selUtils.closeOtherWindows();
 	        
 	        new LoginPageTest().logOut();
 	    } 
@@ -110,7 +111,7 @@ public class InventoryPageTest extends BaseClass
 	    {
 	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
 	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Test failed due to assertion error: " + e.getMessage());
 	        Assert.fail("Assertion error occurred: " + e.getMessage());
 	        throw e;
 	    } 
@@ -118,14 +119,14 @@ public class InventoryPageTest extends BaseClass
 	    {
 	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
 	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
 	        throw e;
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyUserIsAbleToNavigateToSocialMediaSites *****");
 	        LogUtils.info("********************************************");
-	        ExtentReportManager.test.info("Test finished.");
+	        ExtentReportManager.getTest().info("Test finished.");
 	    }
 	}
 
@@ -143,7 +144,8 @@ public class InventoryPageTest extends BaseClass
 		LogUtils.info("********************************************************************************");
 		LogUtils.info("***** <<<<< Starting verifyUserCanAddItemToCart >>>>> *****");
 
-	    try {	 
+	    try 
+	    {	 
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        List<WebElement> products = addItemsToCart();
 	        
@@ -160,7 +162,7 @@ public class InventoryPageTest extends BaseClass
 	    {
 	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
 	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Test failed due to assertion error: " + e.getMessage());
 	        Assert.fail("Assertion error occurred: " + e.getMessage());
 	        throw e;
 	    } 
@@ -168,14 +170,14 @@ public class InventoryPageTest extends BaseClass
 	    {
 	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
 	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
 	        throw e;
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyUserCanAddItemToCart *****");
 	        LogUtils.info("********************************************");
-	        ExtentReportManager.test.info("Test finished.");
+	        ExtentReportManager.getTest().info("Test finished.");
 	    }	    
 	
 	}
@@ -185,13 +187,13 @@ public class InventoryPageTest extends BaseClass
 	{
         List<WebElement> products = inventoryPage.getProductNames();
 
-    	SelUtils.clickOnMultipleWebElementsReverseOrder(inventoryPage.getAddToCartButton(), driver);
-    	SelUtils.waitTime(5);
+    	selUtils.clickOnMultipleWebElementsReverseOrder(inventoryPage.getAddToCartButton());
+    	selUtils.waitTime(5);
         LogUtils.info("Added all products to the cart.");
         ReportUtils.addScreenshot("Added all products to the cart.");
 
-    	SelUtils.waitAndClick(basePage.getShoppingCartIcon(), 2);
-    	SelUtils.waitTime(3);
+    	selUtils.waitAndClick(basePage.getShoppingCartIcon(), 2);
+    	selUtils.waitTime(3);
 		
     	LogUtils.info("Opened open cart page.");
         ReportUtils.addScreenshot("Opened open cart page.");

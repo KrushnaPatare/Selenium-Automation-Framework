@@ -27,9 +27,9 @@ public class CheckoutCompletepageTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+		super.tearDown();
 	}
 	
 	
@@ -45,7 +45,8 @@ public class CheckoutCompletepageTest extends BaseClass
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyCheckoutSuccessMessage >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	    	new InventoryPageTest().addItemsToCart();
 	    	new CartPageTest().checkout();

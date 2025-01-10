@@ -28,9 +28,9 @@ public class CheckoutOverviewPageTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+		super.tearDown();
 	}
 	
 	
@@ -45,7 +45,8 @@ public class CheckoutOverviewPageTest extends BaseClass
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyCheckoutFinishFunctionality >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	    	new InventoryPageTest().addItemsToCart();
 	    	new CartPageTest().checkout();
@@ -96,8 +97,8 @@ public class CheckoutOverviewPageTest extends BaseClass
 	
 	public void completeCheckoutOverview() throws InterruptedException 
 	{
-		SelUtils.scrollToElement(checkoutOverviewPage.getFinishButton(), driver);
-		SelUtils.waitAndClick(checkoutOverviewPage.getFinishButton(), 2);
+		selUtils.scrollToElement(checkoutOverviewPage.getFinishButton());
+		selUtils.waitAndClick(checkoutOverviewPage.getFinishButton(), 2);
 
 		LogUtils.info("Opened checkout success page.");
         ReportUtils.addScreenshot("Opened checkout success page.");

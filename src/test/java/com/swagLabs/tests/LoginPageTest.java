@@ -20,19 +20,19 @@ import com.swagLabs.utilities.ReportUtils;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class LoginPageTest extends BaseClass 
-{  	
+{  	 
 	@Parameters({ "browser" }) 
 	@BeforeMethod()
-	public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
+    public void initializeBrowser(@Optional("chrome") String browser) throws InterruptedException 
 	{
-		openBrowser(browser);
-	}
+        openBrowser(browser); // Call the openBrowser method from BaseClass
+    }
 
-	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
-	{	
-		driver.quit();
-	}
+    @AfterMethod()
+    public void tearDown() 
+    {
+        super.tearDown(); // Call the tearDown method from BaseClass to handle cleanup
+    }
 	
 
 	@Test(
@@ -41,17 +41,18 @@ public class LoginPageTest extends BaseClass
 		    dataProviderClass = DataProviders.class, 
 		    description = "<html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html>"
 		)
-	public void checkLoginFunctionality(
-										String username, 
-										String password,
-										String result
-										)
-			throws InterruptedException, IOException 
+	public void checkLoginFunctionality
+	(
+		String username, 
+		String password,
+		String result
+	)throws InterruptedException, IOException 
 	{
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<<Starting checkLoginFunctionality>>>>> *****");
 
-        try {
+        try 
+        {
         LogUtils.info("Test started with parameters - Username: {"+username+"}, Password: {"+password+"}");
         ReportUtils.logMessage(Status.INFO,"<p><b>Parameters of testcase:<br>"
 				+ "username = "+ username +"<br>"
@@ -62,7 +63,7 @@ public class LoginPageTest extends BaseClass
 
         logIn(username, password);
 
-		String actualUrl = BaseClass.driver.getCurrentUrl();
+		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		
 		logOut();
@@ -88,7 +89,7 @@ public class LoginPageTest extends BaseClass
 	    {
         	LogUtils.error("Test failed due to exception: " + e.getMessage());
         	LogUtils.debug("Exception details" + e);
-	        ExtentReportManager.test.fail("Test failed due to exception: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Test failed due to exception: " + e.getMessage());
 	        Assert.fail();
 	        throw e;
 	    } 
@@ -96,14 +97,14 @@ public class LoginPageTest extends BaseClass
 	    {
 	    	LogUtils.error("Unexpected exception occurred: {}" + e.getMessage());
 	    	LogUtils.debug("Exception details" + e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
+	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
 	        throw e;
 	    } 
 	    finally 
 	    {
 	    	LogUtils.info("***** Finished checkLoginFunctionality *****");
 	    	LogUtils.info("********************************************");
-	        ExtentReportManager.test.info("Test finished");
+	        ExtentReportManager.getTest().info("Test finished");
 	    }    
     }
 	
@@ -113,14 +114,14 @@ public class LoginPageTest extends BaseClass
 		LogUtils.info("Opened login page.");
 		ReportUtils.addScreenshot(Status.INFO,"Opened login page.");
 		
-		SelUtils.sendKeysMethod(loginPage.getUsernameField(), username, 1);
-		SelUtils.sendKeysMethod(loginPage.getPasswordField(), password, 1);
+		selUtils.sendKeysMethod(loginPage.getUsernameField(), username, 1);
+		selUtils.sendKeysMethod(loginPage.getPasswordField(), password, 1);
 		
 		LogUtils.info("Entered username and password.");
 		ReportUtils.addScreenshot(Status.INFO, "Entered username and password.");
 
-		SelUtils.waitAndClick(loginPage.getLoginButton(), 3) ;
-		SelUtils.waitTime(3);
+		selUtils.waitAndClick(loginPage.getLoginButton(), 3) ;
+		selUtils.waitTime(3);
 
 		LogUtils.info("Logged in Successfully!");
 		ReportUtils.addScreenshot(Status.INFO,"Logged in Successfully!");	
@@ -129,10 +130,10 @@ public class LoginPageTest extends BaseClass
 	
 	public void logOut() throws InterruptedException 
 	{
-		SelUtils.waitAndClick(basePage.getBurgerMenuButton(), 2);       
-		SelUtils.waitTime(2);
-		SelUtils.waitAndClick(basePage.getLogoutLink(), 2);
-		SelUtils.waitTime(2);
+		selUtils.waitAndClick(basePage.getBurgerMenuButton(), 2);       
+		selUtils.waitTime(2);
+		selUtils.waitAndClick(basePage.getLogoutLink(), 2);
+		selUtils.waitTime(2);
 	}
 
 

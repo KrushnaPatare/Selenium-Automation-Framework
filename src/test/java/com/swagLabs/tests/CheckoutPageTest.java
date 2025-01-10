@@ -29,9 +29,9 @@ public class CheckoutPageTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+		super.tearDown();
 	}
 	
 	
@@ -43,12 +43,19 @@ public class CheckoutPageTest extends BaseClass
 		    		+ "This test verifies that user can complete the order placing process."
 		    		+ "</span></pre></b></body></html>"
 		 )	
-	public void verifyCheckoutFunctionality(String firstname, String lastname, String postalCode, String result) throws InterruptedException, IOException 
+	public void verifyCheckoutFunctionality
+	(
+		 String firstname, 
+		 String lastname, 
+		 String postalCode, 
+		 String result
+	) throws InterruptedException, IOException 
 	{
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyCheckoutFunctionality >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	    	new InventoryPageTest().addItemsToCart();
 	    	new CartPageTest().checkout();
@@ -104,18 +111,18 @@ public class CheckoutPageTest extends BaseClass
 	
 	public void checkOutComplete(String firstname, String lastname, String postalCode) throws InterruptedException 
 	{
-        SelUtils.sendKeysMethod(checkoutPage.getFirstNameField(), firstname, 2);
-        SelUtils.sendKeysMethod(checkoutPage.getLastNameField(), lastname, 2);
-        SelUtils.sendKeysMethod(checkoutPage.getPostalCodeField(), postalCode,2);
+        selUtils.sendKeysMethod(checkoutPage.getFirstNameField(), firstname, 2);
+        selUtils.sendKeysMethod(checkoutPage.getLastNameField(), lastname, 2);
+        selUtils.sendKeysMethod(checkoutPage.getPostalCodeField(), postalCode,2);
 
-        SelUtils.waitTime(3);
+        selUtils.waitTime(3);
         
         LogUtils.info("Entered firstname, lastname, postalCode.");
         ReportUtils.addScreenshot("Entered firstname, lastname, postalCode.");
         
-        SelUtils.waitTime(3);
+        selUtils.waitTime(3);
         
-        SelUtils.waitAndClick(checkoutPage.getContinueButton(), 3);
+        selUtils.waitAndClick(checkoutPage.getContinueButton(), 3);
         LogUtils.info("Opened checkout complete page.");
         ReportUtils.addScreenshot("Opened checkout complete page.");
 	}

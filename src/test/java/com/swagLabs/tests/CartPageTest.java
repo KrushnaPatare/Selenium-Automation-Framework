@@ -30,9 +30,9 @@ public class CartPageTest extends BaseClass
 	
 	
 	@AfterMethod()
-	public void tearDown() throws IOException, InterruptedException 
+	public void tearDown() 
 	{	
-		driver.quit();
+        super.tearDown(); // Call the tearDown method from BaseClass to handle cleanup
 	}
 	
 	
@@ -47,12 +47,13 @@ public class CartPageTest extends BaseClass
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyUserCanRemoveItemsFromCart >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        List<WebElement> products = new InventoryPageTest().addItemsToCart();
 
-	        SelUtils.clickOnMultipleWebElementsReverseOrder(cartPage.getRemoveButton(), driver);
-	        SelUtils.waitTime(5);
+	        selUtils.clickOnMultipleWebElementsReverseOrder(cartPage.getRemoveButton());
+	        selUtils.waitTime(5);
 	        LogUtils.info("Removed all products from the cart.");
 	        ReportUtils.addScreenshot("Removed all products from the cart.");
 	        
@@ -140,13 +141,13 @@ public class CartPageTest extends BaseClass
 	
 	public void checkout() throws InterruptedException 
     {
-        SelUtils.scrollToElement(cartPage.getCheckoutButton(), driver);
-        SelUtils.waitTime(3);
+        selUtils.scrollToElement(cartPage.getCheckoutButton());
+        selUtils.waitTime(3);
         LogUtils.info("Scrolled to Checkout button.");
         ReportUtils.addScreenshot("Scrolled to checkout button.");
         
-        SelUtils.waitAndClick(cartPage.getCheckoutButton(), 3);
-        SelUtils.waitTime(3);
+        selUtils.waitAndClick(cartPage.getCheckoutButton(), 3);
+        selUtils.waitTime(3);
         LogUtils.info("Checkout page opened.");
         ReportUtils.addScreenshot("Checkout page opened.");
     	
