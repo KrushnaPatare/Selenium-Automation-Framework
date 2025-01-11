@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -13,10 +12,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.swagLabs.base.BaseClass;
+import com.swagLabs.utilities.ExceptionHandler;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
 import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
+import com.swagLabs.utilities.Validator;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class InventoryPageTest extends BaseClass 
@@ -44,7 +45,7 @@ public class InventoryPageTest extends BaseClass
 		 )	
 	public void verifyUserIsAbleToNavigateToSocialMediaSites() throws InterruptedException, IOException 
 	{
-	    LogUtils.info("********************************************************");
+	    LogUtils.info("*****************************************************************************");
 	    LogUtils.info("***** <<<<< Starting verifyUserIsAbleToNavigateToSocialMediaSites >>>>> *****");
 
 	    try 
@@ -64,7 +65,8 @@ public class InventoryPageTest extends BaseClass
 	        selUtils.waitTime(10);
 	        System.out.println(driver.getTitle());
 
-	        Assert.assertEquals(driver.getTitle(), "Sauce Labs | LinkedIn", "Page title should match.");
+	        Validator.verifyTitle(driver.getTitle(), "Sauce Labs | LinkedIn");
+	        
 	        LogUtils.info("LinkedIn page title validation passed.");
 
 	        selUtils.switchToWindowByTitle("Swag Labs");
@@ -82,7 +84,8 @@ public class InventoryPageTest extends BaseClass
 	        selUtils.waitTime(5);
 	        ReportUtils.addScreenshot("Opened Twitter Page.");
 
-	        Assert.assertEquals(driver.getTitle(), "Sauce Labs (@saucelabs) / X", "Page title should match.");
+	        Validator.verifyTitle(driver.getTitle(), "Sauce Labs (@saucelabs) / X");
+
 	        LogUtils.info("Twitter page title validation passed.");
 
 	        selUtils.switchToWindowByTitle("Swag Labs");
@@ -98,7 +101,9 @@ public class InventoryPageTest extends BaseClass
 	        ReportUtils.addScreenshot("Opened Facebook Page.");
 
 	        selUtils.switchToWindowByTitle("Sauce Labs | Facebook");
-	        Assert.assertEquals(driver.getTitle(), "Sauce Labs | Facebook", "Page title should match.");
+	        
+	        Validator.verifyTitle(driver.getTitle(), "Sauce Labs | Facebook");
+	        
 	        LogUtils.info("Facebook page title validation passed.");
 
 	        selUtils.switchToWindowByTitle("Swag Labs");
@@ -109,23 +114,16 @@ public class InventoryPageTest extends BaseClass
 	    } 
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.getTest().fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyUserIsAbleToNavigateToSocialMediaSites *****");
-	        LogUtils.info("********************************************");
+	        LogUtils.info("*****************************************************************");
 	        ExtentReportManager.getTest().info("Test finished.");
 	    }
 	}
@@ -153,30 +151,21 @@ public class InventoryPageTest extends BaseClass
 	        
 	        for (WebElement product : products) 
 	        {
-	            Assert.assertTrue(cartItemDetails.contains(product.getText().toLowerCase()), "Added product should found in cart.");
-	            LogUtils.info("CartPage has added item -" + product.getText().toLowerCase());
-		        ReportUtils.logMessage("CartPage has added item -" + product.getText().toLowerCase());
+	        	Validator.verifyTrue(cartItemDetails.contains(product.getText().toLowerCase()), "CartPage has added item -" + product.getText().toLowerCase());
 	        }
 	    }
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.getTest().fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyUserCanAddItemToCart *****");
-	        LogUtils.info("********************************************");
+	        LogUtils.info("***********************************************");
 	        ExtentReportManager.getTest().info("Test finished.");
 	    }	    
 	

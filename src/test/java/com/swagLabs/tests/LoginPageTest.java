@@ -2,7 +2,6 @@ package com.swagLabs.tests;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -13,9 +12,11 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.swagLabs.base.BaseClass;
 import com.swagLabs.utilities.DataProviders;
+import com.swagLabs.utilities.ExceptionHandler;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
 import com.swagLabs.utilities.ReportUtils;
+import com.swagLabs.utilities.Validator;
 
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
@@ -39,8 +40,10 @@ public class LoginPageTest extends BaseClass
 		    priority = 1, 
 		    dataProvider = "loginData", 
 		    dataProviderClass = DataProviders.class, 
-		    description = "<html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html>"
-		)
+		    description = "<html><body><b><pre><span style='color:yellow;'>"
+		    			+ "This test verifies the login functionality with testdata provided."
+		    			+ "</span></pre></b></body></html>"
+		 )
 	public void checkLoginFunctionality
 	(
 		String username, 
@@ -49,63 +52,28 @@ public class LoginPageTest extends BaseClass
 	)throws InterruptedException, IOException 
 	{
 		LogUtils.info("********************************************************");
-		LogUtils.info("***** <<<<<Starting checkLoginFunctionality>>>>> *****");
+		LogUtils.info("****** <<<<<Starting checkLoginFunctionality>>>>> ******");
 
-        try 
-        {
-        LogUtils.info("Test started with parameters - Username: {"+username+"}, Password: {"+password+"}");
-        ReportUtils.logMessage(Status.INFO,"<p><b>Parameters of testcase:<br>"
-				+ "username = "+ username +"<br>"
-				+"password = "+ password +"<br>"
-				+"password = "+ result +"<br>"
-				+"</b>"+"</p>");
-		
+		 try 
+		 {
+            logIn(username, password); // Perform login action
 
-        logIn(username, password);
-
-		String actualUrl = driver.getCurrentUrl();
-		String expectedUrl = "https://www.saucedemo.com/inventory.html";
-		
-		logOut();
-		
-		switch(result.toLowerCase()) 
-    	{
-    		case "pass":
-				LogUtils.info("For 'pass' condition " +actualUrl+ " " +expectedUrl);
-	    		Assert.assertEquals(actualUrl, expectedUrl, "Page Url should match.");
-	    		break;
-    		case "fail":
-				LogUtils.info("For 'fail' condition " +actualUrl+ " " +expectedUrl);
-	    		Assert.assertNotEquals(actualUrl, expectedUrl, "Page Url should not match.");
-	    		break;
-    		default:
-	    		throw new IllegalArgumentException("Wrong argument is entered. Please enter 'Pass' or 'Fail' as argument.");
-    	}	
-		
-		
-		
-        }
-        catch (AssertionError e) 
-	    {
-        	LogUtils.error("Test failed due to exception: " + e.getMessage());
-        	LogUtils.debug("Exception details" + e);
-	        ExtentReportManager.getTest().fail("Test failed due to exception: " + e.getMessage());
-	        Assert.fail();
-	        throw e;
-	    } 
-	    catch (Exception e) 
-	    {
-	    	LogUtils.error("Unexpected exception occurred: {}" + e.getMessage());
-	    	LogUtils.debug("Exception details" + e);
-	        ExtentReportManager.getTest().fail("Unexpected exception: " + e.getMessage());
-	        throw e;
-	    } 
-	    finally 
-	    {
-	    	LogUtils.info("***** Finished checkLoginFunctionality *****");
-	    	LogUtils.info("********************************************");
-	        ExtentReportManager.getTest().info("Test finished");
-	    }    
+            Validator.verifyUrl(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", result);
+	     } 
+		 catch (AssertionError e) 
+		 {
+			 ExceptionHandler.handleException(e, "Assertion failure during test execution.");
+	     } 
+		 catch (Exception e)
+		 {
+			 ExceptionHandler.handleException(e, "Unexpected error during test execution.");
+	     } 
+		 finally 
+		 {
+            LogUtils.info("***** Finished checkLoginFunctionality *****");
+	        LogUtils.info("*********************************************");
+            ExtentReportManager.getTest().info("Test finished.");
+	     } 
     }
 	
 	
@@ -134,8 +102,10 @@ public class LoginPageTest extends BaseClass
 		selUtils.waitTime(2);
 		selUtils.waitAndClick(basePage.getLogoutLink(), 2);
 		selUtils.waitTime(2);
+		LogUtils.info("Logged out Successfully!");
+		ReportUtils.addScreenshot(Status.INFO,"Logged out Successfully!");
 	}
-
+	
 
 }
 

@@ -2,7 +2,6 @@ package com.swagLabs.tests;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -11,10 +10,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.swagLabs.base.BaseClass;
+import com.swagLabs.utilities.ExceptionHandler;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
 import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
+import com.swagLabs.utilities.Validator;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class ProductPageTest extends BaseClass 
@@ -67,8 +68,8 @@ public class ProductPageTest extends BaseClass
 	        LogUtils.info("Opened cart page.");
 	        ReportUtils.addScreenshot("Opened cart page.");
 
-	        Assert.assertTrue(cartPage.getCartItemDetails().getText().toLowerCase().contains(inventoryPage.getFirstProduct().getText().toLowerCase()),
-	        		"Cart should contain added product name.");
+	        Validator.verifyTrue(cartPage.getCartItemDetails().getText().toLowerCase().contains(inventoryPage.getFirstProduct().getText().toLowerCase()),
+	        		"Cart contains added product name.");
 	        
 	        selUtils.switchToWindowByUrlBase("https://www.saucedemo.com/inventory-item.html?id=2");
 	        selUtils.waitTime(2);
@@ -78,18 +79,11 @@ public class ProductPageTest extends BaseClass
 	    } 
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			 ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {

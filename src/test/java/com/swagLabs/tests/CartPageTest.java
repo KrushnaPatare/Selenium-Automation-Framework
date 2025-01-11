@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -13,10 +12,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.swagLabs.base.BaseClass;
+import com.swagLabs.utilities.ExceptionHandler;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
 import com.swagLabs.utilities.PropertiesReader;
 import com.swagLabs.utilities.ReportUtils;
+import com.swagLabs.utilities.Validator;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class CartPageTest extends BaseClass 
@@ -44,7 +45,7 @@ public class CartPageTest extends BaseClass
 		 )	
 	public void verifyUserCanRemoveItemsFromCart() throws InterruptedException, IOException 
 	{
-		LogUtils.info("********************************************************");
+		LogUtils.info("*****************************************************************");
 		LogUtils.info("***** <<<<< Starting verifyUserCanRemoveItemsFromCart >>>>> *****");
 	
 	    try 
@@ -63,30 +64,21 @@ public class CartPageTest extends BaseClass
 	        
 	        for (WebElement product : products) 
 	        {
-	            Assert.assertFalse(cartItemDetails.contains(product.getText().toLowerCase()), "Added product should found in cart.");
-	            LogUtils.info("CartPage has removed the item -" + product.getText().toLowerCase());
-		        ReportUtils.logMessage("CartPage has removed the item -" + product.getText().toLowerCase());
+	        	Validator.verifyTrue(cartItemDetails.contains(product.getText().toLowerCase()), "CartPage has removed the item -" + product.getText().toLowerCase());
 	        }
 	    } 
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyUserCanRemoveItemsFromCart *****");
-	        LogUtils.info("********************************************");
+	        LogUtils.info("*****************************************************");
 	        ExtentReportManager.test.info("Test finished.");
 	    }
 		
@@ -109,27 +101,20 @@ public class CartPageTest extends BaseClass
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	    	new InventoryPageTest().addItemsToCart();
 	    	checkout();
-	        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+	        Validator.verifyUrl(driver.getTitle(), "Swag Labs");
 	        new LoginPageTest().logOut();
 	    } 
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			 ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			 ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {
-	        LogUtils.info("***** Finished verifyUserCanCheckOut *****");
+	        LogUtils.info("****** Finished verifyUserCanCheckOut ******");
 	        LogUtils.info("********************************************");
 	        ExtentReportManager.test.info("Test finished.");
 	    }
@@ -150,7 +135,6 @@ public class CartPageTest extends BaseClass
         selUtils.waitTime(3);
         LogUtils.info("Checkout page opened.");
         ReportUtils.addScreenshot("Checkout page opened.");
-    	
     }
 
 	

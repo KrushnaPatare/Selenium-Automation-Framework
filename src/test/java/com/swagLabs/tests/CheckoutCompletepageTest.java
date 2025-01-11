@@ -2,7 +2,6 @@ package com.swagLabs.tests;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -11,9 +10,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.swagLabs.base.BaseClass;
+import com.swagLabs.utilities.ExceptionHandler;
 import com.swagLabs.utilities.ExtentReportManager;
 import com.swagLabs.utilities.LogUtils;
 import com.swagLabs.utilities.PropertiesReader;
+import com.swagLabs.utilities.Validator;
 
 @Listeners(com.swagLabs.utilities.ExtentReportManager.class)
 public class CheckoutCompletepageTest extends BaseClass 
@@ -42,7 +43,7 @@ public class CheckoutCompletepageTest extends BaseClass
 	public void verifyCheckoutSuccessMessage() throws InterruptedException, IOException 
 	{
     	
-		LogUtils.info("********************************************************");
+		LogUtils.info("*************************************************************");
 		LogUtils.info("***** <<<<< Starting verifyCheckoutSuccessMessage >>>>> *****");
 	
 	    try 
@@ -51,32 +52,27 @@ public class CheckoutCompletepageTest extends BaseClass
 	    	new InventoryPageTest().addItemsToCart();
 	    	new CartPageTest().checkout();
 			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
-	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	String successMessage = "Thank you for your order!";
+	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	   
 	    	
+	    	String successMessage = "Thank you for your order!";
 	    	String message = checkoutCompletePage.getCheckoutCompleteContainer().getText();
-	        new LoginPageTest().logOut();
+	        
+	    	new LoginPageTest().logOut();
 
-	    	Assert.assertTrue(message.toLowerCase().contains(successMessage.toLowerCase()), "Success message should be displayed on page.");     
+	        Validator.verifyTrue(message.toLowerCase().contains(successMessage.toLowerCase()), "Success message is displayed on page.");
 	    } 
 	    catch (AssertionError e) 
 	    {
-	        LogUtils.error("Test failed due to assertion error: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Test failed due to assertion error: " + e.getMessage());
-	        Assert.fail("Assertion error occurred: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {
-	        LogUtils.error("Unexpected exception occurred: " + e.getMessage());
-	        LogUtils.logException(e);
-	        ExtentReportManager.test.fail("Unexpected exception: " + e.getMessage());
-	        throw e;
+			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
 	    } 
 	    finally 
 	    {
 	        LogUtils.info("***** Finished verifyCheckoutSuccessMessage *****");
-	        LogUtils.info("********************************************");
+	        LogUtils.info("*************************************************");
 	        ExtentReportManager.test.info("Test finished.");
 	    }
 	}
