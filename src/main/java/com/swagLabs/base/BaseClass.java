@@ -1,5 +1,6 @@
 package com.swagLabs.base;
 
+
 import java.time.Duration;
 
 import org.openqa.selenium.Capabilities;

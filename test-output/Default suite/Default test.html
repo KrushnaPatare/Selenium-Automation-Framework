@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 09 11:15:02 IST 2025</td>
+<td>Started on:</td><td>Sun Jan 12 19:31:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>112 seconds (112205 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66993 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,10 +77,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.swagLabs.tests.LoginPageTest.checkLoginFunctionality()'><b>checkLoginFunctionality</b><br>Test class: com.swagLabs.tests.LoginPageTest<br>Test method: <html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html><br>Parameters: locked_out_user, secret_sauce, pass</td>
-<td><div><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:96)
+<td><div><pre>java.lang.RuntimeException: java.lang.AssertionError: Expected URL &apos;https://www.saucedemo.com/inventory.html&apos; does not match Actual URL &apos;https://www.saucedemo.com/&apos; for &apos;pass&apos; condition. expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at com.swagLabs.utilities.ExceptionHandler.handleException(ExceptionHandler.java:16)
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:65)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,11 +108,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace838301585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace838301585'><pre>java.lang.AssertionError: null
+Caused by: java.lang.AssertionError: Expected URL &apos;https://www.saucedemo.com/inventory.html&apos; does not match Actual URL &apos;https://www.saucedemo.com/&apos; for &apos;pass&apos; condition. expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.swagLabs.utilities.Validator.verifyUrl(Validator.java:14)
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:61)
+	... 28 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace889346570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889346570'><pre>java.lang.RuntimeException: java.lang.AssertionError: Expected URL &apos;https://www.saucedemo.com/inventory.html&apos; does not match Actual URL &apos;https://www.saucedemo.com/&apos; for &apos;pass&apos; condition. expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at com.swagLabs.utilities.ExceptionHandler.handleException(ExceptionHandler.java:16)
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:65)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,9 +149,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.AssertionError: Expected URL &apos;https://www.saucedemo.com/inventory.html&apos; does not match Actual URL &apos;https://www.saucedemo.com/&apos; for &apos;pass&apos; condition. expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.swagLabs.utilities.Validator.verifyUrl(Validator.java:14)
+	at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:61)
+	... 28 more
 </pre></div></td>
-<td>19</td>
-<td>com.swagLabs.tests.LoginPageTest@1c32386d</td></tr>
+<td>4</td>
+<td>com.swagLabs.tests.LoginPageTest@66fdec9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,20 +171,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swagLabs.tests.LoginPageTest.checkLoginFunctionality()'><b>checkLoginFunctionality</b><br>Test class: com.swagLabs.tests.LoginPageTest<br>Test method: <html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html><br>Parameters: standard_user, secret_sauce, pass</td>
-<td></td>
-<td>18</td>
-<td>com.swagLabs.tests.LoginPageTest@1c32386d</td></tr>
-<tr>
 <td title='com.swagLabs.tests.LoginPageTest.checkLoginFunctionality()'><b>checkLoginFunctionality</b><br>Test class: com.swagLabs.tests.LoginPageTest<br>Test method: <html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html><br>Parameters: performance_glitch_user, secret_sauce, pass</td>
 <td></td>
-<td>23</td>
-<td>com.swagLabs.tests.LoginPageTest@1c32386d</td></tr>
+<td>14</td>
+<td>com.swagLabs.tests.LoginPageTest@66fdec9</td></tr>
 <tr>
 <td title='com.swagLabs.tests.LoginPageTest.checkLoginFunctionality()'><b>checkLoginFunctionality</b><br>Test class: com.swagLabs.tests.LoginPageTest<br>Test method: <html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html><br>Parameters: problem_user, secret_sauce, pass</td>
 <td></td>
-<td>18</td>
-<td>com.swagLabs.tests.LoginPageTest@1c32386d</td></tr>
+<td>9</td>
+<td>com.swagLabs.tests.LoginPageTest@66fdec9</td></tr>
+<tr>
+<td title='com.swagLabs.tests.LoginPageTest.checkLoginFunctionality()'><b>checkLoginFunctionality</b><br>Test class: com.swagLabs.tests.LoginPageTest<br>Test method: <html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html><br>Parameters: standard_user, secret_sauce, pass</td>
+<td></td>
+<td>9</td>
+<td>com.swagLabs.tests.LoginPageTest@66fdec9</td></tr>
 </table><p>
 </body>
 </html>
