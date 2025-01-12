@@ -10,114 +10,114 @@ public class LogUtils
     // General logging
     public static void info(String message) 
     {
-        logger.info("[Thread: {}] {}", Thread.currentThread().getId(), message);
+        logger.info(  message);
     }
 
     public static void debug(String message) 
     {
-        logger.debug("[Thread: {}] {}", Thread.currentThread().getId(), message);
+        logger.debug(  message);
     }
 
     public static void warn(String message) 
     {
-        logger.warn("[Thread: {}] {}", Thread.currentThread().getId(), message);
+        logger.warn(  message);
     }
 
     public static void error(String message) 
     {
-        logger.error("[Thread: {}] {}", Thread.currentThread().getId(), message);
+        logger.error(message);
     }
 
     // Test lifecycle logging
     public static void startTest(String testName) 
     {
-        logger.info("[Thread: {}] Starting Test: {}", Thread.currentThread().getId(), testName);
+        logger.info(testName);
     }
 
     public static void endTest(String testName) 
     {
-        logger.info("[Thread: {}] Ending Test: {}", Thread.currentThread().getId(), testName);
+        logger.info(testName);
     }
 
     public static void testPassed(String testName) 
     {
-        logger.info("[Thread: {}] Test Passed: {}", Thread.currentThread().getId(), testName);
+        logger.info(testName);
     }
 
     public static void testFailed(String testName, Throwable throwable) 
     {
-        logger.error("[Thread: {}] Test Failed: {}", Thread.currentThread().getId(), testName, throwable);
+        logger.error(testName, throwable);
     }
 
     // WebDriver events logging
     public static void logElementClick(String elementDescription) 
     {
-        logger.info("[Thread: {}] Clicked on element: {}", Thread.currentThread().getId(), elementDescription);
+        logger.info(elementDescription);
     }
 
     public static void logTextEntered(String text, String elementDescription) 
     {
-        logger.info("[Thread: {}] Entered text: '{}' into element: {}", Thread.currentThread().getId(), text, elementDescription);
+        logger.info(text, elementDescription);
     }
 
     public static void logElementDisplayed(String elementDescription) 
     {
-        logger.info("[Thread: {}] Element is displayed: {}", Thread.currentThread().getId(), elementDescription);
+        logger.info(elementDescription);
     }
 
     public static void logPageTitle(String title) 
     {
-        logger.info("[Thread: {}] Current Page Title: {}", Thread.currentThread().getId(), title);
+        logger.info(title);
     }
 
     // Screenshot logging
     public static void logScreenshot(String screenshotPath) 
     {
-        logger.info("[Thread: {}] Screenshot saved at: {}", Thread.currentThread().getId(), screenshotPath);
+        logger.info(screenshotPath);
     }
 
     // Configuration logging
     public static void logBrowserDetails(String browserName, String browserVersion) 
     {
-        logger.info("[Thread: {}] Browser: {}, Version: {}", Thread.currentThread().getId(), browserName, browserVersion);
+        logger.info(browserName, browserVersion);
     }
 
     public static void logEnvironmentDetails(String url, String platform) 
     {
-        logger.info("[Thread: {}] Test Environment - URL: {}, Platform: {}", Thread.currentThread().getId(), url, platform);
+        logger.info(url, platform);
     }
 
     // Debugging helpers
     public static void logJavaScriptExecution(String script) 
     {
-        logger.debug("[Thread: {}] Executing JavaScript: {}", Thread.currentThread().getId(), script);
+        logger.debug(script);
     }
 
     public static void logElementLocation(String elementDescription, String locator) 
     {
-        logger.debug("[Thread: {}] Located element: {} using locator: {}", Thread.currentThread().getId(), elementDescription, locator);
+        logger.debug(elementDescription, locator);
     }
 
     // Assertion logging
     public static void logAssertionPass(String assertionMessage) 
     {
-        logger.info("[Thread: {}] Assertion Passed: {}", Thread.currentThread().getId(), assertionMessage);
+        logger.info(assertionMessage);
     }
 
     public static void logAssertionFail(String assertionMessage) 
     {
-        logger.error("[Thread: {}] Assertion Failed: {}", Thread.currentThread().getId(), assertionMessage);
+        logger.error(assertionMessage);
     }
 
     // Exception handling
     public static void logException(Exception e) 
     {
-        logger.error("[Thread: {}] An exception occurred: {}", Thread.currentThread().getId(), e.getMessage(), e);
+        logger.error(e.getMessage(), e);
     }
 
     // Exception handling (Error)
     public static void logException(Error e) 
     {
-        logger.error("[Thread: {}] An error occurred: {}", Thread.currentThread().getId(), e.getMessage(), e);
+        logger.error(e.getMessage(), e);
     }
 }
