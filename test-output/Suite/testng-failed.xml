@@ -18,6 +18,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.swagLabs.tests.CheckoutOverviewPageTest -->
+      <class name="com.swagLabs.tests.EndToEndTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyEndToEndPurchasingFunctionality"/>
+        </methods>
+      </class> <!-- com.swagLabs.tests.EndToEndTest -->
       <class name="com.swagLabs.tests.LoginPageTest">
         <methods>
           <include name="initializeBrowser"/>
@@ -25,6 +32,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.swagLabs.tests.LoginPageTest -->
+      <class name="com.swagLabs.tests.InventoryPageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="verifyUserIsAbleToNavigateToSocialMediaSites"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swagLabs.tests.InventoryPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -49,17 +49,26 @@ public class CheckoutCompletepageTest extends BaseClass
 	    try 
 	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
 	    	new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
+
 	    	new CartPageTest().checkout();
+	        Validator.verifyTrue(checkoutPage.getFirstNameField().isDisplayed(), "Navigated to checkout page validation successfull !!!");
+
 			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
-	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	   
+	        Validator.verifyTrue(checkoutOverviewPage.getFinishButton().isDisplayed(), "Checkout completed with user details validation successfull !!!");
+
+	    	new CheckoutOverviewPageTest().completeCheckoutOverview();
+	        Validator.verifyTrue(checkoutCompletePage.getBackHomeButton().isDisplayed(), "Order placed conformly !!!");
 	    	
 	    	String successMessage = "Thank you for your order!";
 	    	String message = checkoutCompletePage.getCheckoutCompleteContainer().getText();
-	        
-	    	new LoginPageTest().logOut();
-
 	        Validator.verifyTrue(message.toLowerCase().contains(successMessage.toLowerCase()), "Success message is displayed on page.");
+
+	    	new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {

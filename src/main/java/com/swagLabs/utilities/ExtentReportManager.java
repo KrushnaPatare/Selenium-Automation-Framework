@@ -99,8 +99,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener
     
     public void onFinish(ITestContext context) 
     {
-        reports.setSystemInfo("Browser Name", browserName);
-        reports.setSystemInfo("Browser Version", browserVersion);
+        reports.setSystemInfo("Browser Name & Version", browserName+" "+browserVersion);
         reports.flush();
 
         // Try to open the report

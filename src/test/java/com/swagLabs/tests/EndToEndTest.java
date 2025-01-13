@@ -50,10 +50,20 @@ public class EndToEndTest extends BaseClass
 	    try 
 	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
 	    	new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
+
 	    	new CartPageTest().checkout();
-			new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
+	        Validator.verifyTrue(checkoutPage.getFirstNameField().isDisplayed(), "Navigated to checkout page validation successfull !!!");
+
+	    	new CheckoutPageTest().checkOutComplete("Krushna", "Patare", "411016");
+	        Validator.verifyTrue(checkoutOverviewPage.getFinishButton().isDisplayed(), "Checkout completed with user details validation successfull !!!");
+
 	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	
+	        Validator.verifyTrue(checkoutCompletePage.getBackHomeButton().isDisplayed(), "Order placed conformly !!!");
+
 	    	selUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
 	    	LogUtils.info("Opened inventory page.");
 	        ReportUtils.addScreenshot("Opened inventory page.");
@@ -61,6 +71,7 @@ public class EndToEndTest extends BaseClass
 	        Validator.verifyUrl(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", "Page url should match.");
 
 	        new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {

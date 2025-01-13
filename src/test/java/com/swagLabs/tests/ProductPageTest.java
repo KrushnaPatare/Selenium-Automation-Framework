@@ -49,6 +49,8 @@ public class ProductPageTest extends BaseClass
 	    try 
 	    {
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+	        
 	        selUtils.waitAndClick(inventoryPage.getFirstProduct(), 2);
 	        
 	        LogUtils.info("Opened product page.");
@@ -76,6 +78,7 @@ public class ProductPageTest extends BaseClass
 	        selUtils.closeOtherWindows();
 	        
 	        new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {

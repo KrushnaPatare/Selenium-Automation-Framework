@@ -546,7 +546,7 @@ public class SeleniumUtils
             explicitlyWaitForElement(element, waitTimeInSeconds);
             element.clear();
             element.sendKeys(value);
-            LogUtils.info("Entered '{}' into element: {}" + value + element);
+            LogUtils.info(String.format("Entered '%s' into element: %s", value, element));
         } 
         catch (Exception e) 
         {

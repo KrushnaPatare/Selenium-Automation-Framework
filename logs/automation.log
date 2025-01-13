@@ -1,7 +1,0 @@
-19:32:26.343  [main] INFO  com.swagLabs.utilities.LogUtils - [Thread: 1] *********************************************
-19:32:29.201  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@55071497: 231 ms
-19:32:29.216  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@534762ed: 15 ms
-19:32:29.258  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@298263fa: 41 ms
-19:32:29.269  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@222d9d4f: 11 ms
-19:32:29.293  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@18d610e1: 24 ms
-19:32:29.295  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@528e5e38: 1 ms

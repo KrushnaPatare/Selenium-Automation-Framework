@@ -51,6 +51,8 @@ public class InventoryPageTest extends BaseClass
 	    try 
 	    {
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
 	        LogUtils.info("Login successful.");
 	        ReportUtils.addScreenshot("Login successful.");
 	        
@@ -111,6 +113,7 @@ public class InventoryPageTest extends BaseClass
 	        selUtils.closeOtherWindows();
 	        
 	        new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {
@@ -145,6 +148,8 @@ public class InventoryPageTest extends BaseClass
 	    try 
 	    {	 
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
 	        List<WebElement> products = addItemsToCart();
 	        
 	        String cartItemDetails = cartPage.getCartItemDetails().getText().toLowerCase();

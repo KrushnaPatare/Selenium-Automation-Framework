@@ -58,13 +58,19 @@ public class CheckoutPageTest extends BaseClass
 	    try 
 	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
 	    	new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
+
 	    	new CartPageTest().checkout();
+	        Validator.verifyTrue(checkoutPage.getFirstNameField().isDisplayed(), "Navigated to checkout page validation successfull !!!");
+
 	    	checkOutComplete(firstname, lastname, postalCode);
-	        
 	        Validator.verifyUrl(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-complete.html", result);
 
 			new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {

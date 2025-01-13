@@ -51,7 +51,10 @@ public class CartPageTest extends BaseClass
 	    try 
 	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
-	        List<WebElement> products = new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+
+	    	List<WebElement> products = new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
 
 	        selUtils.clickOnMultipleWebElementsReverseOrder(cartPage.getRemoveButton());
 	        selUtils.waitTime(5);
@@ -61,7 +64,8 @@ public class CartPageTest extends BaseClass
 	        String cartItemDetails = cartPage.getCartItemDetails().getText().toLowerCase();
 	        
 	        new LoginPageTest().logOut();
-	        
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
+
 	        for (WebElement product : products) 
 	        {
 	        	Validator.verifyTrue(cartItemDetails.contains(product.getText().toLowerCase()), "CartPage has removed the item -" + product.getText().toLowerCase());
@@ -97,12 +101,19 @@ public class CartPageTest extends BaseClass
 		LogUtils.info("********************************************************");
 		LogUtils.info("***** <<<<< Starting verifyUserCanCheckOut >>>>> *****");
 	
-	    try {
+	    try 
+	    {
 	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
-	    	new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
+	        
+	        new InventoryPageTest().addItemsToCart();
+	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
+
 	    	checkout();
 	        Validator.verifyUrl(driver.getTitle(), "Swag Labs");
+	        
 	        new LoginPageTest().logOut();
+	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
 	    } 
 	    catch (AssertionError e) 
 	    {
