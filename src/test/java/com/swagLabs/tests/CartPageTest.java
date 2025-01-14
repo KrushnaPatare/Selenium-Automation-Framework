@@ -56,8 +56,8 @@ public class CartPageTest extends BaseClass
 	    	List<WebElement> products = new InventoryPageTest().addItemsToCart();
 	        Validator.verifyTrue(cartPage.getCheckoutButton().isDisplayed(), "Item addition to cart validation successfull !!!");
 
-	        selUtils.clickOnMultipleWebElementsReverseOrder(cartPage.getRemoveButton());
-	        selUtils.waitTime(5);
+	        selUtils.clickElementsInReverseOrder(cartPage.getRemoveButton());
+	        selUtils.waitForSeconds(5);
 	        LogUtils.info("Removed all products from the cart.");
 	        ReportUtils.addScreenshot("Removed all products from the cart.");
 	        
@@ -138,12 +138,12 @@ public class CartPageTest extends BaseClass
 	public void checkout() throws InterruptedException 
     {
         selUtils.scrollToElement(cartPage.getCheckoutButton());
-        selUtils.waitTime(3);
+        selUtils.waitForSeconds(3);
         LogUtils.info("Scrolled to Checkout button.");
         ReportUtils.addScreenshot("Scrolled to checkout button.");
         
-        selUtils.waitAndClick(cartPage.getCheckoutButton(), 3);
-        selUtils.waitTime(3);
+        selUtils.waitForElementAndClick(cartPage.getCheckoutButton(), 3);
+        selUtils.waitForSeconds(3);
         LogUtils.info("Checkout page opened.");
         ReportUtils.addScreenshot("Checkout page opened.");
     }

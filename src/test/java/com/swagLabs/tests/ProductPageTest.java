@@ -51,21 +51,21 @@ public class ProductPageTest extends BaseClass
 	        new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
 	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
 	        
-	        selUtils.waitAndClick(inventoryPage.getFirstProduct(), 2);
+	        selUtils.waitForElementAndClick(inventoryPage.getFirstProduct(), 2);
 	        
 	        LogUtils.info("Opened product page.");
 	        ReportUtils.addScreenshot("Opened product page.");
 	        
-	        selUtils.waitAndClick(productPage.getAddToCartButton(), 2);
+	        selUtils.waitForElementAndClick(productPage.getAddToCartButton(), 2);
   
 	        LogUtils.info("Added product to cart.");
 	        ReportUtils.addScreenshot("Added product to cart.");
 	        
-	        selUtils.openCustomTab("https://www.saucedemo.com/cart.html");
+	        selUtils.openNewTab("https://www.saucedemo.com/cart.html");
 	        
-	        selUtils.waitTime(2);
+	        selUtils.waitForSeconds(2);
 	        selUtils.switchToWindowByUrlBase("https://www.saucedemo.com/cart.html");
-	        selUtils.waitTime(2);
+	        selUtils.waitForSeconds(2);
 	        
 	        LogUtils.info("Opened cart page.");
 	        ReportUtils.addScreenshot("Opened cart page.");
@@ -74,8 +74,8 @@ public class ProductPageTest extends BaseClass
 	        		"Cart contains added product name.");
 	        
 	        selUtils.switchToWindowByUrlBase("https://www.saucedemo.com/inventory-item.html?id=2");
-	        selUtils.waitTime(2);
-	        selUtils.closeOtherWindows();
+	        selUtils.waitForSeconds(2);
+	        selUtils.closeAllOtherWindows();
 	        
 	        new LoginPageTest().logOut();
 	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");

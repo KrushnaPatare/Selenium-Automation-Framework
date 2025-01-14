@@ -99,14 +99,14 @@ public class CheckoutPageTest extends BaseClass
         selUtils.sendKeysMethod(checkoutPage.getLastNameField(), lastname, 2);
         selUtils.sendKeysMethod(checkoutPage.getPostalCodeField(), postalCode,2);
 
-        selUtils.waitTime(3);
+        selUtils.waitForSeconds(3);
         
         LogUtils.info("Entered firstname, lastname, postalCode.");
         ReportUtils.addScreenshot("Entered firstname, lastname, postalCode.");
         
-        selUtils.waitTime(3);
+        selUtils.waitForSeconds(3);
         
-        selUtils.waitAndClick(checkoutPage.getContinueButton(), 3);
+        selUtils.waitForElementAndClick(checkoutPage.getContinueButton(), 3);
         LogUtils.info("Opened checkout complete page.");
         ReportUtils.addScreenshot("Opened checkout complete page.");
 	}

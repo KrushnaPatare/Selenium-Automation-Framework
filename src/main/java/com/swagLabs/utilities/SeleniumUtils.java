@@ -158,6 +158,7 @@ public class SeleniumUtils
         }
     }
 
+    
     // Waiting Mechanisms
     public void explicitlyWaitForElement(WebElement element, int waitTimeInSeconds) 
     {
@@ -174,13 +175,15 @@ public class SeleniumUtils
         }
     }
 
-    public void waitTime(int seconds) throws InterruptedException 
+    
+    public void waitForSeconds(int seconds) throws InterruptedException 
     {
         long time = 1000 * seconds;
         Thread.sleep(time);
     }
 
-    public void waitAndClick(WebElement element, int waitTimeInSeconds) 
+    
+    public void waitForElementAndClick(WebElement element, int waitTimeInSeconds) 
     {
         try 
         {
@@ -210,6 +213,7 @@ public class SeleniumUtils
             LogUtils.info("Failed to scroll to element: {}" + e.getMessage());
         }
     }
+    
 
     public void waitScrollAndClick(WebElement element, int waitTimeInSeconds) 
     {
@@ -230,6 +234,7 @@ public class SeleniumUtils
         }
     }
 
+    
     // Mouse Actions
     public void doubleClickElement(WebElement element) 
     {
@@ -246,6 +251,7 @@ public class SeleniumUtils
             Assert.fail("Failed to double-click element");
         }
     }
+    
 
     public void rightClickElement(WebElement element) 
     {
@@ -263,6 +269,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public void hoverOverElement(WebElement element) 
     {
         try 
@@ -280,7 +287,7 @@ public class SeleniumUtils
     }
 
     // Clicking Multiple Elements
-    public void clickOnMultipleWebElementsReverseOrder(List<WebElement> elements) throws InterruptedException 
+    public void clickElementsInReverseOrder(List<WebElement> elements) throws InterruptedException 
     {
         if (elements == null || elements.isEmpty()) 
         {
@@ -295,7 +302,7 @@ public class SeleniumUtils
             {
                 WebElement element = elements.get(i);
                 scrollToElement(element);
-                waitAndClick(element, 2);
+                waitForElementAndClick(element, 2);
                 LogUtils.info("Clicked successfully on element at index " + i + ": " + element);
             }
         } 
@@ -308,7 +315,7 @@ public class SeleniumUtils
     }
 
     // Zoom
-    public void adjustZoomForPage(int zoomPercentage) 
+    public void adjustPageZoom(int zoomPercentage) 
     {
         try 
         {
@@ -346,39 +353,6 @@ public class SeleniumUtils
         }
     }
 
-    public boolean validateURL(String expectedURL) 
-    {
-        try 
-        {
-            String currentURL = driver.getCurrentUrl();
-            boolean isValid = currentURL.equals(expectedURL);
-            LogUtils.info("URL validation result: " + isValid);
-            return isValid;
-        } 
-        catch (Exception e) 
-        {
-            LogUtils.error("Failed to validate URL: " + e.getMessage());
-            LogUtils.logException(e);
-            return false;
-        }
-    }
-
-    public boolean validatePageTitle(String expectedTitle) 
-    {
-        try 
-        {
-            String actualTitle = driver.getTitle();
-            boolean isValid = actualTitle.equals(expectedTitle);
-            LogUtils.info("Page title validation result: " + isValid);
-            return isValid;
-        } 
-        catch (Exception e) 
-        {
-            LogUtils.error("Failed to validate page title: " + e.getMessage());
-            LogUtils.logException(e);
-            return false;
-        }
-    }
     
     
     public static String getFormattedDateTime(String pattern) 
@@ -390,11 +364,8 @@ public class SeleniumUtils
     
     
     ////////////////////////////////////////////////////////
-    
-    
-    
 
-    public void switchToFrameByName(String nameOrId) 
+    public void switchToFrameByNameOrId(String nameOrId) 
     {
         try 
         {
@@ -407,6 +378,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public void switchToDefaultContent() 
     {
         try 
@@ -420,6 +392,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public boolean isFileDownloaded(String downloadPath, String fileName) 
     {
         File file = new File(downloadPath + File.separator + fileName);
@@ -435,6 +408,7 @@ public class SeleniumUtils
         return exists;
     }
 
+    
     public WebElement fluentWaitForElement(By locator, long timeout, long pollingTime) 
     {
         try 
@@ -454,7 +428,8 @@ public class SeleniumUtils
         }
     }
 
-    public void highlightElement(WebElement element) 
+    
+    public void highlightWebElement(WebElement element) 
     {
         try 
         {
@@ -468,7 +443,8 @@ public class SeleniumUtils
         }
     }
 
-    public void closeOtherWindows() 
+    
+    public void closeAllOtherWindows() 
     {
         try 
         {
@@ -489,6 +465,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public boolean isElementPresent(WebElement element) 
     {
         try 
@@ -501,8 +478,9 @@ public class SeleniumUtils
             return false;
         }
     }
+    
 
-    public void selectByVisibleText(WebElement element, String visibleText) 
+    public void selectOptionByVisibleText(WebElement element, String visibleText) 
     {
         try 
         {
@@ -517,7 +495,8 @@ public class SeleniumUtils
         }
     }
 
-    public void selectReactDropdownOption(WebElement dropdown, String optionText) 
+    
+    public void selectOptionFromReactDropdown(WebElement dropdown, String optionText) 
     {
         try 
         {
@@ -539,6 +518,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public void sendKeysMethod(WebElement element, String value, int waitTimeInSeconds) 
     {
         try 
@@ -555,6 +535,7 @@ public class SeleniumUtils
         }
     }
 
+    
     public void waitScrollAndSendKeys(WebElement element, WebDriver driver, int waitTimeInSeconds, String keysToSend) 
     {
         try 
@@ -573,7 +554,8 @@ public class SeleniumUtils
             Assert.fail("Failed to wait, scroll, and send keys to the element");
         }
     }
-
+    
+/*
     public void verifyTextElement(String expectedText, WebElement actualElement, String elementDescription, int waitTimeInSeconds) 
     {
         try 
@@ -596,7 +578,8 @@ public class SeleniumUtils
             Assert.fail("Text verification failed");
         }
     }
-
+*/
+    
     public String getAlertText() 
     {
         String alertText = "";
@@ -651,7 +634,7 @@ public class SeleniumUtils
         }
     }
 
-    public void openCustomTab(String url) 
+    public void openNewTab(String url) 
     {
         try 
         {
@@ -673,7 +656,8 @@ public class SeleniumUtils
         }
     }
 
-    public void searchText(WebElement ele, String txt) 
+    
+    public void enterTextInSearchBar(WebElement ele, String txt) 
     {
         try 
         {
@@ -695,7 +679,7 @@ public class SeleniumUtils
         }
     }
 
-    public List<String> getAllOptionsFromMultiSelectBox(WebElement multiSelectBox, By optionLocator) 
+    public List<String> getOptionsFromMultiSelectBox(WebElement multiSelectBox, By optionLocator) 
     {
         List<String> optionsText = new ArrayList<>();
         try 
@@ -720,7 +704,8 @@ public class SeleniumUtils
         return optionsText;
     }
 
-    public Map<String, String> getMappedRowValuesToHeaders(WebElement tableElement, By headerLocator, By rowLocator, int rowIndex) 
+    
+    public Map<String, String> mapRowValuesToHeaders(WebElement tableElement, By headerLocator, By rowLocator, int rowIndex) 
     {
         Map<String, String> rowData = new HashMap<>();
         try 
@@ -766,6 +751,21 @@ public class SeleniumUtils
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

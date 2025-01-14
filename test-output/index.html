@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 5 failed,   8 passed</span>
+                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -121,11 +121,6 @@
                         <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.EndToEndTest" class="method navigator-link" hash-for-method="verifyEndToEndPurchasingFunctionality">verifyEndToEndPurchasingFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.InventoryPageTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToNavigateToSocialMediaSites">verifyUserIsAbleToNavigateToSocialMediaSites</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -137,17 +132,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.LoginPageTest" class="method navigator-link" hash-for-method="checkLoginFunctionality(standard_user, secret_sauce, pass)">checkLoginFunctionality(standard_user, secret_sauce, pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.LoginPageTest" class="method navigator-link" hash-for-method="checkLoginFunctionality(performance_glitch_user, secret_sauce, pass)">checkLoginFunctionality(performance_glitch_user, secret_sauce, pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.LoginPageTest" class="method navigator-link" hash-for-method="checkLoginFunctionality(problem_user, secret_sauce, pass)">checkLoginFunctionality(problem_user, secret_sauce, pass)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.LoginPageTest" class="method navigator-link" hash-for-method="checkLoginFunctionality(standard_user, secret_sauce, pass)">checkLoginFunctionality(standard_user, secret_sauce, pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -173,6 +168,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.CartPageTest" class="method navigator-link" hash-for-method="verifyUserCanRemoveItemsFromCart">verifyUserCanRemoveItemsFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.swagLabs.tests.InventoryPageTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToNavigateToSocialMediaSites">verifyUserIsAbleToNavigateToSocialMediaSites</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -293,33 +293,6 @@ Caused by: java.lang.AssertionError: Expected URL &apos;https://www.saucedemo.co
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.swagLabs.tests.InventoryPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserIsAbleToNavigateToSocialMediaSites">
-                  </a> <!-- verifyUserIsAbleToNavigateToSocialMediaSites -->
-                  <span class="method-name">verifyUserIsAbleToNavigateToSocialMediaSites</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.AssertionError: Expected Title &apos;Sauce Labs (@saucelabs) / X&apos; does not match Actual Title &apos;&apos;. expected [Sauce Labs (@saucelabs) / X] but found []
-	at com.swagLabs.utilities.ExceptionHandler.handleException(ExceptionHandler.java:16)
-	at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:120)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.AssertionError: Expected Title &apos;Sauce Labs (@saucelabs) / X&apos; does not match Actual Title &apos;&apos;. expected [Sauce Labs (@saucelabs) / X] but found []
-	at com.swagLabs.utilities.Validator.verifyTitle(Validator.java:117)
-	at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:89)
-	... 28 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(<html><body><b><pre><span style='color:yellow;'>This test verifies that user is able to different social media handles of SwagLabs.com.</span></pre></b></body></html>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -370,6 +343,15 @@ Caused by: java.lang.AssertionError: Expected Title &apos;Sauce Labs (@saucelabs
 (<html><body><b><pre><span style='color:yellow;'>This test verifies that user can add items to cart he wants to buy.</span></pre></b></body></html>)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToNavigateToSocialMediaSites">
+                  </a> <!-- verifyUserIsAbleToNavigateToSocialMediaSites -->
+                  <span class="method-name">verifyUserIsAbleToNavigateToSocialMediaSites</span>
+                  <em>
+(<html><body><b><pre><span style='color:yellow;'>This test verifies that user is able to different social media handles of SwagLabs.com.</span></pre></b></body></html>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -378,6 +360,16 @@ Caused by: java.lang.AssertionError: Expected Title &apos;Sauce Labs (@saucelabs
               <span class="class-name">com.swagLabs.tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginFunctionality(standard_user, secret_sauce, pass)">
+                  </a> <!-- checkLoginFunctionality(standard_user, secret_sauce, pass) -->
+                  <span class="method-name">checkLoginFunctionality</span>
+                  <span class="parameters">(standard_user,secret_sauce,pass)</span>
+                  <em>
+(<html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html>)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkLoginFunctionality(performance_glitch_user, secret_sauce, pass)">
@@ -394,16 +386,6 @@ Caused by: java.lang.AssertionError: Expected Title &apos;Sauce Labs (@saucelabs
                   </a> <!-- checkLoginFunctionality(problem_user, secret_sauce, pass) -->
                   <span class="method-name">checkLoginFunctionality</span>
                   <span class="parameters">(problem_user,secret_sauce,pass)</span>
-                  <em>
-(<html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html>)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkLoginFunctionality(standard_user, secret_sauce, pass)">
-                  </a> <!-- checkLoginFunctionality(standard_user, secret_sauce, pass) -->
-                  <span class="method-name">checkLoginFunctionality</span>
-                  <span class="parameters">(standard_user,secret_sauce,pass)</span>
                   <em>
 (<html><body><b><pre><span style='color:yellow;'>This test verifies the login functionality with testdata provided.</span></pre></b></body></html>)                  </em>
                 </div> <!-- method-content -->
@@ -497,53 +479,53 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCheckoutSuccessMessage')
-data.setCell(0, 2, 'com.swagLabs.tests.CheckoutCompletepageTest')
-data.setCell(0, 3, 58140);
+data.setCell(0, 1, 'verifyUserIsAbleToNavigateToSocialMediaSites')
+data.setCell(0, 2, 'com.swagLabs.tests.InventoryPageTest')
+data.setCell(0, 3, 59327);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyEndToEndPurchasingFunctionality')
-data.setCell(1, 2, 'com.swagLabs.tests.EndToEndTest')
-data.setCell(1, 3, 53828);
+data.setCell(1, 1, 'verifyCheckoutSuccessMessage')
+data.setCell(1, 2, 'com.swagLabs.tests.CheckoutCompletepageTest')
+data.setCell(1, 3, 57091);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyCheckoutFunctionality')
-data.setCell(2, 2, 'com.swagLabs.tests.CheckoutPageTest')
-data.setCell(2, 3, 52257);
+data.setCell(2, 1, 'verifyEndToEndPurchasingFunctionality')
+data.setCell(2, 2, 'com.swagLabs.tests.EndToEndTest')
+data.setCell(2, 3, 53121);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyUserIsAbleToNavigateToSocialMediaSites')
-data.setCell(3, 2, 'com.swagLabs.tests.InventoryPageTest')
-data.setCell(3, 3, 50968);
+data.setCell(3, 1, 'verifyCheckoutFunctionality')
+data.setCell(3, 2, 'com.swagLabs.tests.CheckoutPageTest')
+data.setCell(3, 3, 51859);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyCheckoutFunctionality')
 data.setCell(4, 2, 'com.swagLabs.tests.CheckoutPageTest')
-data.setCell(4, 3, 42855);
+data.setCell(4, 3, 42422);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyUserCanCheckOut')
 data.setCell(5, 2, 'com.swagLabs.tests.CartPageTest')
-data.setCell(5, 3, 39782);
+data.setCell(5, 3, 39808);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyUserCanRemoveItemsFromCart')
 data.setCell(6, 2, 'com.swagLabs.tests.CartPageTest')
-data.setCell(6, 3, 39542);
+data.setCell(6, 3, 39591);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyUserCanAddItemToCart')
 data.setCell(7, 2, 'com.swagLabs.tests.InventoryPageTest')
-data.setCell(7, 3, 23996);
+data.setCell(7, 3, 23837);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'checkLoginFunctionality')
 data.setCell(8, 2, 'com.swagLabs.tests.LoginPageTest')
-data.setCell(8, 3, 14478);
+data.setCell(8, 3, 14464);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'checkLoginFunctionality')
 data.setCell(9, 2, 'com.swagLabs.tests.LoginPageTest')
-data.setCell(9, 3, 9404);
+data.setCell(9, 3, 9300);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'checkLoginFunctionality')
 data.setCell(10, 2, 'com.swagLabs.tests.LoginPageTest')
-data.setCell(10, 3, 9133);
+data.setCell(10, 3, 9258);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'checkLoginFunctionality')
 data.setCell(11, 2, 'com.swagLabs.tests.LoginPageTest')
-data.setCell(11, 3, 4306);
+data.setCell(11, 3, 4014);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'verifyCheckoutFinishFunctionality')
 data.setCell(12, 2, 'com.swagLabs.tests.CheckoutOverviewPageTest')
@@ -585,166 +567,164 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanRemoveItemsFromCart</span>
-                <span class="method-start">10375 ms</span>
+                <span class="method-start">6121 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49921 ms</span>
+                <span class="method-start">45732 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">50662 ms</span>
+                <span class="method-start">46146 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanCheckOut</span>
-                <span class="method-start">54972 ms</span>
+                <span class="method-start">50496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94757 ms</span>
+                <span class="method-start">90307 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.swagLabs.tests.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">95232 ms</span>
+                <span class="method-start">90690 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyEndToEndPurchasingFunctionality</span>
-                <span class="method-start">100588 ms</span>
+                <span class="method-start">94239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">154627 ms</span>
+                <span class="method-start">147507 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.swagLabs.tests.InventoryPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">155054 ms</span>
+                <span class="method-start">147868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUserIsAbleToNavigateToSocialMediaSites</span>
-                <span class="method-start">161568 ms</span>
+                <span class="method-start">151428 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">212752 ms</span>
+                <span class="method-start">210756 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">213333 ms</span>
+                <span class="method-start">211294 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanAddItemToCart</span>
-                <span class="method-start">217379 ms</span>
+                <span class="method-start">215399 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">241379 ms</span>
+                <span class="method-start">239237 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.swagLabs.tests.CheckoutCompletepageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">241855 ms</span>
+                <span class="method-start">239605 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCheckoutSuccessMessage</span>
-                <span class="method-start">245673 ms</span>
+                <span class="method-start">243885 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">303814 ms</span>
+                <span class="method-start">300978 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.swagLabs.tests.CheckoutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">306031 ms</span>
+                <span class="method-start">302816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyCheckoutFunctionality(Krushna, Patare, 411016, Pass)</span>
-                <span class="method-start">313306 ms</span>
+                <span class="method-start">307018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">356308 ms</span>
+                <span class="method-start">349561 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">356727 ms</span>
+                <span class="method-start">349896 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCheckoutFunctionality(12345, Patare, 411016, Fail)</span>
-                <span class="method-start">363588 ms</span>
+                <span class="method-start">354065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">415848 ms</span>
+                <span class="method-start">405925 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.swagLabs.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">416883 ms</span>
+                <span class="method-start">406868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkLoginFunctionality(standard_user, secret_sauce, pass)</span>
-                <span class="method-start">420591 ms</span>
+                <span class="method-start">410416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">429725 ms</span>
+                <span class="method-start">419676 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">430123 ms</span>
+                <span class="method-start">421567 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkLoginFunctionality(locked_out_user, secret_sauce, pass)</span>
-                <span class="method-start">436735 ms</span>
+                <span class="method-start">426795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">441168 ms</span>
+                <span class="method-start">430911 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">441582 ms</span>
+                <span class="method-start">431274 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkLoginFunctionality(problem_user, secret_sauce, pass)</span>
-                <span class="method-start">447304 ms</span>
+                <span class="method-start">436048 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">456709 ms</span>
+                <span class="method-start">445350 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
-                <span class="method-start">457104 ms</span>
+                <span class="method-start">445739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkLoginFunctionality(performance_glitch_user, secret_sauce, pass)</span>
-                <span class="method-start">462473 ms</span>
+                <span class="method-start">450172 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">476955 ms</span>
+                <span class="method-start">464638 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -92,7 +92,7 @@ public class CheckoutOverviewPageTest extends BaseClass
 	public void completeCheckoutOverview() throws InterruptedException 
 	{
 		selUtils.scrollToElement(checkoutOverviewPage.getFinishButton());
-		selUtils.waitAndClick(checkoutOverviewPage.getFinishButton(), 2);
+		selUtils.waitForElementAndClick(checkoutOverviewPage.getFinishButton(), 2);
 
 		LogUtils.info("Opened checkout success page.");
         ReportUtils.addScreenshot("Opened checkout success page.");

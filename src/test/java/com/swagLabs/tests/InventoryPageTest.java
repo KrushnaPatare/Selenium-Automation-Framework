@@ -58,13 +58,13 @@ public class InventoryPageTest extends BaseClass
 	        
 	        LogUtils.info("Navigating to LinkedIn page.");
 	        selUtils.scrollToElement(basePage.getLinkedInPageButton());
-	        selUtils.waitTime(3);
+	        selUtils.waitForSeconds(3);
 	        ReportUtils.addScreenshot("Scrolled to LinkeInPageButton.");
-	        selUtils.waitAndClick(basePage.getLinkedInPageButton(), 2);
-	        selUtils.waitTime(5);
+	        selUtils.waitForElementAndClick(basePage.getLinkedInPageButton(), 2);
+	        selUtils.waitForSeconds(5);
 	        ReportUtils.addScreenshot("Opened LinkeIn Page.");
 	        selUtils.switchToWindowByTitle("Sauce Labs | LinkedIn");
-	        selUtils.waitTime(10);
+	        selUtils.waitForSeconds(10);
 	        System.out.println(driver.getTitle());
 
 	        Validator.verifyTitle(driver.getTitle(), "Sauce Labs | LinkedIn");
@@ -74,16 +74,16 @@ public class InventoryPageTest extends BaseClass
 	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
 
-	        selUtils.closeOtherWindows();
+	        selUtils.closeAllOtherWindows();
 
 	        LogUtils.info("Navigating to Twitter page.");
 	        selUtils.scrollToElement(basePage.getTwitterPageButton());
-	        selUtils.waitTime(3);
+	        selUtils.waitForSeconds(3);
 	        ReportUtils.addScreenshot("Scrolled to TwitterPageButton.");
 
-	        selUtils.waitAndClick(basePage.getTwitterPageButton(), 5);
+	        selUtils.waitForElementAndClick(basePage.getTwitterPageButton(), 5);
 	        selUtils.switchToWindowByTitle("Sauce Labs (@saucelabs) / X");
-	        selUtils.waitTime(5);
+	        selUtils.waitForSeconds(5);
 	        ReportUtils.addScreenshot("Opened Twitter Page.");
 
 	        Validator.verifyTitle(driver.getTitle(), "Sauce Labs (@saucelabs) / X");
@@ -93,13 +93,13 @@ public class InventoryPageTest extends BaseClass
 	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
 	       
-	        selUtils.closeOtherWindows();
+	        selUtils.closeAllOtherWindows();
 
 	        LogUtils.info("Navigating to Facebook page.");
 	        selUtils.scrollToElement(basePage.getFacebookPageButton());
 	        ReportUtils.addScreenshot("Scrolled to FacebookPageButton.");
-	        selUtils.waitAndClick(basePage.getFacebookPageButton(), 5);
-	        selUtils.waitTime(5);
+	        selUtils.waitForElementAndClick(basePage.getFacebookPageButton(), 5);
+	        selUtils.waitForSeconds(5);
 	        ReportUtils.addScreenshot("Opened Facebook Page.");
 
 	        selUtils.switchToWindowByTitle("Sauce Labs | Facebook");
@@ -110,7 +110,7 @@ public class InventoryPageTest extends BaseClass
 
 	        selUtils.switchToWindowByTitle("Swag Labs");
 	        ReportUtils.addScreenshot("Navigated to HomePage.");
-	        selUtils.closeOtherWindows();
+	        selUtils.closeAllOtherWindows();
 	        
 	        new LoginPageTest().logOut();
 	        Validator.verifyTrue(loginPage.getLoginButton().isDisplayed(), "Logout validation successful !!!");
@@ -181,13 +181,13 @@ public class InventoryPageTest extends BaseClass
 	{
         List<WebElement> products = inventoryPage.getProductNames();
 
-    	selUtils.clickOnMultipleWebElementsReverseOrder(inventoryPage.getAddToCartButton());
-    	selUtils.waitTime(5);
+    	selUtils.clickElementsInReverseOrder(inventoryPage.getAddToCartButton());
+    	selUtils.waitForSeconds(5);
         LogUtils.info("Added all products to the cart.");
         ReportUtils.addScreenshot("Added all products to the cart.");
 
-    	selUtils.waitAndClick(basePage.getShoppingCartIcon(), 2);
-    	selUtils.waitTime(3);
+    	selUtils.waitForElementAndClick(basePage.getShoppingCartIcon(), 2);
+    	selUtils.waitForSeconds(3);
 		
     	LogUtils.info("Opened open cart page.");
         ReportUtils.addScreenshot("Opened open cart page.");

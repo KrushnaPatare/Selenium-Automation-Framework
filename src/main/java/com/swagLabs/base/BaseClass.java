@@ -119,7 +119,7 @@ public class BaseClass
         driver.get(PropertiesReader.getProperty("baseUrl"));
 
         // Wait time for UI elements to load
-        selUtils.waitTime(2);
+        selUtils.waitForSeconds(2);
     }
 
     public void tearDown() 

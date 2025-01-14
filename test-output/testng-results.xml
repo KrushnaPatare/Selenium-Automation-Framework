@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="8" failed="5" skipped="0">
+<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T21:22:45 IST" name="Suite" finished-at="2025-01-13T21:30:45 IST" duration-ms="479687">
+  <suite started-at="2025-01-14T18:56:12 IST" name="Suite" finished-at="2025-01-14T19:03:57 IST" duration-ms="465577">
     <groups>
     </groups>
-    <test started-at="2025-01-13T21:22:45 IST" name="Test" finished-at="2025-01-13T21:30:45 IST" duration-ms="479687">
+    <test started-at="2025-01-14T18:56:12 IST" name="Test" finished-at="2025-01-14T19:03:57 IST" duration-ms="465577">
       <class name="com.swagLabs.tests.InventoryPageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:25:21 IST" name="initializeBrowser" finished-at="2025-01-13T21:25:28 IST" duration-ms="6514" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T18:58:40 IST" name="initializeBrowser" finished-at="2025-01-14T18:58:44 IST" duration-ms="3560" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,63 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserIsAbleToNavigateToSocialMediaSites()[pri:1, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:25:28 IST" name="verifyUserIsAbleToNavigateToSocialMediaSites" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user is able to different social media handles of SwagLabs.com.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:26:19 IST" duration-ms="50968" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.AssertionError: Expected Title 'Sauce Labs (@saucelabs) / X' does not match Actual Title ''. expected [Sauce Labs (@saucelabs) / X] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.AssertionError: Expected Title 'Sauce Labs (@saucelabs) / X' does not match Actual Title ''. expected [Sauce Labs (@saucelabs) / X] but found []
-at com.swagLabs.utilities.ExceptionHandler.handleException(ExceptionHandler.java:16)
-at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:120)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.AssertionError: Expected Title 'Sauce Labs (@saucelabs) / X' does not match Actual Title ''. expected [Sauce Labs (@saucelabs) / X] but found []
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.swagLabs.utilities.Validator.verifyTitle(Validator.java:117)
-at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaSites(InventoryPageTest.java:89)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="verifyUserIsAbleToNavigateToSocialMediaSites()[pri:1, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T18:58:44 IST" name="verifyUserIsAbleToNavigateToSocialMediaSites" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user is able to different social media handles of SwagLabs.com.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T18:59:43 IST" duration-ms="59327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToNavigateToSocialMediaSites -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:26:19 IST" name="tearDown" finished-at="2025-01-13T21:26:20 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T18:59:43 IST" name="tearDown" finished-at="2025-01-14T18:59:43 IST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:26:20 IST" name="initializeBrowser" finished-at="2025-01-13T21:26:24 IST" duration-ms="4046" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T18:59:43 IST" name="initializeBrowser" finished-at="2025-01-14T18:59:48 IST" duration-ms="4105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,17 +37,17 @@ at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaS
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserCanAddItemToCart()[pri:2, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:26:24 IST" name="verifyUserCanAddItemToCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can add items to cart he wants to buy.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:26:48 IST" duration-ms="23996" status="PASS">
+        <test-method signature="verifyUserCanAddItemToCart()[pri:2, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T18:59:48 IST" name="verifyUserCanAddItemToCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can add items to cart he wants to buy.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T19:00:11 IST" duration-ms="23837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAddItemToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-13T21:26:48 IST" name="tearDown" finished-at="2025-01-13T21:26:48 IST" duration-ms="474" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.InventoryPageTest@22ffa91a]" started-at="2025-01-14T19:00:11 IST" name="tearDown" finished-at="2025-01-14T19:00:12 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.InventoryPageTest -->
       <class name="com.swagLabs.tests.CheckoutCompletepageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-13T21:26:48 IST" name="initializeBrowser" finished-at="2025-01-13T21:26:52 IST" duration-ms="3818" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-14T19:00:12 IST" name="initializeBrowser" finished-at="2025-01-14T19:00:16 IST" duration-ms="4280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,17 +58,17 @@ at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaS
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyCheckoutSuccessMessage()[pri:1, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-13T21:26:52 IST" name="verifyCheckoutSuccessMessage" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user after order placing process completion, a success message is displayed.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:27:50 IST" duration-ms="58140" status="PASS">
+        <test-method signature="verifyCheckoutSuccessMessage()[pri:1, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-14T19:00:16 IST" name="verifyCheckoutSuccessMessage" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user after order placing process completion, a success message is displayed.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T19:01:13 IST" duration-ms="57091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckoutSuccessMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-13T21:27:50 IST" name="tearDown" finished-at="2025-01-13T21:27:50 IST" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutCompletepageTest@74960bfa]" started-at="2025-01-14T19:01:13 IST" name="tearDown" finished-at="2025-01-14T19:01:13 IST" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.CheckoutCompletepageTest -->
       <class name="com.swagLabs.tests.EndToEndTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-13T21:24:21 IST" name="initializeBrowser" finished-at="2025-01-13T21:24:27 IST" duration-ms="5356" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-14T18:57:43 IST" name="initializeBrowser" finished-at="2025-01-14T18:57:46 IST" duration-ms="3549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +79,7 @@ at com.swagLabs.tests.InventoryPageTest.verifyUserIsAbleToNavigateToSocialMediaS
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyEndToEndPurchasingFunctionality()[pri:1, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-13T21:24:27 IST" name="verifyEndToEndPurchasingFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies complete purchasing functionality cycle.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:25:21 IST" duration-ms="53828" status="FAIL">
+        <test-method signature="verifyEndToEndPurchasingFunctionality()[pri:1, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-14T18:57:46 IST" name="verifyEndToEndPurchasingFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies complete purchasing functionality cycle.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T18:58:40 IST" duration-ms="53121" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.IllegalArgumentException: Invalid result argument 'Page url should match.'. Use 'pass' or 'fail'.]]>
@@ -174,13 +126,13 @@ at com.swagLabs.tests.EndToEndTest.verifyEndToEndPurchasingFunctionality(EndToEn
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndPurchasingFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-13T21:25:21 IST" name="tearDown" finished-at="2025-01-13T21:25:21 IST" duration-ms="391" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.EndToEndTest@232a7d73]" started-at="2025-01-14T18:58:40 IST" name="tearDown" finished-at="2025-01-14T18:58:40 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.EndToEndTest -->
       <class name="com.swagLabs.tests.CheckoutOverviewPageTest">
-        <test-method signature="verifyCheckoutFinishFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutOverviewPageTest@4b41e4dd]" started-at="2025-01-13T21:25:21 IST" name="verifyCheckoutFinishFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:25:21 IST" duration-ms="0" status="FAIL">
+        <test-method signature="verifyCheckoutFinishFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutOverviewPageTest@4b41e4dd]" started-at="2025-01-14T18:58:40 IST" name="verifyCheckoutFinishFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T18:58:40 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -226,7 +178,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- verifyCheckoutFinishFunctionality -->
       </class> <!-- com.swagLabs.tests.CheckoutOverviewPageTest -->
       <class name="com.swagLabs.tests.CartPageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:22:46 IST" name="initializeBrowser" finished-at="2025-01-13T21:22:57 IST" duration-ms="10373" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:56:12 IST" name="initializeBrowser" finished-at="2025-01-14T18:56:18 IST" duration-ms="6119" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,15 +189,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserCanRemoveItemsFromCart()[pri:1, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:22:57 IST" name="verifyUserCanRemoveItemsFromCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can remove mutiple items from the cart.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:23:36 IST" duration-ms="39542" status="PASS">
+        <test-method signature="verifyUserCanRemoveItemsFromCart()[pri:1, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:56:18 IST" name="verifyUserCanRemoveItemsFromCart" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can remove mutiple items from the cart.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T18:56:58 IST" duration-ms="39591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanRemoveItemsFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:23:36 IST" name="tearDown" finished-at="2025-01-13T21:23:37 IST" duration-ms="737" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:56:58 IST" name="tearDown" finished-at="2025-01-14T18:56:58 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:23:37 IST" name="initializeBrowser" finished-at="2025-01-13T21:23:41 IST" duration-ms="4310" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:56:58 IST" name="initializeBrowser" finished-at="2025-01-14T18:57:03 IST" duration-ms="4350" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -256,17 +208,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserCanCheckOut()[pri:2, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:23:41 IST" name="verifyUserCanCheckOut" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can navigate to checkout page for futher process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-13T21:24:21 IST" duration-ms="39782" status="PASS">
+        <test-method signature="verifyUserCanCheckOut()[pri:2, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:57:03 IST" name="verifyUserCanCheckOut" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can navigate to checkout page for futher process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" finished-at="2025-01-14T18:57:42 IST" duration-ms="39808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCheckOut -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-13T21:24:21 IST" name="tearDown" finished-at="2025-01-13T21:24:21 IST" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CartPageTest@32193bea]" started-at="2025-01-14T18:57:42 IST" name="tearDown" finished-at="2025-01-14T18:57:43 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.CartPageTest -->
       <class name="com.swagLabs.tests.CheckoutPageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:27:52 IST" name="initializeBrowser" finished-at="2025-01-13T21:28:00 IST" duration-ms="7275" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:01:15 IST" name="initializeBrowser" finished-at="2025-01-14T19:01:19 IST" duration-ms="4202" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,7 +229,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:28:00 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-13T21:28:42 IST" duration-ms="42855" status="FAIL">
+        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:01:19 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-14T19:02:02 IST" duration-ms="42422" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -351,11 +303,11 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckoutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:28:43 IST" name="tearDown" finished-at="2025-01-13T21:28:43 IST" duration-ms="418" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:02:02 IST" name="tearDown" finished-at="2025-01-14T19:02:02 IST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:28:43 IST" name="initializeBrowser" finished-at="2025-01-13T21:28:50 IST" duration-ms="6861" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:02:02 IST" name="initializeBrowser" finished-at="2025-01-14T19:02:06 IST" duration-ms="4169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -366,7 +318,7 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:28:50 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-13T21:29:42 IST" duration-ms="52257" status="PASS">
+        <test-method signature="verifyCheckoutFunctionality(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:02:06 IST" name="verifyCheckoutFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies that user can complete the order placing process.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="checkoutData" finished-at="2025-01-14T19:02:58 IST" duration-ms="51859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -392,13 +344,13 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckoutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-13T21:29:42 IST" name="tearDown" finished-at="2025-01-13T21:29:42 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.CheckoutPageTest@42721fe]" started-at="2025-01-14T19:02:58 IST" name="tearDown" finished-at="2025-01-14T19:02:58 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.swagLabs.tests.CheckoutPageTest -->
       <class name="com.swagLabs.tests.LoginPageTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:29:43 IST" name="initializeBrowser" finished-at="2025-01-13T21:29:47 IST" duration-ms="3708" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:02:59 IST" name="initializeBrowser" finished-at="2025-01-14T19:03:03 IST" duration-ms="3548" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -409,7 +361,7 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:29:47 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-13T21:29:56 IST" duration-ms="9133" status="PASS">
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:03 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-14T19:03:12 IST" duration-ms="9258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,11 +382,11 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:29:56 IST" name="tearDown" finished-at="2025-01-13T21:29:56 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:12 IST" name="tearDown" finished-at="2025-01-14T19:03:14 IST" duration-ms="1891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:29:56 IST" name="initializeBrowser" finished-at="2025-01-13T21:30:03 IST" duration-ms="6612" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:14 IST" name="initializeBrowser" finished-at="2025-01-14T19:03:19 IST" duration-ms="5228" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -445,7 +397,7 @@ at com.swagLabs.tests.CheckoutPageTest.verifyCheckoutFunctionality(CheckoutPageT
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:03 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-13T21:30:07 IST" duration-ms="4306" status="FAIL">
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:19 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-14T19:03:23 IST" duration-ms="4014" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -514,11 +466,11 @@ at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:07 IST" name="tearDown" finished-at="2025-01-13T21:30:08 IST" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:23 IST" name="tearDown" finished-at="2025-01-14T19:03:23 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:08 IST" name="initializeBrowser" finished-at="2025-01-13T21:30:14 IST" duration-ms="5722" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:23 IST" name="initializeBrowser" finished-at="2025-01-14T19:03:28 IST" duration-ms="4774" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -529,7 +481,7 @@ at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:14 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-13T21:30:23 IST" duration-ms="9404" status="PASS">
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:28 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-14T19:03:37 IST" duration-ms="9300" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -550,11 +502,11 @@ at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:23 IST" name="tearDown" finished-at="2025-01-13T21:30:23 IST" duration-ms="394" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:37 IST" name="tearDown" finished-at="2025-01-14T19:03:38 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:23 IST" name="initializeBrowser" finished-at="2025-01-13T21:30:29 IST" duration-ms="5369" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:38 IST" name="initializeBrowser" finished-at="2025-01-14T19:03:42 IST" duration-ms="4433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -565,7 +517,7 @@ at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:29 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-13T21:30:43 IST" duration-ms="14478" status="PASS">
+        <test-method signature="checkLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:42 IST" name="checkLoginFunctionality" description="&lt;html&gt;&lt;body&gt;&lt;b&gt;&lt;pre&gt;&lt;span style=&#039;color:yellow;&#039;&gt;This test verifies the login functionality with testdata provided.&lt;/span&gt;&lt;/pre&gt;&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;" data-provider="loginData" finished-at="2025-01-14T19:03:57 IST" duration-ms="14464" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -586,7 +538,7 @@ at com.swagLabs.tests.LoginPageTest.checkLoginFunctionality(LoginPageTest.java:6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-13T21:30:43 IST" name="tearDown" finished-at="2025-01-13T21:30:45 IST" duration-ms="1988" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swagLabs.tests.LoginPageTest@40844aab]" started-at="2025-01-14T19:03:57 IST" name="tearDown" finished-at="2025-01-14T19:03:57 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

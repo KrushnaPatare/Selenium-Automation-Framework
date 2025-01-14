@@ -32,13 +32,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.swagLabs.tests.LoginPageTest -->
-      <class name="com.swagLabs.tests.InventoryPageTest">
-        <methods>
-          <include name="initializeBrowser"/>
-          <include name="verifyUserIsAbleToNavigateToSocialMediaSites"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.swagLabs.tests.InventoryPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -88,8 +88,8 @@ public class LoginPageTest extends BaseClass
 		LogUtils.info("Entered username and password.");
 		ReportUtils.addScreenshot(Status.INFO, "Entered username and password.");
 
-		selUtils.waitAndClick(loginPage.getLoginButton(), 3) ;
-		selUtils.waitTime(3);
+		selUtils.waitForElementAndClick(loginPage.getLoginButton(), 3) ;
+		selUtils.waitForSeconds(3);
 
 		LogUtils.info("Logged in Successfully!");
 		ReportUtils.addScreenshot(Status.INFO,"Logged in Successfully!");	
@@ -98,10 +98,10 @@ public class LoginPageTest extends BaseClass
 	
 	public void logOut() throws InterruptedException 
 	{
-		selUtils.waitAndClick(basePage.getBurgerMenuButton(), 2);       
-		selUtils.waitTime(2);
-		selUtils.waitAndClick(basePage.getLogoutLink(), 2);
-		selUtils.waitTime(2);
+		selUtils.waitForElementAndClick(basePage.getBurgerMenuButton(), 2);       
+		selUtils.waitForSeconds(2);
+		selUtils.waitForElementAndClick(basePage.getLogoutLink(), 2);
+		selUtils.waitForSeconds(2);
 		LogUtils.info("Logged out Successfully!");
 		ReportUtils.addScreenshot(Status.INFO,"Logged out Successfully!");
 	}

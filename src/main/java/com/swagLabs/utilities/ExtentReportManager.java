@@ -33,8 +33,11 @@ public class ExtentReportManager extends BaseClass implements ITestListener
         reports.attachReporter(sparkReporter);
 
         reports.setSystemInfo("Application URL", PropertiesReader.getProperty("baseUrl"));
-        reports.setSystemInfo("Username", System.getProperty("user.name"));
+        reports.setSystemInfo("Machine Name", System.getProperty("user.name"));
         reports.setSystemInfo("Operating System", System.getProperty("os.name"));
+        reports.setSystemInfo("Environment", "QA");
+        reports.setSystemInfo("Username & Password", "standard_user & secret_sauce");
+
 //        reports.setSystemInfo("OS Version", System.getProperty("os.version"));
 //        reports.setSystemInfo("OS Architecture", System.getProperty("os.arch"));
         reports.setSystemInfo("Java Version", System.getProperty("java.version"));

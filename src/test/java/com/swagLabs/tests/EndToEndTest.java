@@ -64,7 +64,7 @@ public class EndToEndTest extends BaseClass
 	    	new CheckoutOverviewPageTest().completeCheckoutOverview();	    	
 	        Validator.verifyTrue(checkoutCompletePage.getBackHomeButton().isDisplayed(), "Order placed conformly !!!");
 
-	    	selUtils.waitAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
+	    	selUtils.waitForElementAndClick(checkoutCompletePage.getBackHomeButton(), 2);	
 	    	LogUtils.info("Opened inventory page.");
 	        ReportUtils.addScreenshot("Opened inventory page.");
 	        

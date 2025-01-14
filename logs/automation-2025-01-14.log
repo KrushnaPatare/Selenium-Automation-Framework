@@ -1,0 +1,311 @@
+18:59:43.391  [main] INFO  com.swagLabs.utilities.LogUtils - *****************************************************************
+18:59:43.939  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+18:59:43.955  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
+18:59:43.956  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
+18:59:43.957  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+18:59:43.980  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+18:59:43.981  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+18:59:48.048  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************************************
+18:59:48.048  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyUserCanAddItemToCart >>>>> *****
+18:59:48.048  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+18:59:48.213  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //input[@data-test='username']]
+18:59:48.411  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'standard_user' into element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //input[@data-test='username']]
+18:59:48.501  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //input[@data-test='password']]
+18:59:48.728  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //input[@data-test='password']]
+18:59:48.729  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+18:59:48.948  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //input[@data-test='login-button']]
+18:59:54.137  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+18:59:57.140  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+18:59:57.335  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: LogIn validation successfull !!!, Condition: true
+18:59:57.335  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: LogIn validation successfull !!!
+18:59:57.335  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+18:59:57.391  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.417  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.515  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.515  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.557  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.590  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.693  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.694  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.723  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.751  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.831  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.831  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.851  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.876  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.959  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.960  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:57.993  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.020  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.133  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.133  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.166  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.197  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.339  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+18:59:58.339  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //button[text()='Add to cart']]
+19:00:03.348  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
+19:00:03.543  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //div[@class='shopping_cart_container']]
+19:00:03.664  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2046ee656659557bb1220d9f7df2f4b)] -> xpath: //div[@class='shopping_cart_container']]
+19:00:06.666  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
+19:00:11.877  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyUserCanAddItemToCart *****
+19:00:11.877  [main] INFO  com.swagLabs.utilities.LogUtils - ***********************************************
+19:00:12.250  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:00:12.266  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
+19:00:12.267  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
+19:00:12.267  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+19:00:12.290  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+19:00:12.291  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+19:00:16.528  [main] INFO  com.swagLabs.utilities.LogUtils - *************************************************************
+19:00:16.528  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyCheckoutSuccessMessage >>>>> *****
+19:00:16.529  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:00:16.697  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@data-test='username']]
+19:00:16.965  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'standard_user' into element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@data-test='username']]
+19:00:17.050  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@data-test='password']]
+19:00:17.263  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@data-test='password']]
+19:00:17.263  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:00:17.415  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@data-test='login-button']]
+19:00:22.666  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:00:25.675  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:00:25.854  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: LogIn validation successfull !!!, Condition: true
+19:00:25.854  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: LogIn validation successfull !!!
+19:00:25.854  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:00:25.898  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:25.922  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.002  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.003  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.036  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.061  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.149  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.149  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.174  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.201  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.279  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.280  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.302  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.321  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.396  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.397  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.420  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.445  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.524  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.524  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.545  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.571  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.653  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:26.653  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Add to cart']]
+19:00:31.661  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
+19:00:31.855  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //div[@class='shopping_cart_container']]
+19:00:31.977  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //div[@class='shopping_cart_container']]
+19:00:34.992  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
+19:00:35.125  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Item addition to cart validation successfull !!!, Condition: true
+19:00:35.125  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Item addition to cart validation successfull !!!
+19:00:35.125  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:00:35.155  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Checkout']]
+19:00:38.160  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
+19:00:38.301  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[text()='Checkout']]
+19:00:43.449  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
+19:00:46.464  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
+19:00:46.598  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Navigated to checkout page validation successfull !!!, Condition: true
+19:00:46.598  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Navigated to checkout page validation successfull !!!
+19:00:46.598  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:00:46.648  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='first-name']]
+19:00:46.823  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'Krushna' into element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='first-name']]
+19:00:46.879  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='last-name']]
+19:00:47.021  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'Patare' into element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='last-name']]
+19:00:47.073  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='postal-code']]
+19:00:47.218  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '411016' into element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='postal-code']]
+19:00:50.219  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
+19:00:53.390  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //input[@name='continue']]
+19:00:58.580  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
+19:00:58.580  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
+19:00:58.719  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Checkout completed with user details validation successfull !!!, Condition: true
+19:00:58.719  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Checkout completed with user details validation successfull !!!
+19:00:58.719  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:00:58.748  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[@data-test='finish']]
+19:00:58.804  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //button[@data-test='finish']]
+19:01:03.958  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-test='finish']'
+19:01:03.958  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout success page.
+19:01:04.112  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Order placed conformly !!!, Condition: true
+19:01:04.112  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Order placed conformly !!!
+19:01:04.112  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:04.145  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Success message is displayed on page., Condition: true
+19:01:04.145  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Success message is displayed on page.
+19:01:04.145  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:04.200  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='react-burger-menu-btn']]
+19:01:04.297  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='react-burger-menu-btn']]
+19:01:06.360  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (12351578598da8f515b98bc22147ce63)] -> xpath: //*[@id='logout_sidebar_link']]
+19:01:11.479  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
+19:01:13.488  [main] INFO  com.swagLabs.utilities.LogUtils - Logged out Successfully!
+19:01:13.617  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Logout validation successful !!!, Condition: true
+19:01:13.617  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Logout validation successful !!!
+19:01:13.617  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:13.617  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyCheckoutSuccessMessage *****
+19:01:13.618  [main] INFO  com.swagLabs.utilities.LogUtils - *************************************************
+19:01:13.987  [main] INFO  com.swagLabs.utilities.XLUtility - XLUtility initialized with file path: F:\WorkSpace\SwagLabs-Ecommerce\src\test\resources\testdata\testdata.xlsx
+19:01:13.987  [main] INFO  com.swagLabs.utilities.XLUtility - Getting row count for sheet: PersonalData
+19:01:14.155  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:14.159  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:14.160  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:14.752  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:14.912  [main] DEBUG com.swagLabs.utilities.XLUtility - Row count for sheet PersonalData: 2
+19:01:14.912  [main] INFO  com.swagLabs.utilities.XLUtility - Getting cell count for sheet: PersonalData, row: 0
+19:01:14.926  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:14.929  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:14.930  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:14.963  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:14.991  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell count for sheet: PersonalData, row: 0: 4
+19:01:14.991  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 1, column: 0
+19:01:15.005  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.008  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.009  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.030  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.063  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: Krushna
+19:01:15.063  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 1, column: 1
+19:01:15.076  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.077  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.079  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.097  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.117  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: Patare
+19:01:15.118  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 1, column: 2
+19:01:15.129  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.130  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.131  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.148  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.193  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: 411016
+19:01:15.194  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 1, column: 3
+19:01:15.204  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.207  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.208  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.228  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.247  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: Pass
+19:01:15.248  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 2, column: 0
+19:01:15.265  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.267  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.268  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.291  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.307  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: 12345
+19:01:15.307  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 2, column: 1
+19:01:15.319  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.320  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.322  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.343  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.365  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: Patare
+19:01:15.365  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 2, column: 2
+19:01:15.375  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.377  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.378  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.395  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.412  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: 411016
+19:01:15.412  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: PersonalData, row: 2, column: 3
+19:01:15.422  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+19:01:15.424  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+19:01:15.425  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+19:01:15.440  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+19:01:15.455  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: Fail
+19:01:15.461  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:01:15.487  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
+19:01:15.488  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
+19:01:15.489  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+19:01:15.521  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+19:01:15.522  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+19:01:19.665  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
+19:01:19.665  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyCheckoutFunctionality >>>>> *****
+19:01:19.665  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:01:19.909  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@data-test='username']]
+19:01:20.197  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'standard_user' into element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@data-test='username']]
+19:01:20.280  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@data-test='password']]
+19:01:20.478  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@data-test='password']]
+19:01:20.478  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:01:20.643  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@data-test='login-button']]
+19:01:25.886  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:01:28.896  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:01:29.082  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: LogIn validation successfull !!!, Condition: true
+19:01:29.082  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: LogIn validation successfull !!!
+19:01:29.082  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:29.146  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.184  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.293  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.293  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.329  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.363  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.478  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.478  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.510  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.540  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.633  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.633  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.653  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.673  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.746  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.746  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.774  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.798  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.874  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.874  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.898  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:29.924  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:30.090  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:30.090  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Add to cart']]
+19:01:35.091  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
+19:01:35.266  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //div[@class='shopping_cart_container']]
+19:01:35.389  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //div[@class='shopping_cart_container']]
+19:01:38.400  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
+19:01:38.538  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Item addition to cart validation successfull !!!, Condition: true
+19:01:38.538  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Item addition to cart validation successfull !!!
+19:01:38.538  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:38.572  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Checkout']]
+19:01:41.585  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
+19:01:41.724  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //button[text()='Checkout']]
+19:01:46.877  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
+19:01:49.882  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
+19:01:50.014  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Navigated to checkout page validation successfull !!!, Condition: true
+19:01:50.014  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Navigated to checkout page validation successfull !!!
+19:01:50.014  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:01:50.063  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='first-name']]
+19:01:50.230  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'Krushna' into element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='first-name']]
+19:01:50.279  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='last-name']]
+19:01:50.418  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'Patare' into element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='last-name']]
+19:01:50.470  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='postal-code']]
+19:01:50.613  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '411016' into element: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //*[@id='postal-code']]
+19:01:53.614  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
+19:01:56.791  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (47b05b274f605fd2de1056b93cc2e04d)] -> xpath: //input[@name='continue']]
+19:02:01.953  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
+19:02:01.953  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
+19:02:02.072  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: Pass, Actual URL: https://www.saucedemo.com/checkout-step-two.html, Expected URL: https://www.saucedemo.com/checkout-complete.html
+19:02:02.072  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/checkout-complete.html' does not match Actual URL 'https://www.saucedemo.com/checkout-step-two.html' for 'pass' condition.
+19:02:02.081  [main] ERROR com.swagLabs.utilities.LogUtils - Assertion failure during test execution. AssertionError: Expected URL 'https://www.saucedemo.com/checkout-complete.html' does not match Actual URL 'https://www.saucedemo.com/checkout-step-two.html' for 'pass' condition. expected [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+19:02:02.081  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyCheckoutFunctionality *****
+19:02:02.082  [main] INFO  com.swagLabs.utilities.LogUtils - ************************************************
+19:02:02.541  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
+19:02:02.553  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
+19:02:02.554  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
+19:02:02.554  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+19:02:02.577  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
+19:02:02.578  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
+19:02:06.713  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
+19:02:06.714  [main] INFO  com.swagLabs.utilities.LogUtils - ***** <<<<< Starting verifyCheckoutFunctionality >>>>> *****
+19:02:06.714  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
+19:02:06.919  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@data-test='username']]
+19:02:07.108  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'standard_user' into element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@data-test='username']]
+19:02:07.161  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@data-test='password']]
+19:02:07.309  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@data-test='password']]
+19:02:07.309  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
+19:02:07.482  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@data-test='login-button']]
+19:02:12.699  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
+19:02:15.701  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
+19:02:15.934  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: LogIn validation successfull !!!, Condition: true
+19:02:15.934  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: LogIn validation successfull !!!
+19:02:15.934  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
+19:02:15.991  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.023  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.140  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.140  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 5: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.225  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.252  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.390  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.390  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 4: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.424  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.456  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.561  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.561  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 3: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
+19:02:16.589  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
