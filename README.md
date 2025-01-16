@@ -152,9 +152,13 @@ The project is structured using **Maven** conventions and organized into relevan
 
 The framework generates a comprehensive **Extent Report** that visually presents the test results. Below is a sample screenshot from the report:
 
-![Extent Report Screenshot](https://github.com/your-username/KrushnaPatare-Selenium-Automation-Framework/blob/main/screenshots/ExtentReportImg01.png)
+![Extent Report Screenshot](https://github.com/KrushnaPatare/Selenium-Automation-Framework/blob/main/Screenshots/ExtentReportImg01.png)
 
-![Extent Report Screenshot](https://github.com/your-username/KrushnaPatare-Selenium-Automation-Framework/blob/main/screenshots/ExtentReportImg02.png)
+![Extent Report Screenshot](https://github.com/KrushnaPatare/Selenium-Automation-Framework/blob/main/Screenshots/ExtentReportImg02.png)
+
+![Extent Report Screenshot](https://github.com/KrushnaPatare/Selenium-Automation-Framework/blob/main/Screenshots/ExtentReportImg03.png)
+
+![Extent Report Screenshot](https://github.com/KrushnaPatare/Selenium-Automation-Framework/blob/main/Screenshots/ExtentReportImg04.png)
 
 For additional reports and logs, please check the `logs` and `test-output` folder.
 
