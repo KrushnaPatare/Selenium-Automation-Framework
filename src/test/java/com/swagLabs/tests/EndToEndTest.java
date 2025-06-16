@@ -49,7 +49,7 @@ public class EndToEndTest extends BaseClass
 	
 	    try 
 	    {
-	    	new LoginPageTest().logIn(PropertiesReader.getProperty("username"), PropertiesReader.getProperty("password"));
+	    	new LoginPageTest().logIn(PropertiesReader.getPropertyFromFile("username"), PropertiesReader.getPropertyFromFile("password"));
 	        Validator.verifyTrue(basePage.getShoppingCartIcon().isDisplayed(), "LogIn validation successfull !!!");
 
 	    	new InventoryPageTest().addItemsToCart();
@@ -75,7 +75,7 @@ public class EndToEndTest extends BaseClass
 	    } 
 	    catch (AssertionError e) 
 	    {
-			ExceptionHandler.handleException(e, "Assertion failure during test execution.");
+			ExceptionHandler.handleAssertionError(e, "Assertion failure during test execution.");
 	    } 
 	    catch (Exception e) 
 	    {

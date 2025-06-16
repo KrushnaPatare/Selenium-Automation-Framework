@@ -62,7 +62,7 @@ public class LoginPageTest extends BaseClass
 	     } 
 		 catch (AssertionError e) 
 		 {
-			 ExceptionHandler.handleException(e, "Assertion failure during test execution.");
+			 ExceptionHandler.handleAssertionError(e, "Assertion failure during test execution.");
 	     } 
 		 catch (Exception e)
 		 {
@@ -81,6 +81,9 @@ public class LoginPageTest extends BaseClass
 	{
 		LogUtils.info("Opened login page.");
 		ReportUtils.addScreenshot(Status.INFO,"Opened login page.");
+		
+//		System.out.println(username);
+//		System.out.println(password);
 		
 		selUtils.sendKeysMethod(loginPage.getUsernameField(), username, 1);
 		selUtils.sendKeysMethod(loginPage.getPasswordField(), password, 1);

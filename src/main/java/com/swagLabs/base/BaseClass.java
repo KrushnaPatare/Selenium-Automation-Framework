@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.swagLabs.pom.BasePage;
@@ -78,9 +80,18 @@ public class BaseClass
             options.addArguments("start-maximized");
             driver = new EdgeDriver(options);
         }
+        else if (browser.equalsIgnoreCase("firefox")) 
+        {
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--force-device-scale-factor=" + (80 / 100.0));
+            options.addArguments("start-maximized");
+            driver = new FirefoxDriver(options);
+        }
         else 
         {
         	System.out.println("Wrong browser name is entered.");
+        	throw new IllegalArgumentException("Wrong browser name is entered.");
         }
         
         
@@ -116,7 +127,7 @@ public class BaseClass
         driver.manage().deleteAllCookies();  // Clears all cookies
 
         // Open the base URL
-        driver.get(PropertiesReader.getProperty("baseUrl"));
+        driver.get(PropertiesReader.getPropertyFromFile("baseUrl"));
 
         // Wait time for UI elements to load
         selUtils.waitForSeconds(2);
@@ -127,6 +138,10 @@ public class BaseClass
         if (driver != null) 
         {
             driver.quit();
+        }
+        else 
+        {
+        	throw new NullPointerException("The value of driver is not initialized...");
         }
     }
 }

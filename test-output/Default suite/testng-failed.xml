@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.swagLabs.tests.LoginPageTest">
+      <class name="com.swagLabs.tests.NaukriProfileUpdateTest">
         <methods>
-          <include name="initializeBrowser"/>
-          <include name="checkLoginFunctionality" invocation-numbers="1"/>
-          <include name="tearDown"/>
+          <include name="webTableTest"/>
         </methods>
-      </class> <!-- com.swagLabs.tests.LoginPageTest -->
+      </class> <!-- com.swagLabs.tests.NaukriProfileUpdateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

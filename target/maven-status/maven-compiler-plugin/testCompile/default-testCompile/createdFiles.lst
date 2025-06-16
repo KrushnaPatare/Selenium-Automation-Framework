@@ -1,0 +1,9 @@
+com\swagLabs\tests\ProductPageTest.class
+com\swagLabs\tests\LoginPageTest.class
+com\swagLabs\tests\CartPageTest.class
+com\swagLabs\tests\NaukriProfileUpdateTest.class
+com\swagLabs\tests\CheckoutCompletepageTest.class
+com\swagLabs\tests\CheckoutOverviewPageTest.class
+com\swagLabs\tests\EndToEndTest.class
+com\swagLabs\tests\InventoryPageTest.class
+com\swagLabs\tests\CheckoutPageTest.class

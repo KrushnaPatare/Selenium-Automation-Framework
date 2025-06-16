@@ -1,222 +1,31 @@
-19:02:16.620  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.704  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.704  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 2: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.724  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.746  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.840  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.840  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 1: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.867  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:16.895  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:17.002  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:17.003  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully on element at index 0: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Add to cart']]
-19:02:22.009  [main] INFO  com.swagLabs.utilities.LogUtils - Added all products to the cart.
-19:02:22.197  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //div[@class='shopping_cart_container']]
-19:02:22.314  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //div[@class='shopping_cart_container']]
-19:02:25.328  [main] INFO  com.swagLabs.utilities.LogUtils - Opened open cart page.
-19:02:25.462  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Item addition to cart validation successfull !!!, Condition: true
-19:02:25.462  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Item addition to cart validation successfull !!!
-19:02:25.462  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
-19:02:25.494  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to the element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Checkout']]
-19:02:28.498  [main] INFO  com.swagLabs.utilities.LogUtils - Scrolled to Checkout button.
-19:02:28.655  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //button[text()='Checkout']]
-19:02:33.805  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Checkout']'
-19:02:36.812  [main] INFO  com.swagLabs.utilities.LogUtils - Checkout page opened.
-19:02:36.944  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Navigated to checkout page validation successfull !!!, Condition: true
-19:02:36.944  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Navigated to checkout page validation successfull !!!
-19:02:36.944  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
-19:02:36.996  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='first-name']]
-19:02:37.155  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '12345' into element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='first-name']]
-19:02:37.214  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='last-name']]
-19:02:37.365  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'Patare' into element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='last-name']]
-19:02:37.418  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='postal-code']]
-19:02:37.554  [main] INFO  com.swagLabs.utilities.LogUtils - Entered '411016' into element: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='postal-code']]
-19:02:40.564  [main] INFO  com.swagLabs.utilities.LogUtils - Entered firstname, lastname, postalCode.
-19:02:43.733  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //input[@name='continue']]
-19:02:48.919  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='continue']'
-19:02:48.919  [main] INFO  com.swagLabs.utilities.LogUtils - Opened checkout complete page.
-19:02:49.030  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: Fail, Actual URL: https://www.saucedemo.com/checkout-step-two.html, Expected URL: https://www.saucedemo.com/checkout-complete.html
-19:02:49.030  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/checkout-complete.html' matches Actual URL 'https://www.saucedemo.com/checkout-step-two.html' for 'fail' condition.
-19:02:49.030  [main] INFO  com.swagLabs.utilities.LogUtils - Validation completed successfully for result: Fail
-19:02:49.086  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='react-burger-menu-btn']]
-19:02:49.189  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='react-burger-menu-btn']]
-19:02:51.257  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (a2c4deb619bdfa3b3da267a9aea7fced)] -> xpath: //*[@id='logout_sidebar_link']]
-19:02:56.439  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='logout_sidebar_link']'
-19:02:58.440  [main] INFO  com.swagLabs.utilities.LogUtils - Logged out Successfully!
-19:02:58.565  [main] INFO  com.swagLabs.utilities.LogUtils - Validating condition. Message: Logout validation successful !!!, Condition: true
-19:02:58.565  [main] INFO  com.swagLabs.utilities.LogUtils - Condition passed: Logout validation successful !!!
-19:02:58.566  [main] INFO  com.swagLabs.utilities.LogUtils - Condition validation completed successfully.
-19:02:58.566  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished verifyCheckoutFunctionality *****
-19:02:58.566  [main] INFO  com.swagLabs.utilities.LogUtils - ************************************************
-19:02:58.927  [main] INFO  com.swagLabs.utilities.XLUtility - XLUtility initialized with file path: F:\WorkSpace\SwagLabs-Ecommerce\src\test\resources\testdata\testdata.xlsx
-19:02:58.927  [main] INFO  com.swagLabs.utilities.XLUtility - Getting row count for sheet: Credentials
-19:02:58.937  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:58.939  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:58.940  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:58.965  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:58.989  [main] DEBUG com.swagLabs.utilities.XLUtility - Row count for sheet Credentials: 4
-19:02:58.989  [main] INFO  com.swagLabs.utilities.XLUtility - Getting cell count for sheet: Credentials, row: 0
-19:02:59.001  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.003  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.004  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.027  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.040  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell count for sheet: Credentials, row: 0: 3
-19:02:59.040  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 1, column: 0
-19:02:59.052  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.053  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.054  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.072  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.093  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: standard_user
-19:02:59.093  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 1, column: 1
-19:02:59.104  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.108  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.110  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.123  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.144  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: secret_sauce
-19:02:59.144  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 1, column: 2
-19:02:59.154  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.155  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.156  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.168  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.187  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: pass
-19:02:59.187  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 2, column: 0
-19:02:59.196  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.197  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.198  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.213  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.230  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: locked_out_user
-19:02:59.230  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 2, column: 1
-19:02:59.238  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.239  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.241  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.254  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.269  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: secret_sauce
-19:02:59.269  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 2, column: 2
-19:02:59.278  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.279  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.280  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.295  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.305  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: pass
-19:02:59.305  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 3, column: 0
-19:02:59.315  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.316  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.317  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.328  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.337  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: problem_user
-19:02:59.338  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 3, column: 1
-19:02:59.351  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.352  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.353  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.364  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.377  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: secret_sauce
-19:02:59.378  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 3, column: 2
-19:02:59.383  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.384  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.385  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.395  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.406  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: pass
-19:02:59.406  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 4, column: 0
-19:02:59.413  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.414  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.414  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.428  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.438  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: performance_glitch_user
-19:02:59.438  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 4, column: 1
-19:02:59.445  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.448  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.449  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.463  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.477  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: secret_sauce
-19:02:59.477  [main] INFO  com.swagLabs.utilities.XLUtility - Fetching cell data from sheet: Credentials, row: 4, column: 2
-19:02:59.485  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-19:02:59.487  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-19:02:59.488  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-19:02:59.499  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-19:02:59.510  [main] DEBUG com.swagLabs.utilities.XLUtility - Cell data retrieved: pass
-19:02:59.513  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-19:02:59.530  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
-19:02:59.531  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
-19:02:59.531  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
-19:02:59.562  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
-19:02:59.563  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
-19:03:03.060  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-19:03:03.061  [main] INFO  com.swagLabs.utilities.LogUtils - ****** <<<<<Starting checkLoginFunctionality>>>>> ******
-19:03:03.061  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-19:03:03.227  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (851efb8cb0f305690b152d31e3f92d2c)] -> xpath: //input[@data-test='username']]
-19:03:03.421  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'standard_user' into element: [[ChromeDriver: chrome on windows (851efb8cb0f305690b152d31e3f92d2c)] -> xpath: //input[@data-test='username']]
-19:03:03.485  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (851efb8cb0f305690b152d31e3f92d2c)] -> xpath: //input[@data-test='password']]
-19:03:03.662  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (851efb8cb0f305690b152d31e3f92d2c)] -> xpath: //input[@data-test='password']]
-19:03:03.662  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-19:03:03.836  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (851efb8cb0f305690b152d31e3f92d2c)] -> xpath: //input[@data-test='login-button']]
-19:03:09.143  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
-19:03:12.158  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-19:03:12.315  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: pass, Actual URL: https://www.saucedemo.com/inventory.html, Expected URL: https://www.saucedemo.com/inventory.html
-19:03:12.315  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/inventory.html' does not match Actual URL 'https://www.saucedemo.com/inventory.html' for 'pass' condition.
-19:03:12.315  [main] INFO  com.swagLabs.utilities.LogUtils - Validation completed successfully for result: pass
-19:03:12.315  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished checkLoginFunctionality *****
-19:03:12.315  [main] INFO  com.swagLabs.utilities.LogUtils - *********************************************
-19:03:14.211  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-19:03:14.224  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
-19:03:14.225  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
-19:03:14.225  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
-19:03:14.245  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
-19:03:14.247  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
-19:03:19.442  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-19:03:19.442  [main] INFO  com.swagLabs.utilities.LogUtils - ****** <<<<<Starting checkLoginFunctionality>>>>> ******
-19:03:19.442  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-19:03:19.644  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='username']]
-19:03:19.834  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'locked_out_user' into element: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='username']]
-19:03:19.891  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='password']]
-19:03:20.032  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='password']]
-19:03:20.032  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-19:03:20.196  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='login-button']]
-19:03:20.328  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: [[ChromeDriver: chrome on windows (aec7fed75389ff4547d719fb637c5509)] -> xpath: //input[@data-test='login-button']]
-19:03:23.334  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-19:03:23.450  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: pass, Actual URL: https://www.saucedemo.com/, Expected URL: https://www.saucedemo.com/inventory.html
-19:03:23.450  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/inventory.html' does not match Actual URL 'https://www.saucedemo.com/' for 'pass' condition.
-19:03:23.450  [main] ERROR com.swagLabs.utilities.LogUtils - Assertion failure during test execution. AssertionError: Expected URL 'https://www.saucedemo.com/inventory.html' does not match Actual URL 'https://www.saucedemo.com/' for 'pass' condition. expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
-19:03:23.451  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished checkLoginFunctionality *****
-19:03:23.451  [main] INFO  com.swagLabs.utilities.LogUtils - *********************************************
-19:03:23.918  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-19:03:23.935  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
-19:03:23.935  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
-19:03:23.936  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
-19:03:23.955  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
-19:03:23.956  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
-19:03:28.692  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-19:03:28.692  [main] INFO  com.swagLabs.utilities.LogUtils - ****** <<<<<Starting checkLoginFunctionality>>>>> ******
-19:03:28.692  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-19:03:28.920  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (c822d3d3a2c7650109a5f2d309390036)] -> xpath: //input[@data-test='username']]
-19:03:29.124  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'problem_user' into element: [[ChromeDriver: chrome on windows (c822d3d3a2c7650109a5f2d309390036)] -> xpath: //input[@data-test='username']]
-19:03:29.184  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (c822d3d3a2c7650109a5f2d309390036)] -> xpath: //input[@data-test='password']]
-19:03:29.348  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (c822d3d3a2c7650109a5f2d309390036)] -> xpath: //input[@data-test='password']]
-19:03:29.349  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-19:03:29.518  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (c822d3d3a2c7650109a5f2d309390036)] -> xpath: //input[@data-test='login-button']]
-19:03:34.767  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
-19:03:37.775  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-19:03:37.990  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: pass, Actual URL: https://www.saucedemo.com/inventory.html, Expected URL: https://www.saucedemo.com/inventory.html
-19:03:37.990  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/inventory.html' does not match Actual URL 'https://www.saucedemo.com/inventory.html' for 'pass' condition.
-19:03:37.990  [main] INFO  com.swagLabs.utilities.LogUtils - Validation completed successfully for result: pass
-19:03:37.990  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished checkLoginFunctionality *****
-19:03:37.990  [main] INFO  com.swagLabs.utilities.LogUtils - *********************************************
-19:03:38.383  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using WebDriverManager 5.9.2
-19:03:38.400  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=131 in cache (valid until 19:32:26 14/01/2025 IST)
-19:03:38.401  [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome131=131.0.6778.264 in cache (valid until 21:22:51 14/01/2025 IST)
-19:03:38.402  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
-19:03:38.430  [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 131.0.6778.264 found in cache
-19:03:38.432  [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win64\131.0.6778.264\chromedriver.exe
-19:03:42.816  [main] INFO  com.swagLabs.utilities.LogUtils - ********************************************************
-19:03:42.817  [main] INFO  com.swagLabs.utilities.LogUtils - ****** <<<<<Starting checkLoginFunctionality>>>>> ******
-19:03:42.817  [main] INFO  com.swagLabs.utilities.LogUtils - Opened login page.
-19:03:43.015  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (0b04b4d67a7c3007d0ac37fbf4ce5140)] -> xpath: //input[@data-test='username']]
-19:03:43.300  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'performance_glitch_user' into element: [[ChromeDriver: chrome on windows (0b04b4d67a7c3007d0ac37fbf4ce5140)] -> xpath: //input[@data-test='username']]
-19:03:43.379  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (0b04b4d67a7c3007d0ac37fbf4ce5140)] -> xpath: //input[@data-test='password']]
-19:03:43.606  [main] INFO  com.swagLabs.utilities.LogUtils - Entered 'secret_sauce' into element: [[ChromeDriver: chrome on windows (0b04b4d67a7c3007d0ac37fbf4ce5140)] -> xpath: //input[@data-test='password']]
-19:03:43.606  [main] INFO  com.swagLabs.utilities.LogUtils - Entered username and password.
-19:03:43.826  [main] INFO  com.swagLabs.utilities.LogUtils - Element is clickable: [[ChromeDriver: chrome on windows (0b04b4d67a7c3007d0ac37fbf4ce5140)] -> xpath: //input[@data-test='login-button']]
-19:03:54.100  [main] INFO  com.swagLabs.utilities.LogUtils - Clicked successfully: Proxy element for: DefaultElementLocator 'By.xpath: //input[@data-test='login-button']'
-19:03:57.106  [main] INFO  com.swagLabs.utilities.LogUtils - Logged in Successfully!
-19:03:57.278  [main] INFO  com.swagLabs.utilities.LogUtils - Validating login result. Expected Outcome: pass, Actual URL: https://www.saucedemo.com/inventory.html, Expected URL: https://www.saucedemo.com/inventory.html
-19:03:57.278  [main] INFO  com.swagLabs.utilities.LogUtils - Expected URL 'https://www.saucedemo.com/inventory.html' does not match Actual URL 'https://www.saucedemo.com/inventory.html' for 'pass' condition.
-19:03:57.278  [main] INFO  com.swagLabs.utilities.LogUtils - Validation completed successfully for result: pass
-19:03:57.278  [main] INFO  com.swagLabs.utilities.LogUtils - ***** Finished checkLoginFunctionality *****
-19:03:57.278  [main] INFO  com.swagLabs.utilities.LogUtils - *********************************************
+12:40:58.206  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+12:40:58.208  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+12:40:58.210  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+12:40:58.210  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+12:40:58.211  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+12:40:58.213  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+12:40:58.214  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+12:40:58.215  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+12:40:58.221  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+12:40:58.222  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+12:40:58.223  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+12:40:58.241  [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+12:40:58.266  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+12:40:58.267  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+12:40:58.269  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+12:40:58.269  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+12:40:58.271  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/thumbnail.emf'
+12:40:58.273  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/printerSettings/printerSettings1.bin'
+12:40:58.273  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+12:40:58.274  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+12:40:58.274  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+12:40:58.275  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+12:40:58.277  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+12:40:58.280  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+12:40:58.280  [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+12:40:58.564  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@32d418a9: 226 ms
+12:40:58.565  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@52ea0269: 1 ms
+12:40:58.579  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@2a02e34b: 14 ms
+12:40:58.602  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@7792d851: 23 ms
+12:40:58.607  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@574059d5: 5 ms
+12:40:58.608  [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6d672bd4: 1 ms

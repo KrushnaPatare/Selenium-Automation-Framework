@@ -49,18 +49,19 @@ public class PropertiesReader
     }
 
     
-    public static String getProperty(String property) 
+    public static String getPropertyFromFile(String property) 
     {
         loadProperties();
-        if (prop != null) 
+        try
         {
-            return prop.getProperty(property, "").trim();
+            String value = prop.getProperty(property, "").trim();
+            return prop != null? value:"";
         } 
-        else 
+        catch(Exception e)
         {
-            LOG.error("Properties file not loaded. Returning an empty value for property: " + property);
-            return "";
+            LOG.error("Properties file not loaded. Returning an empty value for property: " + property);          
         }
+        return "";
     }
 }
 

@@ -1,8 +1,14 @@
 package com.swagLabs.utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -127,4 +133,92 @@ public class XLUtility
             throw e;
         }
     }
+    
+    
+    public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
+    { 
+	    File xlfile=new File(path);
+	    if( !xlfile.exists())    // If the file does not exist, then create a new file
+	    {
+		    workbook = new XSSFWorkbook();
+		    fo = new FileOutputStream(path);
+		    workbook.write(fo);
+	    }
+	    
+	    fi = new FileInputStream(path);
+	    workbook = new XSSFWorkbook(fi);
+	    
+	    if(workbook.getSheetIndex(sheetName)==-1) // If the sheet does not exist, then create a new sheet
+	    	workbook.createSheet(sheetName);
+	    
+	    sheet = workbook.getSheet(sheetName);
+	    
+	    if(sheet.getRow(rownum)==null)        // If the row does not exist, then create a new row
+	    	sheet.createRow(rownum);
+	    
+	    row = sheet.getRow(rownum);
+	    
+	    cell = row.createCell(colnum);
+	    
+//	    System.out.println(rownum);
+//	    System.out.println(colnum);
+	    System.out.println(data);
+
+	    
+	    cell.setCellValue(data);
+	    fo = new FileOutputStream(path);
+	    workbook.write(fo);
+	    workbook.close();
+	    fi.close();
+	    fo.close();
+    }
+    
+    
+    public static void writeWebTableDataIntoExcel(String sheetname, List<List<String>> data)
+    		throws IOException 
+    {
+      String dataSheetPath = PropertiesReader.getPropertyFromFile("testDataPath");
+      XLUtility xlutil = new XLUtility(dataSheetPath);
+        
+      Iterator<List<String>> itr = data.iterator();
+        
+      int rownum = 0;
+        
+      while(itr.hasNext()) 
+      {
+        List<String> rowData = itr.next();
+        Iterator<String> itd = rowData.iterator();
+        
+        int colnum = 0;
+        
+        while(itd.hasNext()) 
+        {
+          String value = itd.next();	
+//        System.out.println(value);	
+          xlutil.setCellData(sheetname, rownum, colnum, value);
+          colnum++;
+//  	  System.out.println(rownum);
+//	      System.out.println(colnum);
+        }
+          
+          rownum++;
+      }    
+        
+    }
+    
+    public static String getSpecificCellData(List<HashMap<String,String>>sheetData, String inColName, String inColValue, String outColName) 
+    {
+    	String value = null;
+    	for(HashMap<String, String> rowData: sheetData) 
+    	{
+			if(rowData.get(inColName) == inColValue) 
+			{
+				value = rowData.get(outColName);
+			}
+    	}
+    	return value;
+    }
+    
+    
+    
 }

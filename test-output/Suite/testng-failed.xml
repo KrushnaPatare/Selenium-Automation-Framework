@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
     <classes>
-      <class name="com.swagLabs.tests.CheckoutPageTest">
+      <class name="com.swagLabs.tests.NaukriProfileUpdateTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="initializeBrowser"/>
-          <include name="verifyCheckoutFunctionality" invocation-numbers="0"/>
+          <include name="updateNaukriProfile"/>
         </methods>
-      </class> <!-- com.swagLabs.tests.CheckoutPageTest -->
-      <class name="com.swagLabs.tests.CheckoutOverviewPageTest">
-        <methods>
-          <include name="verifyCheckoutFinishFunctionality"/>
-          <include name="initializeBrowser"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.swagLabs.tests.CheckoutOverviewPageTest -->
-      <class name="com.swagLabs.tests.EndToEndTest">
-        <methods>
-          <include name="initializeBrowser"/>
-          <include name="tearDown"/>
-          <include name="verifyEndToEndPurchasingFunctionality"/>
-        </methods>
-      </class> <!-- com.swagLabs.tests.EndToEndTest -->
-      <class name="com.swagLabs.tests.LoginPageTest">
-        <methods>
-          <include name="initializeBrowser"/>
-          <include name="checkLoginFunctionality" invocation-numbers="1"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.swagLabs.tests.LoginPageTest -->
+      </class> <!-- com.swagLabs.tests.NaukriProfileUpdateTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,14 +1,22 @@
 package com.swagLabs.utilities;
 
 import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -234,6 +242,88 @@ public class SeleniumUtils
         }
     }
 
+
+    
+/*    
+    public void navigatePagination() {
+        try {
+            driver.get("URL_OF_PAGINATED_TABLE");
+            int lastPage = getLastPageNumber();
+            
+            for (int i = 1; i <= lastPage; i++) {
+                clickPageNumber(i);
+                System.out.println("Navigated to Page: " + i + " out of " + lastPage);
+            }
+            
+            addNewData();
+        } catch (Exception e) {
+            LogUtils.error("Failed to navigate pagination: " + e.getMessage());
+            LogUtils.logException(e);
+            Assert.fail("Pagination navigation failed");
+        } finally {
+            driver.quit();
+        }
+    }
+
+    public int getLastPageNumber() {
+        try {
+            WebElement lastPageElement = driver.findElement(By.xpath("//span[@class='total-pages']"));
+            return extractLastNumber(lastPageElement.getText());
+        } catch (Exception e) {
+            LogUtils.error("Failed to get last page number: " + e.getMessage());
+            LogUtils.logException(e);
+            Assert.fail("Error extracting last page number");
+            return -1;
+        }
+    }
+
+    public void clickPageNumber(int pageNumber) {
+        try {
+            WebElement pageButton = driver.findElement(By.xpath("//div[@class='pagination']//a[text()='" + pageNumber + "']"));
+            waitScrollAndClick(pageButton, 10);
+        } catch (Exception e) {
+            LogUtils.error("Failed to click page number " + pageNumber + ": " + e.getMessage());
+            LogUtils.logException(e);
+            Assert.fail("Error clicking on page number: " + pageNumber);
+        }
+    }
+    
+    public void addNewData() {
+        try {
+            WebElement addButton = driver.findElement(By.id("addData"));
+            waitScrollAndClick(addButton, 10);
+            int updatedLastPage = getLastPageNumber();
+            System.out.println("New Data Added: Pagination Updated to " + updatedLastPage + " pages!");
+        } catch (Exception e) {
+            LogUtils.error("Failed to add new data: " + e.getMessage());
+            LogUtils.logException(e);
+            Assert.fail("Error while adding new data");
+        }
+    }
+    
+    
+
+    public static int extractLastNumber(String text) {
+        try {
+            Pattern pattern = Pattern.compile("(\\d+)$");
+            Matcher matcher = pattern.matcher(text);
+            if (matcher.find()) {
+                return Integer.parseInt(matcher.group(1));
+            } else {
+                throw new RuntimeException("Could not extract last page number from text: " + text);
+            }
+        } catch (Exception e) {
+            LogUtils.error("Error extracting last number from text: " + text + " - " + e.getMessage());
+            LogUtils.logException(e);
+            Assert.fail("Failed to extract last page number");
+            return -1;
+        }
+    }
+	
+*/	
+	
+	
+	
     
     // Mouse Actions
     public void doubleClickElement(WebElement element) 
@@ -656,7 +746,47 @@ public class SeleniumUtils
         }
     }
 
+
     
+	public static void selectDate(WebDriver driver, WebElement monthElement, WebElement yearElement,
+			WebElement nextButton, WebElement prevButton, String day, String month, String year) 
+	{
+
+		int targetMonth = Month.valueOf(month.toUpperCase()).getValue();
+		int targetYear = Integer.parseInt(year);
+
+		while (true) {
+			String displayedMonth = monthElement.getText().trim();
+			String displayedYear = yearElement.getText().trim();
+
+			int currentMonth = Month.valueOf(displayedMonth.toUpperCase()).getValue();
+			int currentYear = Integer.parseInt(displayedYear);
+
+			if (currentMonth == targetMonth && currentYear == targetYear) {
+				break;
+			}
+
+// Decide direction
+			if (currentYear < targetYear || (currentYear == targetYear && currentMonth < targetMonth)) {
+				nextButton.click();
+			} else {
+				prevButton.click();
+			}
+
+// You may need to wait a bit if calendar updates slowly
+			try {
+				Thread.sleep(300); // Optional: Add explicit waits instead
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+// Select the day
+		driver.findElement(By.xpath("//td[not(contains(@class, 'disabled')) and text()='" + day + "']")).click();
+	}
+	
+	
+  
     public void enterTextInSearchBar(WebElement ele, String txt) 
     {
         try 
@@ -748,6 +878,125 @@ public class SeleniumUtils
     }
 
 
+    
+    
+    
+    public void clickCheckBox(List<WebElement> checkBoxes, String option) 
+    {
+    	try 
+    	{
+	    	Iterator<WebElement> itr = checkBoxes.iterator();
+	    	while(itr.hasNext()) 
+	    	{
+	    		WebElement checkBox = itr.next();
+	    		String value = checkBox.getText();
+	    		if(value==option) 
+	    		{
+	    			waitScrollAndClick(checkBox, 1);
+	    		}
+	    	}
+    	}	
+    	 catch (Exception e) 
+         {
+             LogUtils.error("Failed to click on checkBox option:"+option+" " + e.getMessage());
+         }
+    }
+    	
+    
+    
+    public void clickMultipleCheckBoxes(List<WebElement> checkBoxes, List<String> options) 
+    {
+    	try 
+    	{
+	    	Iterator<WebElement> itw = checkBoxes.iterator();
+	    	while(itw.hasNext()) 
+	    	{
+	    		WebElement checkBox = itw.next();
+	    		String value = checkBox.getText();
+	    		
+	    		Iterator<String> its = options.iterator();
+		    	while(its.hasNext()) 
+		    	{
+		    		String option = its.next();
+		    		
+		    		if(value==option) 
+		    		{
+		    			waitScrollAndClick(checkBox, 1);
+		    		}
+		    	}
+	    	}
+    	}	
+    	 catch (Exception e) 
+         {
+             LogUtils.error("Failed to click on checkBox option:"+options+" " + e.getMessage());
+         }
+    }
+    	
+    	
+
+    public List<List<String>> collectDataWebTable(WebElement table, String theadRow, String theadColumn, String tbodyRow, String tbodyColumn) 
+    {
+    	int hrow = table.findElements(By.xpath(theadRow)).size();
+    	int hcolumn = table.findElements(By.xpath(theadColumn)).size();
+//		System.out.println(hrow);
+//		System.out.println(hcolumn);
+
+
+    	List<List<String>> data = new ArrayList<>();
+    	
+    	//set Header row data
+    	for(int i=0; i<hrow; i++) 
+    	{
+    		List<String> hdata = new ArrayList<>();
+    		
+    		for(int j=1; j<=hcolumn; j++) 
+    		{
+    			String hvalue = table.findElement(By.xpath(theadRow+"/th["+ j + "]")).getText();
+    			hdata.add(hvalue);
+//    			System.out.println(hvalue);
+    		}
+    		data.add(hdata);
+    	}
+    	
+    	
+    	int brow = table.findElements(By.xpath(tbodyRow)).size();
+    	int bcolumn = table.findElements(By.xpath(tbodyColumn)).size();
+    	
+//    	System.out.println(brow);
+//		System.out.println(bcolumn);
+		
+    	//set Body row data
+    	for(int k=1; k<=brow; k++) 
+    	{
+    		ArrayList<String> bdata = new ArrayList<>();
+    		
+    		for(int p=1; p<=bcolumn; p++) 
+    		{
+    			String bvalue = table.findElement(By.xpath(tbodyRow+"["+k+"]"+"/td["+p+"]")).getText();
+    			bdata.add(bvalue);
+//    			System.out.println(bvalue);
+    		}
+    		
+    		data.add(bdata);
+    	}
+    	
+    	return data;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
     
     
 }

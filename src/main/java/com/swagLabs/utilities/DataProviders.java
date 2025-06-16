@@ -1,6 +1,9 @@
 package com.swagLabs.utilities;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
@@ -18,7 +21,7 @@ public class DataProviders {
      */
     public static String[][] getDataFromExcel(String sheetName) throws IOException 
     {
-        String dataSheetPath = PropertiesReader.getProperty("testDataPath");
+        String dataSheetPath = PropertiesReader.getPropertyFromFile("testDataPath");
         XLUtility xlutil = new XLUtility(dataSheetPath);
 
         int rowCount = xlutil.getRowCount(sheetName);
@@ -62,18 +65,21 @@ public class DataProviders {
     }
 
     // Uncomment and update this if you need ArrayList-based data provider
-    /*
-    public static synchronized ArrayList<HashMap<String, String>> getCheckoutData2() throws IOException {
-        String loginDataSheetPath = PropertiesReader.getProperty("testDataPath");
+    
+    public static List<HashMap<String, String>> getCheckoutData2() throws IOException 
+    {
+        String loginDataSheetPath = PropertiesReader.getPropertyFromFile("testDataPath");
         XLUtility xlutil = new XLUtility(loginDataSheetPath);
 
         int rownum = xlutil.getRowCount("credentials");
         int colcount = xlutil.getCellCount("credentials", 0);
-        ArrayList<HashMap<String, String>> data = new ArrayList<>();
+        List<HashMap<String, String>> data = new ArrayList<>();
 
-        for (int i = 1; i <= rownum; i++) {
+        for (int i = 1; i <= rownum; i++) 
+        {
             HashMap<String, String> map = new HashMap<>();
-            for (int j = 1; j < colcount; j++) {
+            for (int j = 1; j < colcount; j++) 
+            {
                 String columnName = xlutil.getCellData("credentials", 0, j);
                 String cellData = xlutil.getCellData("credentials", i, j);
                 map.put(columnName, cellData);
@@ -82,7 +88,33 @@ public class DataProviders {
         }
         return data;
     }
-    */
+    
+    
+    public static String getColumnData(String colName) throws IOException 
+    {
+        String loginDataSheetPath = PropertiesReader.getPropertyFromFile("testDataPath");
+        XLUtility xlutil = new XLUtility(loginDataSheetPath);
+
+        int rownum = xlutil.getRowCount("credentials");
+        int colcount = xlutil.getCellCount("credentials", 0);
+        List<HashMap<String, String>> data = new ArrayList<>();
+        
+        String columnData = null;
+
+        for (int i = 1; i <= rownum; i++) 
+        {
+            HashMap<String, String> map = new HashMap<>();
+            for (int j = 1; j < colcount; j++) 
+            {
+                String columnName = xlutil.getCellData("credentials", 0, j);
+                String cellData = xlutil.getCellData("credentials", i, j);
+                map.put(columnName, cellData);
+            }
+            data.add(map);
+        }
+        return columnData;
+    }
+    
 }
 
 

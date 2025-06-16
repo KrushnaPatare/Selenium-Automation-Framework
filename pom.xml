@@ -35,7 +35,7 @@
 					<version>3.3.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>profileUpdateTestng.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -204,7 +204,13 @@
 		    <artifactId>javafaker</artifactId>
 		    <version>1.0.2</version>
 		</dependency>
-
+		
+		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+		<dependency>
+		    <groupId>com.mysql</groupId>
+		    <artifactId>mysql-connector-j</artifactId>
+		    <version>9.3.0</version>
+		</dependency>
 
 
 	</dependencies>

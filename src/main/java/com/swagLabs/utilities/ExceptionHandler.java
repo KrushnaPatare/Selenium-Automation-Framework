@@ -9,7 +9,7 @@ public class ExceptionHandler
         throw new RuntimeException(e); // Ensure the exception propagates to TestNG
     }
 	
-	public static void handleException(AssertionError e, String message) 
+	public static void handleAssertionError(AssertionError e, String message) 
 	{
         LogUtils.error(message + " AssertionError: " + e.getMessage());
         ExtentReportManager.getTest().fail(message + " AssertionError: " + e.getMessage());
